@@ -1,0 +1,44 @@
+@font-face {
+    font-family: vazir;
+    src: url(Vazirmatn[wght].woff2);
+}
+body{
+    font-family: vazir;
+    direction: rtl;
+}
+
+/* GRAND LINE - Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f4;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d93636, #a91f2c);
+  border: 2px solid #f1f1f4;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff5555, #c51f35);
+  border: 1px solid #f1f1f4;
+  box-shadow: 0 0 10px rgba(217, 54, 54, 0.7);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c52f36 #f1f1f4;
+}
+html {
+  scroll-behavior: smooth;
+}
+
