@@ -15,19 +15,19 @@
 
 
         <a href="#" class="md:mr-10 mr-3 w-30 shrink-0">
-            <img src="img/brand.png" alt="" class="">
+            <img src="img/brand.png" alt="" loading="lazy">
         </a>
 
         <!-- Menu -->
-        <nav class="hidden lg:flex items-center m-auto">
+        <nav class="hidden min-[900px]:flex items-center m-auto">
 
             <a href="#" class="px-3 no-underline transition-colors duration-200 text-black hover:text-red-600">خانه</a>
 
-            <div class="relative group">
+            <div class="relative group shrink-0">
 
-                <button class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600">
-                    فروشگاه
-                </button>
+                <a href="#" class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600 group">
+                    فروشگاه <span class="inline-block transition-transform duration-300 group-hover:-rotate-90">›</span>
+                </a>
 
                 <div class="absolute right-0 top-full z-50 w-48 p-3 rounded-xl bg-white border border-gray-300 shadow-xl
                     invisible opacity-0 translate-y-2
@@ -41,11 +41,11 @@
 
                 </div>
             </div>
-            <div class="relative group">
+            <div class="relative group shrink-0">
 
-                <button class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600">
-                    دسته‌بندی‌ها
-                </button>
+                <a href="#" class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600 group">
+                    دسته‌بندی‌ها <span class="inline-block transition-transform duration-300 group-hover:-rotate-90">›</span>
+                </a>
 
                 <div class="absolute right-0 top-full z-50 w-48 p-3 rounded-xl bg-white border border-gray-300 shadow-xl
                     invisible opacity-0 translate-y-2
@@ -63,18 +63,18 @@
                 </div>
             </div>
 
-            <a href="#" class="px-3 no-underline transition-colors duration-200 text-black hover:text-red-600">درباره
+            <a href="#" class="px-3 no-underline transition-colors duration-200 text-black hover:text-red-600 shrink-0">درباره
                 ما</a>
 
-            <a href="#" class="px-3 no-underline transition-colors duration-200 text-black hover:text-red-600">تماس با
+            <a href="#" class="px-3 pl-20 no-underline transition-colors duration-200 text-black hover:text-red-600 shrink-0">تماس با
                 ما</a>
 
         </nav>
 
         <!-- Search -->
-        <div class="relative w-full max-w-70 mr-auto">
+        <div class="relative w-full max-w-50 mr-auto">
 
-            <input type="search" placeholder="جستجو..."
+            <input type="text" placeholder="جستجو..."
                 class="w-full h-10 bg-gray-100 focus:bg-white text-gray-800 border border-gray-300 rounded-lg pr-4 outline-none placeholder:text-gray-400 focus:border-red-500 transition-colors duration-300">
 
             <button class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-red-500">
@@ -90,8 +90,8 @@
         </div>
 
         <!-- Icons -->
-        <div class="flex items-center gap-6 lg:gap-5 shrink-0 lg:px-10 px-3 ml-auto">
-            <div class="rounded-md hidden lg:flex">
+        <div class="flex items-center gap-3 lg:gap-5 shrink-0 lg:px-10 px-3 ml-auto">
+            <div class="rounded-md hidden md:flex">
                 <div class="flex items-center justify-center p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
                     data-tooltip="سبد خرید">
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <div class="rounded-md">
-                <div class="flex items-center justify-center p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 active:bg-neutral-100 active:text-red-600 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
+                <div class="flex items-center justify-center bg-gray-100 md:bg-white active:bg-white border border-gray-300 md:border-0 p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 active:bg-neutral-100 active:text-red-600 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
                     data-tooltip="علاقه مندی ها">
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -110,7 +110,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="rounded-md hidden lg:flex" onclick="openModal()">
+            <div class="rounded-md hidden md:flex" onclick="openModal()">
                 <div class="flex items-center justify-center p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
                     data-tooltip="حساب کاربری">
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
@@ -121,10 +121,10 @@
             </div>
         </div>
         <nav
-            class="lg:hidden fixed bottom-0 right-0 w-full bg-white shadow-[0_-1px_2px_rgba(0,0,0,0.12)] border-gray-200 z-50 ">
+            class="min-[900px]:hidden fixed bottom-0 right-0 w-full bg-white shadow-[0_-1px_2px_rgba(0,0,0,0.12)] border-gray-200 z-50 ">
             <div class="flex items-center justify-around py-3">
 
-                <a href="#" class="flex flex-col items-center gap-1 text-sm text-gray-800 active:text-red-600">
+                <a href="#" class="flex flex-col items-center gap-1 px-2 text-sm text-gray-800 active:text-red-600">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-house preview-icon">
@@ -393,13 +393,13 @@
         </div>
     </div>
     <div
-        class="fixed lg:bottom-4 bottom-20 left-5 z-50 flex h-14 lg:w-28 w-14 items-center justify-center rounded-full bg-red-600 text-white transition-all duration-300 ease-out">
+        class="fixed min-[900px]:bottom-4 bottom-20 left-5 z-50 flex h-14 min-[900px]:w-28 w-14 items-center justify-center rounded-full bg-red-600 text-white transition-all duration-300 ease-out">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headset preview-icon"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></svg>
-        <p class="mr-3 hidden lg:flex">پشتیبانی</p>
+        <p class="mr-3 hidden min-[900px]:flex">پشتیبانی</p>
     </div>
     
 
-<div id="carousel" class="relative w-full overflow-hidden select-none rounded-b-2xl" dir="rtl">
+<div id="carousel" class="relative w-full overflow-hidden select-none" dir="rtl">
 
   <!-- Slides -->
   <div id="slider"
@@ -589,9 +589,8 @@
 <section class="w-full px-4 md:px-8" dir="rtl">
   <div class="max-w-[1406px] mx-auto">
 
-    <div class="grid lg:grid-cols-6 grid-cols-3 gap-3 md:gap-4 mt-5">
+    <div class="grid lg:grid-cols-6 grid-cols-3 gap-3 md:gap-4 mt-10">
 
-      <!-- Manga -->
       <a href="#manga"
          class="group h-[65px] md:h-[74px] rounded-xl
                 border border-[#e8e8eb] bg-[#fafafa]
@@ -602,20 +601,12 @@
                 hover:bg-white hover:shadow-md hover:border-gray-300 active:bg-white active:shadow-md active:border-gray-300">
 
         <div class="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-          <svg class="w-7 h-7 md:w-11 md:h-11 text-[#252532]"
-               viewBox="0 0 48 48" fill="none"
-               stroke="currentColor" stroke-width="2">
-            <path d="M5 9c7-3 13-1 19 3v29c-6-4-12-6-19-3V9Z"/>
-            <path d="M43 9c-7-3-13-1-19 3v29c6-4 12-6 19-3V9Z"/>
-            <path d="M11 15c4-1 8 0 11 2M11 21c4-1 8 0 11 2"/>
-            <path d="M37 15c-4-1-8 0-11 2M37 21c-4-1-8 0-11 2"/>
-          </svg>
+          <img src="img/manga.png" alt="" class="w-10 h-10" loading="lazy">
           <span class="text-[11px] md:text-base font-bold text-[#252532]">مانگا</span>
         </div>
         <span class="hidden md:block text-[#252532] text-xl group-hover:-translate-x-1 transition-transform">›</span>
       </a>
 
-      <!-- Figure -->
       <a href="#figures"
          class="group h-[65px] md:h-[74px] rounded-xl
                 border border-[#e8e8eb] bg-[#fafafa]
@@ -626,18 +617,12 @@
                 hover:shadow-md hover:border-gray-300 active:bg-white active:shadow-md active:border-gray-300">
 
         <div class="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-          <svg class="w-7 h-7 md:w-11 md:h-11 text-[#252532]"
-               viewBox="0 0 48 48" fill="currentColor">
-            <circle cx="25" cy="8" r="4"/>
-            <path d="M18 15c2-3 12-3 14 0l3 10-5 2-2-7-1 8 7 10H17l6-10-2-8-2 7-5-2 4-10Z"/>
-            <path d="m15 15-5 9 4 2 5-8M32 16l6 7-3 3-6-7"/>
-          </svg>
+          <img src="img/figur.png" alt="" class="w-10 h-10" loading="lazy">
           <span class="text-[11px] md:text-base font-bold text-[#252532]">فیگور</span>
         </div>
         <span class="hidden md:block text-[#252532] text-xl group-hover:-translate-x-1 transition-transform">›</span>
       </a>
 
-      <!-- Accessories -->
       <a href="#accessories"
          class="group h-[65px] md:h-[74px] rounded-xl
                 border border-[#e8e8eb] bg-[#fafafa]
@@ -648,17 +633,12 @@
                 hover:shadow-md hover:border-gray-300 active:bg-white active:shadow-md active:border-gray-300">
 
         <div class="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-          <svg class="w-7 h-7 md:w-11 md:h-11 text-[#252532]"
-               viewBox="0 0 54 48" fill="currentColor">
-            <path d="M7 28c4-11 12-18 23-18 9 0 15 6 18 14l-5 5H13l-6-1Z"/>
-            <path d="M4 31c12-4 33-5 47-1-5 6-13 8-24 8-10 0-18-2-23-7Z"/>
-          </svg>
+          <img src="img/accesori.png" alt="" class="w-10 h-10" loading="lazy">
           <span class="text-[11px] md:text-base font-bold text-[#252532]">اکسسوری</span>
         </div>
         <span class="hidden md:block text-[#252532] text-xl group-hover:-translate-x-1 transition-transform">›</span>
       </a>
 
-      <!-- Clothing -->
       <a href="#clothing"
          class="group h-[65px] md:h-[74px] rounded-xl
                 border border-[#e8e8eb] bg-[#fafafa]
@@ -669,18 +649,12 @@
                 hover:shadow-md hover:border-gray-300 active:bg-white active:shadow-md active:border-gray-300">
 
         <div class="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-          <svg class="w-7 h-7 md:w-11 md:h-11 text-[#252532]"
-               viewBox="0 0 48 48" fill="currentColor">
-            <path d="m16 7 8 4 8-4 10 6-5 10-5-3v22H16V20l-5 3-5-10 10-6Z"/>
-            <path d="m19 8 5 6 5-6" fill="none"
-                  stroke="#fafafa" stroke-width="2"/>
-          </svg>
+          <img src="img/poshak.png" alt="" class="w-10 h-10" loading="lazy">
           <span class="text-[11px] md:text-base font-bold text-[#252532]">پوشاک</span>
         </div>
         <span class="hidden md:block text-[#252532] text-xl group-hover:-translate-x-1 transition-transform">›</span>
       </a>
 
-      <!-- Collection -->
       <a href="#collectibles"
          class="group h-[65px] md:h-[74px] rounded-xl
                 border border-[#e8e8eb] bg-[#fafafa]
@@ -691,19 +665,12 @@
                 hover:shadow-md hover:border-gray-300 active:bg-white active:shadow-md active:border-gray-300">
 
         <div class="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-          <svg class="w-7 h-7 md:w-11 md:h-11 text-[#252532]"
-               viewBox="0 0 52 48" fill="none"
-               stroke="currentColor" stroke-width="2.5">
-            <path d="M6 15 26 5l20 10-20 11L6 15Z"/>
-            <path d="M6 15v22l20 7V26M46 15v22l-20 7"/>
-            <path d="M15 20v14l11 5 11-5V20"/>
-          </svg>
+          <img src="img/collaction.png" alt="" class="w-10 h-10" loading="lazy">
           <span class="text-[11px] md:text-base font-bold text-[#252532]">کلکسیونی</span>
         </div>
         <span class="hidden md:block text-[#252532] text-xl group-hover:-translate-x-1 transition-transform">›</span>
       </a>
 
-      <!-- Gadgets -->
       <a href="#gadget"
          class="group h-[65px] md:h-[74px] rounded-xl
                 border border-[#e8e8eb] bg-[#fafafa]
@@ -714,15 +681,7 @@
                 hover:shadow-md hover:border-gray-300 active:bg-white active:shadow-md active:border-gray-300">
 
         <div class="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-          <svg class="w-7 h-7 md:w-11 md:h-11 text-[#252532]"
-               viewBox="0 0 48 48" fill="none"
-               stroke="currentColor" stroke-width="3">
-            <path d="M7 25v-4a17 17 0 0 1 34 0v4"/>
-            <path d="M7 24h7v13H9a3 3 0 0 1-3-3V27a3 3 0 0 1 1-3Z"
-                  fill="currentColor"/>
-            <path d="M41 24h-7v13h5a3 3 0 0 0 3-3v-7a3 3 0 0 0-1-3Z"
-                  fill="currentColor"/>
-          </svg>
+          <img src="img/headset.png" alt="" class="w-10 h-10" loading="lazy">
           <span class="text-[11px] md:text-base font-bold text-[#252532]">لوازم جانبی</span>
         </div>
         <span class="hidden md:block text-[#252532] text-xl group-hover:-translate-x-1 transition-transform">›</span>
@@ -731,6 +690,331 @@
     </div>
   </div>
 </section>
+ 
+<section class="w-full px-4 md:px-8" dir="rtl">
+  <div class="relative isolate overflow-hidden rounded-xl mt-10
+              min-h-[155px] md:min-h-[280px]
+              bg-[#111522] text-white">
+
+    <!-- Background artwork -->
+    <img
+      src="img/gear5-banner.webp"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover
+             object-center opacity-90 pointer-events-none"
+             loading="lazy"
+    />
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r
+                from-[#111522] via-[#111522]/30
+                to-[#111522]/10"></div>
+
+    <!-- Content -->
+    <div dir="ltr" class="relative z-10 flex items-center
+                h-full min-h-[155px] md:min-h-[280px]
+                px-6 md:px-8 bottom-0">
+
+      <div class="flex flex-col items-start gap-2
+                  max-w-[55%] md:max-w-[38%]">
+
+        <h2 class="text-2xl md:text-4xl font-extrabold
+                   tracking-tight" dir="ltr">
+          Gear <span class="text-[#e9b84d]">5</span> Collection
+        </h2>
+
+        <p class="text-xs md:text-sm text-gray-200">
+          ویژه‌ترین کالکشن با الهام از شکل پنجم لوفی
+        </p>
+
+        <a href="#gear5"
+           class="mt-1 inline-flex items-center gap-2
+                  border border-white/80 rounded-lg
+                  px-4 py-1.5 text-xs md:text-sm
+                  font-semibold transition-all duration-200 md:duration-300
+                  hover:bg-white hover:text-[#111522]
+                  hover:scale-105 active:bg-white active:text-[#111522] active:scale-105">
+<span class="text-lg">←</span>
+          مشاهده کالکشن
+          
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section data-pcx-root dir="rtl" class="w-full overflow-x-hidden px-4 py-12 md:px-12 lg:px-[72px]">
+  <div class="mb-6 flex items-center justify-between">
+    <h2 class="m-0 border-r-4 border-red-600 pr-3 text-2xl font-black text-slate-900 md:text-3xl">پرفروش‌ترین‌ها</h2>
+
+    <a href="#"
+       class="group/pcxall inline-flex ml-5 items-center gap-1.5 rounded-xl border border-red-600 px-4 py-2 text-sm font-bold text-red-600 transition duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white">
+      مشاهده همه
+      <svg class="h-4 w-4 transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] [@media(any-hover:hover)]:group-hover/pcxall:-translate-x-1" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+    </a>
+  </div>
+
+  <div class="relative">
+    <!-- فلش چپ: رفتن به کارت‌های بعدی -->
+    <button type="button" data-pcx-prev aria-label="قبلی"
+      class="absolute left-[-10px] top-1/2 z-30 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-red-600 text-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-90 md:flex [@media(any-hover:hover)]:hover:scale-110 [@media(any-hover:hover)]:hover:bg-red-700">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <!-- فلش راست: برگشت به کارت‌های قبلی (در شروع مخفیه) -->
+    <button type="button" data-pcx-next aria-label="بعدی" style="opacity:0;visibility:hidden;pointer-events:none"
+      class="absolute right-[-24px] top-1/2 z-30 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-red-600 text-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-90 md:flex [@media(any-hover:hover)]:hover:scale-110 [@media(any-hover:hover)]:hover:bg-red-700">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <div data-pcx-track dir="rtl" class="pcx-noscroll relative z-[1] flex snap-x snap-mandatory gap-5 overflow-x-auto overflow-y-hidden px-2 py-1.5"></div>
+  </div>
+</section>
+
+<style>
+  .pcx-noscroll{-ms-overflow-style:none;scrollbar-width:none}
+  .pcx-noscroll::-webkit-scrollbar{display:none;width:0;height:0}
+</style>
+
+<script>
+(function () {
+  // badge = متن برچسب روی عکس | o = قیمت قبل از تخفیف (برای محصولات بدون تخفیف خالی بذار)
+  // url = صفحه محصول | cart = لینک سبد خرید — آدرس‌ها رو با آدرس واقعی سایتت عوض کن
+  var products = [
+    {n:'اورجینال مانگا One piece 3',   p:'2,625,000', o:'3,500,000', badge:'25٪ تخفیف', image:'img/products/manga-3.jpg', url:'/product/1', cart:'/cart?add=1'},
+    {n:'فیگور لوفی  king of artist',      p:'9,900,000', o:'',          badge:'جدید',      image:'img/products/figure-lufy.jpg', url:'/product/2', cart:'/cart?add=2'},
+    {n:'فندک حکاکی وان پیس',          p:'1,388,000', o:'1,735,000', badge:'20٪ تخفیف', image:'img/products/fandak.jpg', url:'/product/3', cart:'/cart?add=3'},
+    {n:'تیشرت وان پیس طرح لوفی',        p:'2,300,000', o:'',          badge:'محبوب',     image:'img/products/t-shirt.webp', url:'/product/4', cart:'/cart?add=4'},
+    {n:'ماکت کشتی سانی گو',    p:'24,580,000 ', o:'', badge:'ویژه', image:'img/products/keshti.jpg', url:'/product/5', cart:'/cart?add=5'},
+    {n:'کوله پشتی طرح انیمه وان پیس',   p:'2,230,000', o:'', badge:'تنها 2 عدد', image:'img/products/bag.jpg', url:'/product/6', cart:'/cart?add=6'},
+    {n:'دسک پد هومرو طرح انیمه وان پیس', p:'1,997,000',   o:'3,994,000',          badge:'تخفیف ویژه',     image:'img/products/mousepad.jpg', url:'/product/7', cart:'/cart?add=7'},
+    {n:'کیکپ هنری طرح انیمه وان پیس لوفی',   p:'358,000',   o:'',   badge:'ویژه آذر ماه', image:'img/products/ki-kap.jpg', url:'/product/8', cart:'/cart?add=8'}
+  ];
+
+  var E = 'ease-[cubic-bezier(.22,1,.36,1)]';
+  var H = '[@media(any-hover:hover)]:'; // هاور فقط روی دستگاه‌های دارای ماوس
+
+  function init(root) {
+    var track = root.querySelector('[data-pcx-track]');
+    var prev  = root.querySelector('[data-pcx-prev]');
+    var next  = root.querySelector('[data-pcx-next]');
+
+    track.innerHTML = products.map(function (x) {
+      return '' +
+      '<div data-pcx-item class="group/pcx shrink-0 snap-start pb-3 pt-4 w-[78%] sm:w-[calc((100%_-_20px)/2)] md:w-[calc((100%_-_40px)/3)] lg:w-[calc((100%_-_60px)/4)] xl:w-[calc((100%_-_80px)/5)]">' +
+        '<article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ' + E + ' will-change-transform ' + H + 'group-hover/pcx:-translate-y-2 ' + H + 'group-hover/pcx:border-red-500">' +
+
+          // عکس → صفحه محصول
+          // عکس → صفحه محصول (با پدینگ از بیرون و گوشه‌های گرد)
+// عکس → صفحه محصول (با پدینگ از بیرون و گوشه‌های گرد)
+'<div class="p-3 pb-0">' +
+  '<a href="' + x.url + '" draggable="false" aria-label="' + x.n + '" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100">' +
+    '<img src="' + x.image + '" alt="' + x.n + '" loading="lazy" draggable="false" class="block h-full w-full transition-transform duration-700 ' + E + ' ' + H + '">' +
+  '</a>' +
+'</div>' +
+
+// برچسب: به خود کارت می‌چسبه، نه به عکس
+'<span class="pointer-events-none absolute right-3 top-3 z-10 rounded-full bg-red-600 px-3 py-1 text-xs font-bold text-white">' + x.badge + '</span>' +
+
+          '<div class="p-5">' +
+            // اسم محصول → صفحه محصول
+            '<a href="' + x.url + '" draggable="false" class="block no-underline">' +
+              '<h3 class="m-0 min-h-[56px] text-base font-bold leading-7 text-slate-900 transition-colors duration-500 ' + E + ' ' + H + 'group-hover/pcx:text-red-600">' + x.n + '</h3>' +
+            '</a>' +
+
+            // قیمت قبلی فقط وقتی وجود داره؛ وگرنه یه فضای خالی هم‌ارتفاع می‌ذاره
+            (x.o
+              ? '<div class="mt-2 text-xs font-semibold text-slate-400 line-through">' + x.o + '</div>'
+              : '<div class="mt-2 h-4"></div>') +
+
+            '<div class="flex items-baseline gap-1"><b class="text-xl font-black text-red-600">' + x.p + '</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>' +
+
+            // دکمه → سبد خرید
+            '<a href="' + x.cart + '" draggable="false" class="mt-4 block w-full rounded-xl border-2 border-red-600 bg-transparent py-2.5 text-center text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ' + E + ' active:scale-95 active:bg-red-600 active:text-white ' + H + 'group-hover/pcx:bg-red-600 ' + H + 'group-hover/pcx:text-white">افزودن به سبد</a>' +
+          '</div>' +
+        '</article>' +
+      '</div>';
+    }).join('');
+
+    var maxScroll = function () { return track.scrollWidth - track.clientWidth; };
+    var oneCard = function () {
+      var c = track.querySelector('[data-pcx-item]');
+      return c.offsetWidth + (parseFloat(getComputedStyle(track).columnGap) || 20);
+    };
+    var ease = function (t) { return t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2; };
+
+    var rafId = null, target = 0;
+
+    function stopAnim() {
+      if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; track.style.scrollSnapType = ''; }
+    }
+
+    function slideTo(to, duration) {
+      var from = track.scrollLeft, start = performance.now();
+      cancelAnimationFrame(rafId);
+      track.style.scrollSnapType = 'none';
+      (function tick(now) {
+        var t = Math.min(1, (now - start) / (duration || 650));
+        track.scrollLeft = from + (to - from) * ease(t);
+        if (t < 1) rafId = requestAnimationFrame(tick);
+        else { track.style.scrollSnapType = ''; rafId = null; }
+      })(start);
+    }
+
+    function go(dir) {
+      if (rafId === null) target = track.scrollLeft;
+      // صفحه راست‌چینه: scrollLeft بین -max و 0 هست
+      target = Math.max(-maxScroll(), Math.min(0, target + dir * oneCard()));
+      slideTo(target);
+    }
+
+    prev.addEventListener('click', function () { go(-1); });
+    next.addEventListener('click', function () { go(1); });
+
+    ['wheel', 'touchstart', 'pointerdown'].forEach(function (ev) {
+      track.addEventListener(ev, stopAnim, { passive: true });
+    });
+
+    // مخفی/نمایش با استایل مستقیم (بدون دست زدن به transform و جای فلش‌ها)
+    function setVisible(btn, show) {
+      btn.style.opacity = show ? '1' : '0';
+      btn.style.visibility = show ? 'visible' : 'hidden';
+      btn.style.pointerEvents = show ? 'auto' : 'none';
+    }
+
+    // وضعیت فلش‌ها از روی جای کارت‌ها (مستقل از مقدار scrollLeft در RTL)
+    function updateArrows() {
+      var items = track.querySelectorAll('[data-pcx-item]');
+      if (!items.length) return;
+
+      var TOL = 16; // تلورانس برای padding و snap
+      var t = track.getBoundingClientRect();
+      var first = items[0].getBoundingClientRect();
+      var last = items[items.length - 1].getBoundingClientRect();
+
+      // کارت اول سمت راسته؛ اگه به داخل اومده یعنی چیزی سمت راست هست → فلش راست
+      var canGoRight = first.right > t.right + TOL;
+      // کارت آخر سمت چپه؛ اگه هنوز بیرون زده یعنی چیزی سمت چپ هست → فلش چپ
+      var canGoLeft = last.left < t.left - TOL;
+
+      setVisible(next, canGoRight);
+      setVisible(prev, canGoLeft);
+    }
+
+    track.addEventListener('scroll', updateArrows, { passive: true });
+    window.addEventListener('resize', updateArrows);
+    window.addEventListener('load', updateArrows);
+    if (window.ResizeObserver) new ResizeObserver(updateArrows).observe(track);
+    updateArrows();
+    requestAnimationFrame(updateArrows);
+  }
+
+  document.querySelectorAll('[data-pcx-root]').forEach(init);
+})();
+</script>
+<div class="px-3 md:px-0">
+<div id="gl-chars" dir="rtl" class="relative mx-auto flex h-auto w-full max-w-[1400px] flex-col overflow-hidden rounded-xl bg-[#12141c] shadow-lg md:block md:h-[250px]">
+
+  <!-- متن -->
+  <div class="pointer-events-none relative order-1 px-5 pb-3 pt-4 md:absolute md:inset-y-0 md:right-0 md:z-10 md:order-none md:flex md:w-[40%] md:items-center md:bg-gradient-to-l md:from-[#12141c] md:from-45% md:via-[#12141c]/90 md:to-transparent md:p-0 md:pe-12">
+    <div class="md:mr-5 mr-0">
+      <h3 class="text-xl font-extrabold text-white md:text-3xl lg:text-4xl">شخصیت‌های محبوب</h3>
+      <span class="mt-1 block h-[2px] w-9 bg-red-600 md:mt-2 md:h-[3px] md:w-14"></span>
+      <p class="mt-1.5 text-xs text-gray-300 md:mt-3 md:text-sm lg:text-base">از لوفی تا ریش‌سفید، همه اینجا هستند!</p>
+    </div>
+  </div>
+
+  <!-- پنل‌ها -->
+  <div dir="ltr" class="relative order-2 flex h-40 w-full [--s:8px] md:absolute md:inset-y-0 md:left-0 md:order-none md:h-auto md:w-[84%] md:[--s:30px]">
+
+    <!-- لوفی -->
+    <a href="#" data-gl aria-label="لوفی"
+       class="group/c relative block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(0_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
+      <img src="img/caro-1-lufy.png" alt="" loading="lazy"
+           class="absolute inset-0 h-full w-full max-w-none scale-[1.02] object-cover brightness-[.6] transition duration-[1200ms] ease-in-out group-hover/c:scale-110 group-hover/c:brightness-[1.15] group-[.is-active]/c:scale-110 group-[.is-active]/c:brightness-[1.15] motion-reduce:transition-none">
+      <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent transition-opacity duration-[900ms] group-hover/c:opacity-40 group-[.is-active]/c:opacity-40"></span>
+      <span class="absolute inset-x-0 bottom-3 text-center text-[11px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,.8)] transition duration-700 md:bottom-5 md:translate-y-2 md:text-base md:opacity-0 md:group-hover/c:translate-y-0 md:group-hover/c:opacity-100 md:group-hover/c:delay-150 md:group-[.is-active]/c:translate-y-0 md:group-[.is-active]/c:opacity-100">لوفی</span>
+      <span class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
+    </a>
+
+    <!-- زورو -->
+    <a href="#" data-gl aria-label="زورو"
+       class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
+      <img src="img/caro-3-zoro.png" alt="" loading="lazy"
+           class="absolute inset-0 h-full w-full max-w-none scale-[1.02] object-cover brightness-[.6] transition duration-[1200ms] ease-in-out group-hover/c:scale-110 group-hover/c:brightness-[1.15] group-[.is-active]/c:scale-110 group-[.is-active]/c:brightness-[1.15] motion-reduce:transition-none">
+      <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent transition-opacity duration-[900ms] group-hover/c:opacity-40 group-[.is-active]/c:opacity-40"></span>
+      <span class="absolute inset-x-0 bottom-3 text-center text-[11px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,.8)] transition duration-700 md:bottom-5 md:translate-y-2 md:text-base md:opacity-0 md:group-hover/c:translate-y-0 md:group-hover/c:opacity-100 md:group-hover/c:delay-150 md:group-[.is-active]/c:translate-y-0 md:group-[.is-active]/c:opacity-100">زورو</span>
+      <span class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
+    </a>
+
+    <!-- سانجی -->
+    <a href="#" data-gl aria-label="سانجی"
+       class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
+      <img src="img/sanji.png" alt="" loading="lazy"
+           class="absolute inset-0 h-full w-full max-w-none scale-[1.02] object-cover brightness-[.6] transition duration-[1200ms] ease-in-out group-hover/c:scale-110 group-hover/c:brightness-[1.15] group-[.is-active]/c:scale-110 group-[.is-active]/c:brightness-[1.15] motion-reduce:transition-none">
+      <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent transition-opacity duration-[900ms] group-hover/c:opacity-40 group-[.is-active]/c:opacity-40"></span>
+      <span class="absolute inset-x-0 bottom-3 text-center text-[11px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,.8)] transition duration-700 md:bottom-5 md:translate-y-2 md:text-base md:opacity-0 md:group-hover/c:translate-y-0 md:group-hover/c:opacity-100 md:group-hover/c:delay-150 md:group-[.is-active]/c:translate-y-0 md:group-[.is-active]/c:opacity-100">سانجی</span>
+      <span class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
+    </a>
+
+    <!-- شنکس -->
+    <a href="#" data-gl aria-label="شنکس"
+       class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
+      <img src="img/shanks.png" alt="" loading="lazy"
+           class="absolute inset-0 h-full w-full max-w-none scale-[1.02] object-cover brightness-[.6] transition duration-[1200ms] ease-in-out group-hover/c:scale-110 group-hover/c:brightness-[1.15] group-[.is-active]/c:scale-110 group-[.is-active]/c:brightness-[1.15] motion-reduce:transition-none">
+      <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent transition-opacity duration-[900ms] group-hover/c:opacity-40 group-[.is-active]/c:opacity-40"></span>
+      <span class="absolute inset-x-0 bottom-3 text-center text-[11px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,.8)] transition duration-700 md:bottom-5 md:translate-y-2 md:text-base md:opacity-0 md:group-hover/c:translate-y-0 md:group-hover/c:opacity-100 md:group-hover/c:delay-150 md:group-[.is-active]/c:translate-y-0 md:group-[.is-active]/c:opacity-100">شنکس</span>
+      <span class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
+    </a>
+
+    <!-- لاو -->
+    <a href="#" data-gl aria-label="لاو"
+       class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
+      <img src="img/Trafalgar Law Under a Bright Sky.png" alt="" loading="lazy"
+           class="absolute inset-0 h-full w-full max-w-none scale-[1.02] object-cover brightness-[.6] transition duration-[1200ms] ease-in-out group-hover/c:scale-110 group-hover/c:brightness-[1.15] group-[.is-active]/c:scale-110 group-[.is-active]/c:brightness-[1.15] motion-reduce:transition-none">
+      <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent transition-opacity duration-[900ms] group-hover/c:opacity-40 group-[.is-active]/c:opacity-40"></span>
+      <span class="absolute inset-x-0 bottom-3 text-center text-[11px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,.8)] transition duration-700 md:bottom-5 md:translate-y-2 md:text-base md:opacity-0 md:group-hover/c:translate-y-0 md:group-hover/c:opacity-100 md:group-hover/c:delay-150 md:group-[.is-active]/c:translate-y-0 md:group-[.is-active]/c:opacity-100">لاو</span>
+      <span class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
+    </a>
+
+    <!-- ریش‌سفید -->
+    <a href="#" data-gl aria-label="ریش‌سفید"
+       class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
+      <img src="img/Whitebeard Beneath Blue Skies.png" alt="" loading="lazy"
+           class="absolute inset-0 h-full w-full max-w-none scale-[1.02] object-cover brightness-[.6] transition duration-[1200ms] ease-in-out group-hover/c:scale-110 group-hover/c:brightness-[1.15] group-[.is-active]/c:scale-110 group-[.is-active]/c:brightness-[1.15] motion-reduce:transition-none">
+      <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent transition-opacity duration-[900ms] group-hover/c:opacity-40 group-[.is-active]/c:opacity-40"></span>
+      <span class="absolute inset-x-0 bottom-3 text-center text-[11px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,.8)] transition duration-700 md:bottom-5 md:translate-y-2 md:text-base md:opacity-0 md:group-hover/c:translate-y-0 md:group-hover/c:opacity-100 md:group-hover/c:delay-150 md:group-[.is-active]/c:translate-y-0 md:group-[.is-active]/c:opacity-100">ریش‌سفید</span>
+      <span class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
+    </a>
+  </div>
+</div>
+</div>
+
+<!-- فقط برای لمسی‌ها: لمس اول = باز شدن افکت، لمس دوم = رفتن به لینک -->
+<script>
+(function () {
+  var root = document.getElementById('gl-chars');
+  if (!root || !window.matchMedia('(hover: none)').matches) return;
+
+  var panels = root.querySelectorAll('[data-gl]');
+  function clearAll() {
+    for (var i = 0; i < panels.length; i++) panels[i].classList.remove('is-active');
+  }
+
+  for (var i = 0; i < panels.length; i++) {
+    panels[i].addEventListener('click', function (e) {
+      if (!this.classList.contains('is-active')) {
+        e.preventDefault();
+        clearAll();
+        this.classList.add('is-active');
+      }
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!root.contains(e.target)) clearAll();
+  });
+})();
+</script>
 <div class="h-20"></div>
 </body>
 
