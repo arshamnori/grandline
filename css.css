@@ -1,10 +1,11 @@
 @font-face {
-    font-family: vazir;
-    src: url(Vazirmatn[wght].woff2);
+  font-family: vazir;
+  src: url(Vazirmatn[wght].woff2);
 }
-body{
-    font-family: vazir;
-    direction: rtl;
+
+body {
+  font-family: vazir;
+  direction: rtl;
 }
 
 /* GRAND LINE - Custom Scrollbar */
@@ -38,15 +39,138 @@ body{
   scrollbar-width: thin;
   scrollbar-color: #c52f36 #f1f1f4;
 }
+
 html {
   scroll-behavior: smooth;
 }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@keyframes wave-move {
+  from {
+    transform: translateX(0);
   }
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
+
+  to {
+    transform: translateX(-50%);
   }
+}
+
+@keyframes ship-bob {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+@keyframes ship-sail {
+  from {
+    left: 4%;
+  }
+
+  to {
+    left: 72%;
+  }
+}
+
+@keyframes foam-pulse {
+
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: .9;
+  }
+
+  50% {
+    transform: scaleX(.8);
+    opacity: .6;
+  }
+}
+
+.wave-a {
+  animation: wave-move 26s linear infinite;
+}
+
+.wave-b {
+  animation: wave-move 18s linear infinite reverse;
+}
+
+.wave-c {
+  animation: wave-move 13s linear infinite;
+}
+
+.wave-d {
+  animation: wave-move 9s linear infinite reverse;
+}
+
+.ship-sail {
+  animation: ship-sail 30s ease-in-out infinite alternate;
+}
+
+.ship-bob {
+  animation: ship-bob 4s ease-in-out infinite;
+}
+
+.foam {
+  animation: foam-pulse 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .wave-a,
+  .wave-b,
+  .wave-c,
+  .wave-d,
+  .ship-bob,
+  .foam {
+    animation: none;
+  }
+
+  .ship-sail {
+    animation: none;
+    left: 60%;
+  }
+}
+
+.pcx-noscroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}
+
+.pcx-noscroll::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(.96)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1)
+  }
+}
+
+.modal-animation {
+  animation: modalIn .3s ease-out;
+}
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
