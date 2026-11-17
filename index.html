@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grand Line</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="css.css"> 
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/png" href="img/strawhat.png">
 </head>
 
-<body>
+<body class="flex min-h-screen flex-col">
 
   <header class="flex items-center justify-between gap-4 p-1 sticky top-0 z-50 bg-white">
 
@@ -18,7 +19,6 @@
       <img src="img/brand.png" alt="" loading="lazy">
     </a>
 
-    <!-- Menu -->
     <nav class="hidden min-[900px]:flex items-center m-auto">
 
       <a href="#" class="px-3 no-underline transition-colors duration-200 text-black hover:text-red-600">خانه</a>
@@ -69,62 +69,47 @@
 
     </nav>
 
-    <!-- Search -->
     <div class="relative w-full max-w-50 mr-auto">
 
       <input type="text" placeholder="جستجو..."
         class="w-full h-10 bg-gray-100 focus:bg-white text-gray-800 border border-gray-300 rounded-lg pr-4 outline-none placeholder:text-gray-400 focus:border-red-500 transition-colors duration-300">
 
-      <button class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-red-500">
+      <button class="absolute left-3 top-1/2 -translate-y-1/2">
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-          stroke-width="2">
-          <circle cx="11" cy="11" r="7" />
-          <path d="m20 20-4-4" />
-        </svg>
+        <img src="img/search.png" alt="" class="w-5 h-5 active:scale-90">
 
       </button>
 
     </div>
 
-    <!-- Icons -->
+
     <div class="flex items-center gap-3 lg:gap-5 shrink-0 lg:px-10 px-3 ml-auto">
       <div class="rounded-md hidden md:flex">
         <div
           class="flex items-center justify-center p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
           data-tooltip="سبد خرید">
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l2.5 12h11L21 7H6" />
-            <circle cx="9" cy="19" r="1" />
-            <circle cx="18" cy="19" r="1" />
-          </svg>
+          <img src="img/sabad.png" alt="" class="w-8 h-8">
         </div>
       </div>
       <div class="rounded-md">
         <div
           class="flex items-center justify-center bg-gray-100 md:bg-white active:bg-white border border-gray-300 md:border-0 p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 active:bg-neutral-100 active:text-red-600 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
           data-tooltip="علاقه مندی ها">
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
-          </svg>
+          <img src="img/heart.png" alt="" class="w-6 h-6 md:w-8 md:h-8">
         </div>
       </div>
       <div class="rounded-md hidden md:flex" onclick="openModal()">
         <div
           class="flex items-center justify-center p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
           data-tooltip="حساب کاربری">
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-            <circle cx="12" cy="8" r="4" />
-            <path stroke-linecap="round" d="M4 21a8 8 0 0 1 16 0" />
-          </svg>
+          <img src="img/hesab.png" alt="" class="w-8 h-8">
         </div>
       </div>
     </div>
     <div class="fixed bottom-6 left-1/2 z-50 flex w-max max-w-[calc(100vw-1rem)] -translate-x-1/2 items-center gap-2
     min-[900px]:bottom-4 min-[900px]:left-5 min-[900px]:translate-x-0" dir="ltr">
 
-      <!-- دکمهٔ پشتیبانی (هدست) -->
+
       <div class="relative shrink-0 group/support">
         <details class="relative">
 
@@ -137,13 +122,7 @@
 
             <p class="ml-3 hidden min-[900px]:flex mr-1" dir="rtl">ارتباط‌‌ با ما</p>
 
-            <svg class="h-6 mr-0 md:mr-1 w-6 min-[900px]:h-7 min-[900px]:w-7" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
-              <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
-            </svg>
+            <img src="img/poshtiban.png" alt="" class="h-10 mr-0 md:mr-1 w-10 min-[900px]:h-7 min-[900px]:w-7">
           </summary>
 
           <div dir="rtl" class="absolute bottom-full left-0 mb-3 w-48 rounded-xl
@@ -177,67 +156,44 @@
         </details>
       </div>
 
-      <!-- منوی پیل (فقط زیر ۹۰۰ پیکسل) -->
       <nav class="min-[900px]:hidden">
         <ul class="flex items-center gap-0.5 rounded-full bg-white p-1.5 shadow-[0_4px_24px_rgba(0,0,0,0.12)]">
 
-          <!-- پروفایل -->
+
           <li>
             <a href="#"
-              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100" onclick="openModal()">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9" />
-                <circle cx="12" cy="10" r="3" />
-                <path d="M6.2 18.5c1.2-2 3.2-3 5.8-3s4.6 1 5.8 3" />
-              </svg>
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100"
+              onclick="openModal()">
+              <img src="img/hesab.png" alt="" class="w-6 h-6">
             </a>
           </li>
 
-          <!-- چت -->
           <li>
             <a href="#"
               class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 4h2l2.2 10.5a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L19 8H6" />
-                <circle cx="9" cy="19" r="1.2" />
-                <circle cx="17" cy="19" r="1.2" />
-              </svg>
+              <img src="img/sabad.png" alt="" class="w-6 h-6">
             </a>
           </li>
 
-          <li>
-            <a href="#"
-              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100">
-              <img src="img/jpg(1)" alt="" class="w-11 h-10 active:scale-95">
-            </a>
-          </li>
-
-          <!-- دسته‌بندی‌ها -->
           <li>
             <a href="#"
               class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                stroke-linejoin="round">
-                <rect x="4" y="4" width="6" height="6" rx="2" />
-                <rect x="14" y="4" width="6" height="6" rx="2" />
-                <rect x="4" y="14" width="6" height="6" rx="2" />
-                <rect x="14" y="14" width="6" height="6" rx="2" />
-              </svg>
+              <img src="img/strawhat.png" alt="" class="w-11 h-10 active:scale-95">
             </a>
           </li>
 
-          <!-- خانه (فعال) -->
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
+              <img src="img/daste.png" alt="" class="w-7 h-7">
+            </a>
+          </li>
+
           <li>
             <a href="#"
               class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100 text-gray-900 active:bg-gray-100">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 3.5c.6 0 1.1.2 1.6.6l5.6 4.6c.5.4.8 1 .8 1.7V17a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 17v-7.6c0-.7.3-1.3.8-1.7l5.6-4.6c.5-.4 1-.6 1.6-.6z" />
-                <path d="M9 15.5c.8.8 1.8 1.2 3 1.2s2.2-.4 3-1.2" fill="none" stroke="#fff" stroke-width="1.6"
-                  stroke-linecap="round" />
-              </svg>
+              <img src="img/home.png" alt="" class="w-6 h-6">
             </a>
           </li>
 
@@ -248,443 +204,438 @@
 
 
 
-<!-- ================= مدال ورود و ثبت‌نام ================= -->
-<div id="authModal" onclick="if (event.target === this) closeModal()"
-  class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+    <div id="authModal" onclick="if (event.target === this) closeModal()"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
 
-  <div id="modalBox"
-    class="no-scrollbar relative max-h-[95dvh] w-full max-w-[410px] translate-y-5 scale-95 overflow-y-auto rounded-2xl bg-white shadow-2xl transition-all duration-300">
+      <div id="modalBox"
+        class="no-scrollbar relative max-h-[95dvh] w-full max-w-[410px] translate-y-5 scale-95 overflow-y-auto rounded-2xl bg-white shadow-2xl transition-all duration-300">
 
-    <div class="h-1.5 bg-gradient-to-l from-red-800 to-red-500"></div>
+        <div class="h-1.5 bg-gradient-to-l from-red-800 to-red-500"></div>
 
-    <!-- دکمه بستن -->
-    <button type="button" onclick="closeModal()"
-      class="absolute left-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
-      &times;
-    </button>
 
-    <div class="p-5 sm:p-6" dir="rtl">
-
-      <!-- لوگو -->
-      <div class="mb-5 flex flex-col items-center gap-2">
-        <img src="img/brand.png" alt="Grand Line" class="w-[40%] rounded-xl object-contain">
-        <p class="text-sm font-semibold text-gray-600">به دنیای گرند لاین خوش آمدید</p>
-      </div>
-
-      <!-- تب‌ها -->
-      <div id="authTabs" class="mb-5 grid grid-cols-2 rounded-xl bg-gray-100 p-1">
-        <button type="button" id="loginTab" onclick="showForm('login')"
-          class="rounded-lg bg-red-600 py-2 text-sm font-bold text-white transition">
-          ورود
+        <button type="button" onclick="closeModal()"
+          class="absolute left-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+          &times;
         </button>
-        <button type="button" id="registerTab" onclick="showForm('register')"
-          class="rounded-lg py-2 text-sm font-bold text-gray-500 transition">
-          ثبت‌نام
-        </button>
+
+        <div class="p-5 sm:p-6" dir="rtl">
+
+
+          <div class="mb-5 flex flex-col items-center gap-2">
+            <img src="img/brand.png" alt="Grand Line" class="w-[40%] rounded-xl object-contain">
+            <p class="text-sm font-semibold text-gray-600">به دنیای گرند لاین خوش آمدید</p>
+          </div>
+
+
+          <div id="authTabs" class="mb-5 grid grid-cols-2 rounded-xl bg-gray-100 p-1">
+            <button type="button" id="loginTab" onclick="showForm('login')"
+              class="rounded-lg bg-red-600 py-2 text-sm font-bold text-white transition">
+              ورود
+            </button>
+            <button type="button" id="registerTab" onclick="showForm('register')"
+              class="rounded-lg py-2 text-sm font-bold text-gray-500 transition">
+              ثبت‌نام
+            </button>
+          </div>
+
+
+
+          <form id="loginForm" class="space-y-4" onsubmit="event.preventDefault()">
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
+              <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div class="flex items-center justify-between">
+
+              <label class="group flex cursor-pointer select-none items-center gap-2.5">
+                <input type="checkbox" class="peer sr-only">
+
+                <span
+                  class="relative h-6 w-11 shrink-0 rounded-full bg-gray-200 shadow-inner transition-colors duration-300 after:absolute after:right-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:bg-white after:shadow-md after:transition-transform after:duration-300 after:content-[''] group-active:after:w-6 peer-checked:bg-red-600 peer-checked:after:-translate-x-5 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
+
+                <span class="text-xs font-medium text-gray-600">مرا به خاطر بسپار</span>
+              </label>
+
+              <button type="button" onclick="showForm('forgot')"
+                class="text-xs font-semibold text-red-600 transition hover:text-red-800">
+                فراموشی رمز عبور؟
+              </button>
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ورود به حساب کاربری
+            </button>
+
+            <p class="text-center text-xs text-gray-500">
+              حساب کاربری ندارید؟
+              <button type="button" onclick="showForm('register')" class="font-bold text-red-600">ثبت‌نام کنید</button>
+            </p>
+          </form>
+
+
+
+          <form id="registerForm" class="hidden space-y-4" onsubmit="submitRegister(event)">
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">نام و نام خانوادگی</label>
+              <input type="text" name="fullname" placeholder="نام کامل شما"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
+              <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+
+            <div>
+              <label class="relative flex cursor-pointer select-none items-center gap-3 rounded-xl p-3">
+                <input type="checkbox" id="acceptRules" class="peer sr-only"
+                  onchange="if (this.checked) hideRulesError()">
+
+
+                <span
+                  class="absolute inset-0 rounded-xl border border-gray-200 bg-gray-50 transition-all duration-300 peer-checked:border-red-500 peer-checked:bg-red-50 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
+
+
+                <span
+                  class="relative flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border-2 border-gray-300 bg-white text-white shadow-sm transition-all duration-300 peer-checked:border-red-600 peer-checked:bg-red-600 [&>svg]:scale-0 [&>svg]:transition-transform [&>svg]:duration-300 peer-checked:[&>svg]:scale-100">
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+
+                <span class="relative text-xs leading-6 text-gray-600">
+                  <button type="button" onclick="openRules()"
+                    class="font-bold text-red-600 underline decoration-red-300 underline-offset-4 transition hover:text-red-800">
+                    قوانین و مقررات گرند لاین
+                  </button>
+                  را خوانده‌ام و می‌پذیرم
+                </span>
+              </label>
+
+              <p id="rulesError" class="mt-2 hidden items-center gap-1.5 text-xs font-medium text-red-600">
+                <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 8v4m0 4h.01" />
+                </svg>
+                برای ادامه، باید قوانین و مقررات را بپذیرید.
+              </p>
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ایجاد حساب کاربری
+            </button>
+
+            <p class="text-center text-xs text-gray-500">
+              قبلاً ثبت‌نام کرده‌اید؟
+              <button type="button" onclick="showForm('login')" class="font-bold text-red-600">وارد شوید</button>
+            </p>
+          </form>
+
+
+
+          <form id="forgotForm" class="hidden space-y-4" onsubmit="event.preventDefault()">
+
+            <div class="text-center">
+              <div
+                class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl text-red-600">
+                🔒</div>
+              <h3 class="text-lg font-black text-gray-800">بازیابی رمز عبور</h3>
+              <p class="mt-2 text-xs leading-6 text-gray-500">شماره موبایلی که با آن ثبت‌نام کرده‌اید را وارد کنید.</p>
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ادامه بازیابی
+            </button>
+
+            <div class="my-3 flex items-center gap-3">
+              <div class="h-px flex-1 bg-gray-200"></div>
+              <span class="text-[11px] text-gray-400">راه ارتباطی</span>
+              <div class="h-px flex-1 bg-gray-200"></div>
+            </div>
+
+            <!-- پشتیبانی تلگرام -->
+            <div class="rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+              <p class="mb-3 text-sm font-bold text-gray-700">پشتیبانی گرند لاین</p>
+
+              <img src="img/telegram-qr.png" alt="QR تلگرام"
+                class="mx-auto h-28 w-28 rounded-xl bg-white object-contain p-2">
+
+              <p class="mt-3 text-xs text-gray-500">برای ارتباط با پشتیبانی اسکن کنید</p>
+
+              <a href="https://t.me/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" dir="ltr"
+                class="mt-3 inline-block text-sm font-bold text-red-600">
+                @YOUR_USERNAME
+              </a>
+            </div>
+
+            <button type="button" onclick="showForm('login')"
+              class="w-full pt-2 text-xs text-gray-500 transition hover:text-red-600">
+              برگشت به ورود
+            </button>
+          </form>
+
+
+
+          <div class="mt-5 border-t border-gray-100 pt-3 text-center">
+            <p class="text-[11px] text-gray-400">تجربه‌ای متفاوت از دنیای گرند لاین</p>
+          </div>
+
+        </div>
       </div>
+    </div>
 
 
-      <!-- ========== فرم ورود ========== -->
-      <form id="loginForm" class="space-y-4" onsubmit="event.preventDefault()">
 
-        <div>
-          <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
-          <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
-            class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
-        </div>
+    <div id="rulesModal" onclick="if (event.target === this) closeRules()"
+      class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/70 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
 
-        <div>
-          <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
-          <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
-            class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
-        </div>
+      <div id="rulesBox" dir="rtl"
+        class="relative flex h-[min(650px,90dvh)] max-h-[90dvh] w-full max-w-[550px] scale-95 flex-col overflow-hidden rounded-2xl bg-white shadow-2xl transition-all duration-300">
 
-        <div class="flex items-center justify-between">
+        <div class="h-1.5 shrink-0 bg-gradient-to-l from-red-800 to-red-500"></div>
 
-          <!-- سوئیچ: مرا به خاطر بسپار -->
-          <label class="group flex cursor-pointer select-none items-center gap-2.5">
-            <input type="checkbox" class="peer sr-only">
+        <div class="flex shrink-0 items-center justify-between border-b border-gray-100 p-5">
+          <div>
+            <h2 class="text-lg font-black text-gray-800">قوانین و مقررات گرند لاین</h2>
+            <p class="mt-1 text-xs text-gray-400">لطفاً پیش از ثبت‌نام، موارد زیر را مطالعه کنید.</p>
+          </div>
 
-            <span class="relative h-6 w-11 shrink-0 rounded-full bg-gray-200 shadow-inner transition-colors duration-300 after:absolute after:right-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:bg-white after:shadow-md after:transition-transform after:duration-300 after:content-[''] group-active:after:w-6 peer-checked:bg-red-600 peer-checked:after:-translate-x-5 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
-
-            <span class="text-xs font-medium text-gray-600">مرا به خاطر بسپار</span>
-          </label>
-
-          <button type="button" onclick="showForm('forgot')"
-            class="text-xs font-semibold text-red-600 transition hover:text-red-800">
-            فراموشی رمز عبور؟
+          <button type="button" onclick="closeRules()"
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+            &times;
           </button>
         </div>
 
-        <button type="submit"
-          class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
-          ورود به حساب کاربری
-        </button>
+        <div id="rulesText"
+          class="no-scrollbar min-h-0 flex-1 space-y-5 overflow-y-auto p-5 text-sm leading-8 text-gray-600">
 
-        <p class="text-center text-xs text-gray-500">
-          حساب کاربری ندارید؟
-          <button type="button" onclick="showForm('register')" class="font-bold text-red-600">ثبت‌نام کنید</button>
-        </p>
-      </form>
+          <section>
+            <h3 class="font-black text-gray-800">۱. شرایط عمومی</h3>
+            <p>
+              استفاده از خدمات و امکانات گرند لاین به معنای پذیرش قوانین و مقررات
+              این فروشگاه است. کاربران موظف‌اند هنگام استفاده از سایت، اصول
+              احترام، صداقت و قوانین جاری را رعایت کنند.
+            </p>
+          </section>
 
+          <section>
+            <h3 class="font-black text-gray-800">۲. اطلاعات حساب کاربری</h3>
+            <p>
+              کاربران موظف‌اند اطلاعات صحیح و معتبر خود را هنگام ثبت‌نام وارد کنند.
+              مسئولیت حفظ رمز عبور و اطلاعات ورود به حساب بر عهده صاحب حساب است.
+              از در اختیار گذاشتن اطلاعات حساب خود به دیگران خودداری کنید.
+            </p>
+          </section>
 
-      <!-- ========== فرم ثبت‌نام ========== -->
-      <form id="registerForm" class="hidden space-y-4" onsubmit="submitRegister(event)">
+          <section>
+            <h3 class="font-black text-gray-800">۳. ثبت سفارش و پرداخت</h3>
+            <p>
+              کاربران باید پیش از ثبت سفارش، مشخصات محصول، قیمت و توضیحات آن را
+              بررسی کنند. سفارش پس از تکمیل مراحل پرداخت و تأیید فروشگاه ثبت
+              خواهد شد. هرگونه تغییر قیمت یا موجودی پیش از نهایی شدن سفارش
+              امکان‌پذیر است.
+            </p>
+          </section>
 
-        <div>
-          <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">نام و نام خانوادگی</label>
-          <input type="text" name="fullname" placeholder="نام کامل شما"
-            class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
-        </div>
+          <section>
+            <h3 class="font-black text-gray-800">۴. ارسال و تحویل سفارش</h3>
+            <p>
+              زمان ارسال و تحویل محصولات با توجه به نوع کالا، مقصد و شرایط ارسال
+              متفاوت است. اطلاعات مربوط به ارسال و هزینه آن باید پیش از خرید
+              در اختیار مشتری قرار گیرد.
+            </p>
+          </section>
 
-        <div>
-          <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
-          <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
-            class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
-        </div>
+          <section>
+            <h3 class="font-black text-gray-800">۵. محصولات دیجیتال و اشتراک‌ها</h3>
+            <p>
+              کاربران باید پیش از خرید محصولات دیجیتال، مشخصات، محدودیت‌ها،
+              شرایط فعال‌سازی و سازگاری محصول با دستگاه خود را بررسی کنند.
+              شرایط تحویل و استفاده از اشتراک‌ها مطابق توضیحات همان محصول خواهد بود.
+            </p>
+          </section>
 
-        <div>
-          <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
-          <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
-            class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
-        </div>
+          <section>
+            <h3 class="font-black text-gray-800">۶. لغو سفارش و بازگشت وجه</h3>
+            <p>
+              درخواست لغو سفارش، تعویض یا بازگشت وجه باید از طریق پشتیبانی
+              گرند لاین پیگیری شود. شرایط بازگشت کالا و وجه با توجه به نوع محصول،
+              وضعیت سفارش و قوانین مربوطه بررسی خواهد شد. محصولات دیجیتال
+              ممکن است پس از تحویل یا فعال‌سازی شرایط متفاوتی داشته باشند.
+            </p>
+          </section>
 
-        <!-- پذیرش قوانین (کارت) -->
-        <div>
-          <label class="relative flex cursor-pointer select-none items-center gap-3 rounded-xl p-3">
-            <input type="checkbox" id="acceptRules" class="peer sr-only" onchange="if (this.checked) hideRulesError()">
+          <section>
+            <h3 class="font-black text-gray-800">۷. حفظ حریم خصوصی</h3>
+            <p>
+              اطلاعات کاربران صرفاً برای ارائه خدمات، پردازش سفارش‌ها و
+              ارتباط با مشتری استفاده می‌شود. گرند لاین متعهد است از اطلاعات
+              کاربران محافظت کند و بدون مجوز قانونی یا رضایت کاربر آن‌ها را
+              در اختیار اشخاص غیرمجاز قرار ندهد.
+            </p>
+          </section>
 
-            <!-- پس‌زمینه کارت -->
-            <span class="absolute inset-0 rounded-xl border border-gray-200 bg-gray-50 transition-all duration-300 peer-checked:border-red-500 peer-checked:bg-red-50 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
+          <section>
+            <h3 class="font-black text-gray-800">۸. پشتیبانی</h3>
+            <p>
+              کاربران می‌توانند برای پیگیری سفارش‌ها، طرح پرسش‌ها و گزارش مشکلات
+              از راه‌های ارتباطی معرفی‌شده در سایت با پشتیبانی گرند لاین تماس بگیرند.
+            </p>
+          </section>
 
-            <!-- چک‌باکس -->
-            <span class="relative flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border-2 border-gray-300 bg-white text-white shadow-sm transition-all duration-300 peer-checked:border-red-600 peer-checked:bg-red-600 [&>svg]:scale-0 [&>svg]:transition-transform [&>svg]:duration-300 peer-checked:[&>svg]:scale-100">
-              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 13l4 4L19 7" />
-              </svg>
-            </span>
+          <section>
+            <h3 class="font-black text-gray-800">۹. تغییر قوانین</h3>
+            <p>
+              گرند لاین ممکن است در صورت نیاز، قوانین و مقررات خود را به‌روزرسانی
+              کند. نسخه جدید قوانین از طریق همین بخش در دسترس کاربران قرار می‌گیرد.
+            </p>
+          </section>
 
-            <span class="relative text-xs leading-6 text-gray-600">
-              <button type="button" onclick="openRules()"
-                class="font-bold text-red-600 underline decoration-red-300 underline-offset-4 transition hover:text-red-800">
-                قوانین و مقررات گرند لاین
-              </button>
-              را خوانده‌ام و می‌پذیرم
-            </span>
-          </label>
-
-          <p id="rulesError" class="mt-2 hidden items-center gap-1.5 text-xs font-medium text-red-600">
-            <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="9" />
-              <path d="M12 8v4m0 4h.01" />
-            </svg>
-            برای ادامه، باید قوانین و مقررات را بپذیرید.
+          <p class="rounded-xl bg-red-50 p-3 text-xs leading-7 text-red-700">
+            با انتخاب دکمه موافقت، تأیید می‌کنید که قوانین و مقررات گرند لاین
+            را مطالعه کرده و پذیرفته‌اید.
           </p>
         </div>
 
-        <button type="submit"
-          class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
-          ایجاد حساب کاربری
-        </button>
-
-        <p class="text-center text-xs text-gray-500">
-          قبلاً ثبت‌نام کرده‌اید؟
-          <button type="button" onclick="showForm('login')" class="font-bold text-red-600">وارد شوید</button>
-        </p>
-      </form>
-
-
-      <!-- ========== فرم فراموشی رمز ========== -->
-      <form id="forgotForm" class="hidden space-y-4" onsubmit="event.preventDefault()">
-
-        <div class="text-center">
-          <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl text-red-600">🔒</div>
-          <h3 class="text-lg font-black text-gray-800">بازیابی رمز عبور</h3>
-          <p class="mt-2 text-xs leading-6 text-gray-500">شماره موبایلی که با آن ثبت‌نام کرده‌اید را وارد کنید.</p>
+        <div class="shrink-0 border-t border-gray-100 bg-white p-4">
+          <button type="button" onclick="acceptRules()"
+            class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+            ✓ موافقت با قوانین
+          </button>
         </div>
 
-        <div>
-          <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
-          <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
-            class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
-        </div>
-
-        <button type="submit"
-          class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
-          ادامه بازیابی
-        </button>
-
-        <div class="my-3 flex items-center gap-3">
-          <div class="h-px flex-1 bg-gray-200"></div>
-          <span class="text-[11px] text-gray-400">راه ارتباطی</span>
-          <div class="h-px flex-1 bg-gray-200"></div>
-        </div>
-
-        <!-- پشتیبانی تلگرام -->
-        <div class="rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
-          <p class="mb-3 text-sm font-bold text-gray-700">پشتیبانی گرند لاین</p>
-
-          <img src="img/telegram-qr.png" alt="QR تلگرام"
-            class="mx-auto h-28 w-28 rounded-xl bg-white object-contain p-2">
-
-          <p class="mt-3 text-xs text-gray-500">برای ارتباط با پشتیبانی اسکن کنید</p>
-
-          <a href="https://t.me/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" dir="ltr"
-            class="mt-3 inline-block text-sm font-bold text-red-600">
-            @YOUR_USERNAME
-          </a>
-        </div>
-
-        <button type="button" onclick="showForm('login')"
-          class="w-full pt-2 text-xs text-gray-500 transition hover:text-red-600">
-          برگشت به ورود
-        </button>
-      </form>
-
-
-      <!-- پایین مدال -->
-      <div class="mt-5 border-t border-gray-100 pt-3 text-center">
-        <p class="text-[11px] text-gray-400">تجربه‌ای متفاوت از دنیای گرند لاین</p>
       </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-<!-- ================= مدال قوانین و مقررات (مستقل؛ با openRules() از هر جای سایت قابل باز شدن) ================= -->
-<div id="rulesModal" onclick="if (event.target === this) closeRules()"
-  class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/70 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
-
-  <div id="rulesBox" dir="rtl"
-    class="relative flex h-[min(650px,90dvh)] max-h-[90dvh] w-full max-w-[550px] scale-95 flex-col overflow-hidden rounded-2xl bg-white shadow-2xl transition-all duration-300">
-
-    <div class="h-1.5 shrink-0 bg-gradient-to-l from-red-800 to-red-500"></div>
-
-    <!-- سربرگ -->
-    <div class="flex shrink-0 items-center justify-between border-b border-gray-100 p-5">
-      <div>
-        <h2 class="text-lg font-black text-gray-800">قوانین و مقررات گرند لاین</h2>
-        <p class="mt-1 text-xs text-gray-400">لطفاً پیش از ثبت‌نام، موارد زیر را مطالعه کنید.</p>
-      </div>
-
-      <button type="button" onclick="closeRules()"
-        class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
-        &times;
-      </button>
     </div>
 
-    <!-- متن قابل اسکرول -->
-    <div id="rulesText"
-      class="no-scrollbar min-h-0 flex-1 space-y-5 overflow-y-auto p-5 text-sm leading-8 text-gray-600">
-
-      <section>
-        <h3 class="font-black text-gray-800">۱. شرایط عمومی</h3>
-        <p>
-          استفاده از خدمات و امکانات گرند لاین به معنای پذیرش قوانین و مقررات
-          این فروشگاه است. کاربران موظف‌اند هنگام استفاده از سایت، اصول
-          احترام، صداقت و قوانین جاری را رعایت کنند.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۲. اطلاعات حساب کاربری</h3>
-        <p>
-          کاربران موظف‌اند اطلاعات صحیح و معتبر خود را هنگام ثبت‌نام وارد کنند.
-          مسئولیت حفظ رمز عبور و اطلاعات ورود به حساب بر عهده صاحب حساب است.
-          از در اختیار گذاشتن اطلاعات حساب خود به دیگران خودداری کنید.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۳. ثبت سفارش و پرداخت</h3>
-        <p>
-          کاربران باید پیش از ثبت سفارش، مشخصات محصول، قیمت و توضیحات آن را
-          بررسی کنند. سفارش پس از تکمیل مراحل پرداخت و تأیید فروشگاه ثبت
-          خواهد شد. هرگونه تغییر قیمت یا موجودی پیش از نهایی شدن سفارش
-          امکان‌پذیر است.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۴. ارسال و تحویل سفارش</h3>
-        <p>
-          زمان ارسال و تحویل محصولات با توجه به نوع کالا، مقصد و شرایط ارسال
-          متفاوت است. اطلاعات مربوط به ارسال و هزینه آن باید پیش از خرید
-          در اختیار مشتری قرار گیرد.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۵. محصولات دیجیتال و اشتراک‌ها</h3>
-        <p>
-          کاربران باید پیش از خرید محصولات دیجیتال، مشخصات، محدودیت‌ها،
-          شرایط فعال‌سازی و سازگاری محصول با دستگاه خود را بررسی کنند.
-          شرایط تحویل و استفاده از اشتراک‌ها مطابق توضیحات همان محصول خواهد بود.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۶. لغو سفارش و بازگشت وجه</h3>
-        <p>
-          درخواست لغو سفارش، تعویض یا بازگشت وجه باید از طریق پشتیبانی
-          گرند لاین پیگیری شود. شرایط بازگشت کالا و وجه با توجه به نوع محصول،
-          وضعیت سفارش و قوانین مربوطه بررسی خواهد شد. محصولات دیجیتال
-          ممکن است پس از تحویل یا فعال‌سازی شرایط متفاوتی داشته باشند.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۷. حفظ حریم خصوصی</h3>
-        <p>
-          اطلاعات کاربران صرفاً برای ارائه خدمات، پردازش سفارش‌ها و
-          ارتباط با مشتری استفاده می‌شود. گرند لاین متعهد است از اطلاعات
-          کاربران محافظت کند و بدون مجوز قانونی یا رضایت کاربر آن‌ها را
-          در اختیار اشخاص غیرمجاز قرار ندهد.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۸. پشتیبانی</h3>
-        <p>
-          کاربران می‌توانند برای پیگیری سفارش‌ها، طرح پرسش‌ها و گزارش مشکلات
-          از راه‌های ارتباطی معرفی‌شده در سایت با پشتیبانی گرند لاین تماس بگیرند.
-        </p>
-      </section>
-
-      <section>
-        <h3 class="font-black text-gray-800">۹. تغییر قوانین</h3>
-        <p>
-          گرند لاین ممکن است در صورت نیاز، قوانین و مقررات خود را به‌روزرسانی
-          کند. نسخه جدید قوانین از طریق همین بخش در دسترس کاربران قرار می‌گیرد.
-        </p>
-      </section>
-
-      <p class="rounded-xl bg-red-50 p-3 text-xs leading-7 text-red-700">
-        با انتخاب دکمه موافقت، تأیید می‌کنید که قوانین و مقررات گرند لاین
-        را مطالعه کرده و پذیرفته‌اید.
-      </p>
-    </div>
-
-    <!-- پایین مدال -->
-    <div class="shrink-0 border-t border-gray-100 bg-white p-4">
-      <button type="button" onclick="acceptRules()"
-        class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
-        ✓ موافقت با قوانین
-      </button>
-    </div>
-
-  </div>
-</div>
 
 
+    <script>
+      const modal = document.getElementById('authModal');
+      const box = document.getElementById('modalBox');
+      const rules = document.getElementById('rulesModal');
+      const rulesBox = document.getElementById('rulesBox');
+      const rulesError = document.getElementById('rulesError');
 
-<!-- ================= جاوا اسکریپت ================= -->
-<script>
-const modal = document.getElementById('authModal');
-const box = document.getElementById('modalBox');
-const rules = document.getElementById('rulesModal');
-const rulesBox = document.getElementById('rulesBox');
-const rulesError = document.getElementById('rulesError');
-
-const TAB_ON = ['bg-red-600', 'text-white'];
-const TAB_OFF = ['text-gray-500'];
+      const TAB_ON = ['bg-red-600', 'text-white'];
+      const TAB_OFF = ['text-gray-500'];
 
 
-/* ---------- مدال ورود ---------- */
-function openModal() {
-  modal.classList.replace('hidden', 'flex');
-  document.body.style.overflow = 'hidden';
+      function openModal() {
+        modal.classList.replace('hidden', 'flex');
+        document.body.style.overflow = 'hidden';
 
-  requestAnimationFrame(() => {
-    modal.classList.remove('opacity-0');
-    box.classList.remove('scale-95', 'translate-y-5');
-  });
-}
+        requestAnimationFrame(() => {
+          modal.classList.remove('opacity-0');
+          box.classList.remove('scale-95', 'translate-y-5');
+        });
+      }
 
-function closeModal() {
-  modal.classList.add('opacity-0');
-  box.classList.add('scale-95', 'translate-y-5');
+      function closeModal() {
+        modal.classList.add('opacity-0');
+        box.classList.add('scale-95', 'translate-y-5');
 
-  setTimeout(() => {
-    modal.classList.replace('flex', 'hidden');
-    document.body.style.overflow = '';
-  }, 300);
-}
+        setTimeout(() => {
+          modal.classList.replace('flex', 'hidden');
+          document.body.style.overflow = '';
+        }, 300);
+      }
 
-function showForm(type) {
-  ['login', 'register', 'forgot'].forEach(name =>
-    document.getElementById(name + 'Form').classList.toggle('hidden', name !== type)
-  );
+      function showForm(type) {
+        ['login', 'register', 'forgot'].forEach(name =>
+          document.getElementById(name + 'Form').classList.toggle('hidden', name !== type)
+        );
 
-  document.getElementById('authTabs').classList.toggle('hidden', type === 'forgot');
+        document.getElementById('authTabs').classList.toggle('hidden', type === 'forgot');
 
-  ['login', 'register'].forEach(name => {
-    const tab = document.getElementById(name + 'Tab');
-    TAB_ON.forEach(c => tab.classList.toggle(c, name === type));
-    TAB_OFF.forEach(c => tab.classList.toggle(c, name !== type));
-  });
+        ['login', 'register'].forEach(name => {
+          const tab = document.getElementById(name + 'Tab');
+          TAB_ON.forEach(c => tab.classList.toggle(c, name === type));
+          TAB_OFF.forEach(c => tab.classList.toggle(c, name !== type));
+        });
 
-  hideRulesError();
-  box.scrollTop = 0;
-}
-
-
-/* ---------- مدال قوانین (مستقل: openRules() را از هر جای سایت صدا بزنید) ---------- */
-function openRules() {
-  rules.classList.replace('hidden', 'flex');
-  document.getElementById('rulesText').scrollTop = 0;
-
-  requestAnimationFrame(() => {
-    rules.classList.remove('opacity-0');
-    rulesBox.classList.remove('scale-95');
-  });
-}
-
-function closeRules() {
-  rules.classList.add('opacity-0');
-  rulesBox.classList.add('scale-95');
-
-  setTimeout(() => rules.classList.replace('flex', 'hidden'), 300);
-}
-
-// اگر تیک ثبت‌نام در صفحه بود، تیک می‌خورد؛ در غیر این صورت فقط مدال بسته می‌شود
-function acceptRules() {
-  const check = document.getElementById('acceptRules');
-  if (check) check.checked = true;
-
-  hideRulesError();
-  closeRules();
-}
+        hideRulesError();
+        box.scrollTop = 0;
+      }
 
 
-/* ---------- تیک قوانین در فرم ثبت‌نام ---------- */
-function hideRulesError() {
-  rulesError.classList.replace('flex', 'hidden');
-}
+      function openRules() {
+        rules.classList.replace('hidden', 'flex');
+        document.getElementById('rulesText').scrollTop = 0;
 
-function submitRegister(e) {
-  e.preventDefault();
+        requestAnimationFrame(() => {
+          rules.classList.remove('opacity-0');
+          rulesBox.classList.remove('scale-95');
+        });
+      }
 
-  if (!document.getElementById('acceptRules').checked) {
-    rulesError.classList.replace('hidden', 'flex');
-    return;
-  }
+      function closeRules() {
+        rules.classList.add('opacity-0');
+        rulesBox.classList.add('scale-95');
 
-  hideRulesError();
-  // اینجا ارسال اطلاعات ثبت‌نام را اضافه کنید
-}
+        setTimeout(() => rules.classList.replace('flex', 'hidden'), 300);
+      }
+
+      function acceptRules() {
+        const check = document.getElementById('acceptRules');
+        if (check) check.checked = true;
+
+        hideRulesError();
+        closeRules();
+      }
 
 
-/* ---------- بستن با Escape ---------- */
-document.addEventListener('keydown', e => {
-  if (e.key !== 'Escape') return;
+      function hideRulesError() {
+        rulesError.classList.replace('flex', 'hidden');
+      }
 
-  if (!rules.classList.contains('hidden')) closeRules();
-  else if (!modal.classList.contains('hidden')) closeModal();
-});
-</script>
+      function submitRegister(e) {
+        e.preventDefault();
+
+        if (!document.getElementById('acceptRules').checked) {
+          rulesError.classList.replace('hidden', 'flex');
+          return;
+        }
+
+        hideRulesError();
+      }
+
+
+      document.addEventListener('keydown', e => {
+        if (e.key !== 'Escape') return;
+
+        if (!rules.classList.contains('hidden')) closeRules();
+        else if (!modal.classList.contains('hidden')) closeModal();
+      });
+    </script>
   </header>
   <div class="bg-[#172554] text-white sticky top-[75px] z-40">
     <div class="mx-auto px-4 py-2 flex items-center justify-center gap-4 text-[10px]">
@@ -702,7 +653,7 @@ document.addEventListener('keydown', e => {
   <div tabindex="0" class="group fixed left-0 top-34 z-40 outline-none sm:top-28">
     <div
       class="pointer-events-none absolute bottom-full left-8 mb-1 w-36 translate-y-2 rounded-2xl rounded-bl-sm bg-white px-3 py-2 text-xs font-bold leading-6 text-red-700 opacity-0 shadow-lg ring-1 ring-red-100 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus:translate-y-0 group-focus:opacity-100 sm:left-12 sm:w-44 sm:px-4">
-      گم شدی؟ بیا کمکت کنم!
+      سلامممممممممم
     </div>
     <img src="img/choper.png" alt=""
       class="h-16 w-16 -translate-x-[40%] rotate-12 object-contain drop-shadow-xl transition duration-300 group-hover:-translate-x-[20%] group-hover:rotate-0 group-focus:-translate-x-[15%] group-focus:rotate-0 sm:h-20 sm:w-20 lg:h-24 lg:w-24 xl:h-28 xl:w-28">
@@ -711,10 +662,8 @@ document.addEventListener('keydown', e => {
 
   <div id="carousel" class="relative w-full overflow-hidden select-none" dir="rtl">
 
-    <!-- Slides -->
     <div id="slider" class="flex transition-transform duration-700 ease-in-out" dir="ltr">
 
-      <!-- Slide 1 -->
       <section class="relative shrink-0 w-full h-[480px] sm:h-[430px] lg:h-[min(42vw,625px)]">
 
         <img src="img/caro-1-lufy.png" class="absolute inset-0 w-full h-full object-cover" alt="">
@@ -754,7 +703,6 @@ document.addEventListener('keydown', e => {
       </section>
 
 
-      <!-- Slide 2 -->
       <section class="relative shrink-0 w-full h-[480px] sm:h-[430px] lg:h-[min(42vw,625px)]">
 
         <img src="img/caro-2-whitebeard.png" class="absolute inset-0 w-full h-full object-cover" alt="">
@@ -787,7 +735,6 @@ document.addEventListener('keydown', e => {
       </section>
 
 
-      <!-- Slide 3 -->
       <section class="relative shrink-0 w-full h-[480px] sm:h-[430px] lg:h-[min(42vw,625px)]">
 
         <img src="img/caro-3-zoro.png" class="absolute inset-0 w-full h-full object-cover" alt="">
@@ -821,7 +768,6 @@ document.addEventListener('keydown', e => {
 
     </div>
 
-    <!-- Dots -->
     <div dir="ltr" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex gap-2">
 
       <button onclick="goToSlide(0)" class="dot w-9 h-4 rounded-full bg-red-600 transition-all"></button>
@@ -861,12 +807,10 @@ document.addEventListener('keydown', e => {
     }
 
 
-    // Automatic slider
     let autoPlay = setInterval(() => {
       moveSlide(1);
     }, 5000);
 
-    // Pause on hover
     carousel.addEventListener("mouseenter", () => {
       clearInterval(autoPlay);
     });
@@ -877,7 +821,6 @@ document.addEventListener('keydown', e => {
     });
 
 
-    // Mobile swipe
     let touchStart = 0;
     let touchEnd = 0;
 
@@ -1005,16 +948,13 @@ document.addEventListener('keydown', e => {
               min-h-[155px] md:min-h-[280px]
               bg-[#111522] text-white">
 
-      <!-- Background artwork -->
       <img src="img/gear5-banner.webp" alt="" class="absolute inset-0 w-full h-full object-cover
              object-center opacity-90 pointer-events-none" loading="lazy" />
 
-      <!-- Dark overlay -->
       <div class="absolute inset-0 bg-gradient-to-r
                 from-[#111522] via-[#111522]/30
                 to-[#111522]/10"></div>
 
-      <!-- Content -->
       <div dir="ltr" class="relative z-10 flex items-center
                 h-full min-h-[155px] md:min-h-[280px]
                 px-6 md:px-8 bottom-0">
@@ -1061,13 +1001,11 @@ document.addEventListener('keydown', e => {
     </div>
 
     <div class="relative">
-      <!-- فلش چپ: رفتن به کارت‌های بعدی -->
       <button type="button" data-pcx-prev aria-label="قبلی"
         class="absolute left-[-10px] top-1/2 z-30 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-red-600 text-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-90 md:flex [@media(any-hover:hover)]:hover:scale-110 [@media(any-hover:hover)]:hover:bg-red-700">
         <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
       </button>
-      <!-- فلش راست: برگشت به کارت‌های قبلی (در شروع مخفیه) -->
       <button type="button" data-pcx-next aria-label="بعدی" style="opacity:0;visibility:hidden;pointer-events:none"
         class="absolute right-[-24px] top-1/2 z-30 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-red-600 text-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-90 md:flex [@media(any-hover:hover)]:hover:scale-110 [@media(any-hover:hover)]:hover:bg-red-700">
         <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
@@ -1081,8 +1019,6 @@ document.addEventListener('keydown', e => {
   </section>
   <script>
     (function () {
-      // badge = متن برچسب روی عکس | o = قیمت قبل از تخفیف (برای محصولات بدون تخفیف خالی بذار)
-      // url = صفحه محصول | cart = لینک سبد خرید — آدرس‌ها رو با آدرس واقعی سایتت عوض کن
       var products = [{
           n: 'اورجینال مانگا One piece 3',
           p: '2,625,000',
@@ -1172,9 +1108,6 @@ document.addEventListener('keydown', e => {
             E + ' will-change-transform ' + H + 'group-hover/pcx:-translate-y-2 ' + H +
             'group-hover/pcx:border-red-500">' +
 
-            // عکس → صفحه محصول
-            // عکس → صفحه محصول (با پدینگ از بیرون و گوشه‌های گرد)
-            // عکس → صفحه محصول (با پدینگ از بیرون و گوشه‌های گرد)
             '<div class="p-3 pb-0">' +
             '<a href="' + x.url + '" draggable="false" aria-label="' + x.n +
             '" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100">' +
@@ -1184,18 +1117,15 @@ document.addEventListener('keydown', e => {
             '</a>' +
             '</div>' +
 
-            // برچسب: به خود کارت می‌چسبه، نه به عکس
             '<span class="pointer-events-none absolute right-3 top-3 z-10 rounded-full bg-red-600 px-3 py-1 text-xs font-bold text-white">' +
             x.badge + '</span>' +
 
             '<div class="p-5">' +
-            // اسم محصول → صفحه محصول
             '<a href="' + x.url + '" draggable="false" class="block no-underline">' +
             '<h3 class="m-0 min-h-[56px] text-base font-bold leading-7 text-slate-900 transition-colors duration-500 ' +
             E + ' ' + H + 'group-hover/pcx:text-red-600">' + x.n + '</h3>' +
             '</a>' +
 
-            // قیمت قبلی فقط وقتی وجود داره؛ وگرنه یه فضای خالی هم‌ارتفاع می‌ذاره
             (x.o ?
               '<div class="mt-2 text-xs font-semibold text-slate-400 line-through">' + x.o + '</div>' :
               '<div class="mt-2 h-4"></div>') +
@@ -1203,7 +1133,6 @@ document.addEventListener('keydown', e => {
             '<div class="flex items-baseline gap-1"><b class="text-xl font-black text-red-600">' + x.p +
             '</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>' +
 
-            // دکمه → سبد خرید
             '<a href="' + x.cart +
             '" draggable="false" class="mt-4 block w-full rounded-xl border-2 border-red-600 bg-transparent py-2.5 text-center text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ' +
             E + ' active:scale-95 active:bg-red-600 active:text-white ' + H + 'group-hover/pcx:bg-red-600 ' + H +
@@ -1253,7 +1182,6 @@ document.addEventListener('keydown', e => {
 
         function go(dir) {
           if (rafId === null) target = track.scrollLeft;
-          // صفحه راست‌چینه: scrollLeft بین -max و 0 هست
           target = Math.max(-maxScroll(), Math.min(0, target + dir * oneCard()));
           slideTo(target);
         }
@@ -1271,14 +1199,12 @@ document.addEventListener('keydown', e => {
           });
         });
 
-        // مخفی/نمایش با استایل مستقیم (بدون دست زدن به transform و جای فلش‌ها)
         function setVisible(btn, show) {
           btn.style.opacity = show ? '1' : '0';
           btn.style.visibility = show ? 'visible' : 'hidden';
           btn.style.pointerEvents = show ? 'auto' : 'none';
         }
 
-        // وضعیت فلش‌ها از روی جای کارت‌ها (مستقل از مقدار scrollLeft در RTL)
         function updateArrows() {
           var items = track.querySelectorAll('[data-pcx-item]');
           if (!items.length) return;
@@ -1288,9 +1214,7 @@ document.addEventListener('keydown', e => {
           var first = items[0].getBoundingClientRect();
           var last = items[items.length - 1].getBoundingClientRect();
 
-          // کارت اول سمت راسته؛ اگه به داخل اومده یعنی چیزی سمت راست هست → فلش راست
           var canGoRight = first.right > t.right + TOL;
-          // کارت آخر سمت چپه؛ اگه هنوز بیرون زده یعنی چیزی سمت چپ هست → فلش چپ
           var canGoLeft = last.left < t.left - TOL;
 
           setVisible(next, canGoRight);
@@ -1314,7 +1238,6 @@ document.addEventListener('keydown', e => {
     <div id="gl-chars" dir="rtl"
       class="relative mx-auto flex h-auto w-full max-w-[1400px] flex-col overflow-hidden rounded-xl bg-[#12141c] shadow-lg md:block md:h-[250px]">
 
-      <!-- متن -->
       <div
         class="pointer-events-none relative order-1 px-5 pb-3 pt-4 md:absolute md:inset-y-0 md:right-0 md:z-10 md:order-none md:flex md:w-[40%] md:items-center md:bg-gradient-to-l md:from-[#12141c] md:from-45% md:via-[#12141c]/90 md:to-transparent md:p-0 md:pe-12">
         <div class="md:mr-5 mr-0">
@@ -1325,11 +1248,9 @@ document.addEventListener('keydown', e => {
         </div>
       </div>
 
-      <!-- پنل‌ها -->
       <div dir="ltr"
         class="relative order-2 flex h-40 w-full [--s:8px] md:absolute md:inset-y-0 md:left-0 md:order-none md:h-auto md:w-[84%] md:[--s:30px]">
 
-        <!-- لوفی -->
         <a href="#" data-gl aria-label="لوفی"
           class="group/c relative block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(0_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
           <img src="img/caro-1-lufy.png" alt="" loading="lazy"
@@ -1342,7 +1263,6 @@ document.addEventListener('keydown', e => {
             class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
         </a>
 
-        <!-- زورو -->
         <a href="#" data-gl aria-label="زورو"
           class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
           <img src="img/caro-3-zoro.png" alt="" loading="lazy"
@@ -1355,7 +1275,6 @@ document.addEventListener('keydown', e => {
             class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
         </a>
 
-        <!-- سانجی -->
         <a href="#" data-gl aria-label="سانجی"
           class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
           <img src="img/sanji.png" alt="" loading="lazy"
@@ -1368,7 +1287,6 @@ document.addEventListener('keydown', e => {
             class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
         </a>
 
-        <!-- شنکس -->
         <a href="#" data-gl aria-label="شنکس"
           class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
           <img src="img/shanks.png" alt="" loading="lazy"
@@ -1381,7 +1299,6 @@ document.addEventListener('keydown', e => {
             class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
         </a>
 
-        <!-- لاو -->
         <a href="#" data-gl aria-label="لاو"
           class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
           <img src="img/Trafalgar Law Under a Bright Sky.png" alt="" loading="lazy"
@@ -1394,7 +1311,6 @@ document.addEventListener('keydown', e => {
             class="absolute inset-x-0 bottom-0 h-[3px] scale-x-0 bg-red-600 transition-transform duration-[900ms] group-hover/c:scale-x-100 group-[.is-active]/c:scale-x-100 md:h-1"></span>
         </a>
 
-        <!-- ریش‌سفید -->
         <a href="#" data-gl aria-label="ریش‌سفید"
           class="group/c relative -ml-[var(--s)] block min-w-0 flex-1 basis-0 grow cursor-pointer overflow-hidden bg-[#15161d] outline-none transition-[flex-grow] duration-[900ms] ease-in-out hover:grow-[1.7] focus-visible:grow-[1.7] [&.is-active]:grow-[1.7] motion-reduce:transition-none [clip-path:polygon(var(--s)_0,100%_0,calc(100%_-_var(--s))_100%,0_100%)]">
           <img src="img/Whitebeard Beneath Blue Skies.png" alt="" loading="lazy"
@@ -1410,7 +1326,6 @@ document.addEventListener('keydown', e => {
     </div>
   </div>
 
-  <!-- فقط برای لمسی‌ها: لمس اول = باز شدن افکت، لمس دوم = رفتن به لینک -->
   <script>
     (function () {
       var root = document.getElementById('gl-chars');
@@ -1443,7 +1358,6 @@ document.addEventListener('keydown', e => {
 
   <div id="faq-top" class="relative isolate overflow-hidden bg-gradient-to-b from-red-50 via-white to-red-50">
 
-    <!-- حباب‌های محو پشت‌زمینه -->
     <div class="pointer-events-none absolute -left-24 top-1/4 -z-10 h-72 w-72 rounded-full bg-red-200/50 blur-3xl">
     </div>
     <div class="pointer-events-none absolute -right-24 top-2/3 -z-10 h-72 w-72 rounded-full bg-red-300/40 blur-3xl">
@@ -1452,20 +1366,16 @@ document.addEventListener('keydown', e => {
     <div
       class="mx-auto xl:grid xl:max-w-[1280px] xl:grid-cols-[15rem_minmax(0,48rem)_15rem] xl:justify-center xl:gap-10 xl:px-6">
 
-      <!-- ستون راست: کاراکتر اول -->
       <aside class="hidden xl:block">
         <div class="sticky top-24 pt-20">
           <div class="relative mx-auto aspect-[3/4] w-full">
-            <img src="img/lufy.png" alt=""
-              class="absolute inset-0 h-full w-full object-contain object-bottom">
+            <img src="img/lufy.png" alt="" class="absolute inset-0 h-full w-full object-contain object-bottom">
           </div>
         </div>
       </aside>
 
-      <!-- وسط: FAQ -->
       <div class="mx-auto w-full max-w-3xl px-4 pb-12 pt-12 sm:px-6 sm:pt-20 xl:px-0">
 
-        <!-- هدر -->
         <header
           class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-red-600 to-red-800 px-6 pb-14 pt-10 text-white shadow-lg shadow-red-600/20 sm:px-10 sm:pt-12">
           <div class="pointer-events-none absolute -left-10 -top-10 h-44 w-44 rounded-full bg-white/10"></div>
@@ -1479,36 +1389,33 @@ document.addEventListener('keydown', e => {
             <p class="mt-3 max-w-lg text-sm leading-7 text-red-50 sm:text-base sm:leading-8">جواب رایج‌ترین سؤال‌ها
               درباره‌ی خرید مانگا، محصولات وان پیس و ارسال سفارش را این‌جا پیدا می‌کنید.</p>
           </div>
-          <!-- موج پایین هدر -->
           <svg class="pointer-events-none absolute inset-x-0 bottom-0 h-8 w-full text-white/15" viewBox="0 0 1200 40"
             preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
             <path d="M0 20 Q 75 0 150 20 T 300 20 T 450 20 T 600 20 T 750 20 T 900 20 T 1050 20 T 1200 20 V40 H0 Z" />
           </svg>
         </header>
 
-        <!-- دکمه‌های میان‌بر -->
         <nav class="mt-6 flex flex-wrap gap-2" aria-label="میان‌بر بخش‌ها">
           <a href="#sec-order"
-            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">🛒
-            سفارش و پرداخت</a>
+            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">
+            <img src="img/sabad.png" alt="" class="w-6 inline-block"> سفارش و پرداخت </a>
           <a href="#sec-ship"
-            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">🚚
-            ارسال و پیگیری</a>
+            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">
+           <img src="img/kamion.png" alt="" class="w-6 inline-block"> ارسال و پیگیری</a>
           <a href="#sec-manga"
-            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">📚
-            مانگا و محصولات</a>
+            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">
+           <img src="img/manga.png" alt="" class="w-6 inline-block"> مانگا و محصولات</a>
           <a href="#sec-onepiece"
-            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">🏴‍☠️
-            وان پیس و مرجوعی</a>
+            class="rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-bold text-red-700 transition hover:bg-red-600 hover:text-white">
+           <img src="img/parcham.png" alt="" class="w-6 inline-block"> وان پیس و مرجوعی</a>
         </nav>
 
         <div class="mt-12 space-y-12">
 
-          <!-- سفارش و پرداخت -->
           <section id="sec-order" class="scroll-mt-24">
             <div class="mb-5 flex items-center gap-3">
               <span class="h-7 w-1.5 rounded-full bg-red-600"></span>
-              <h2 class="text-lg font-black text-slate-900 sm:text-xl">🛒 سفارش و پرداخت</h2>
+              <h2 class="text-lg font-black text-slate-900 sm:text-xl"><img src="img/sabad.png" alt="" class="w-10 inline-block"> سفارش و پرداخت</h2>
               <span class="h-px flex-1 bg-red-100"></span>
             </div>
             <div class="space-y-3">
@@ -1549,11 +1456,10 @@ document.addEventListener('keydown', e => {
             </div>
           </section>
 
-          <!-- ارسال و پیگیری -->
           <section id="sec-ship" class="scroll-mt-24">
             <div class="mb-5 flex items-center gap-3">
               <span class="h-7 w-1.5 rounded-full bg-red-600"></span>
-              <h2 class="text-lg font-black text-slate-900 sm:text-xl">🚚 ارسال و پیگیری</h2>
+              <h2 class="text-lg font-black text-slate-900 sm:text-xl"><img src="img/kamion.png" alt="" class="w-10 inline-block"> ارسال و پیگیری</h2>
               <span class="h-px flex-1 bg-red-100"></span>
             </div>
             <div class="space-y-3">
@@ -1593,7 +1499,6 @@ document.addEventListener('keydown', e => {
             </div>
           </section>
 
-          <!-- مانگا و محصولات -->
           <section id="sec-manga" class="scroll-mt-24">
             <div class="mb-5 flex items-center gap-3">
               <span class="h-7 w-1.5 rounded-full bg-red-600"></span>
@@ -1639,11 +1544,10 @@ document.addEventListener('keydown', e => {
             </div>
           </section>
 
-          <!-- وان پیس و مرجوعی -->
           <section id="sec-onepiece" class="scroll-mt-24">
             <div class="mb-5 flex items-center gap-3">
               <span class="h-7 w-1.5 rounded-full bg-red-600"></span>
-              <h2 class="text-lg font-black text-slate-900 sm:text-xl">🏴‍☠️ وان پیس و مرجوعی</h2>
+              <h2 class="text-lg font-black text-slate-900 sm:text-xl"><img src="img/parcham.png" alt="" class="w-10 inline-block"> وان پیس و مرجوعی</h2>
               <span class="h-px flex-1 bg-red-100"></span>
             </div>
             <div class="space-y-3">
@@ -1685,7 +1589,7 @@ document.addEventListener('keydown', e => {
                     برگردانده می‌شود.</p>
                   <div
                     class="mt-3 flex gap-3 rounded-xl border border-red-200 bg-red-50 p-4 text-sm leading-7 text-red-800">
-                    <span class="text-lg">💡</span>
+                    <span><img src="img/lamp.png" alt="" class="w-6"></span>
                     <span><b>نکته:</b> اگر می‌توانید، لحظه‌ی باز کردن بسته از آن فیلم بگیرید تا بررسی سریع‌تر انجام
                       شود.</span>
                   </div>
@@ -1694,23 +1598,21 @@ document.addEventListener('keydown', e => {
             </div>
           </section>
 
-          <!-- نشان‌ها (از بالا به پایین آمدند) -->
           <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
             <div class="flex items-center gap-3 rounded-2xl border border-red-100 bg-white p-4 shadow-sm">
-              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-xl">📦</span>
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-xl"><img src="img/jabe.png" alt="" class="w-6 inline-block"></span>
               <span class="text-sm font-bold text-slate-800">بسته‌بندی ایمن مانگا</span>
             </div>
             <div class="flex items-center gap-3 rounded-2xl border border-red-100 bg-white p-4 shadow-sm">
-              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-xl">💬</span>
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-xl"><img src="img/chat.png" alt="" class="w-6 inline-block"></span>
               <span class="text-sm font-bold text-slate-800">پاسخ‌گویی سریع در تلگرام</span>
             </div>
             <div class="flex items-center gap-3 rounded-2xl border border-red-100 bg-white p-4 shadow-sm">
-              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-xl">🔔</span>
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-xl"><img src="img/zangole.png" alt="" class="w-6 inline-block"></span>
               <span class="text-sm font-bold text-slate-800">خبر موجود شدن جلدها</span>
             </div>
           </div>
 
-          <!-- کارت نکته‌های قبل از خرید -->
           <section class="relative overflow-hidden rounded-3xl border border-red-100 bg-white p-6 shadow-sm sm:p-8">
             <div class="pointer-events-none absolute -left-10 -top-10 h-32 w-32 rounded-full bg-red-100/70"></div>
             <div class="relative">
@@ -1724,13 +1626,13 @@ document.addEventListener('keydown', e => {
                   <p class="mt-1 text-xs leading-6 text-slate-600">در صفحه‌ی محصول چک کنید نسخه‌ی مورد نظرتان باشد.</p>
                 </div>
                 <div class="rounded-2xl bg-red-50 p-4">
-                  <span class="text-2xl">🔢</span>
+                  <span class="text-2xl"><img src="img/jeld.png" alt="" class="w-10 inline-block"></span>
                   <h3 class="mt-2 text-sm font-bold text-red-800">شماره‌ی جلد</h3>
                   <p class="mt-1 text-xs leading-6 text-slate-600">قبل از پرداخت، شماره‌ی جلدها را در سبد خرید دوباره
                     ببینید.</p>
                 </div>
                 <div class="rounded-2xl bg-red-50 p-4">
-                  <span class="text-2xl">📍</span>
+                  <span class="text-2xl"><img src="img/makan.png" alt="" class="w-10 inline-block"></span>
                   <h3 class="mt-2 text-sm font-bold text-red-800">آدرس و کدپستی</h3>
                   <p class="mt-1 text-xs leading-6 text-slate-600">آدرس کامل و کدپستی درست، رسیدن بسته را سریع‌تر
                     می‌کند.</p>
@@ -1739,11 +1641,10 @@ document.addEventListener('keydown', e => {
             </div>
           </section>
 
-          <!-- باکس پایانی -->
           <section
             class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-red-600 to-red-800 p-6 text-white shadow-lg shadow-red-600/20 sm:p-8">
             <div class="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-white/10"></div>
-            <span class="pointer-events-none absolute -bottom-2 left-4 rotate-12 text-6xl opacity-20">🏴‍☠️</span>
+            <span class="pointer-events-none absolute -bottom-2 left-4 rotate-12 text-6xl opacity-20"><img src="img/parcham.png" alt="" class="w-25 inline-block"></span>
             <div class="relative">
               <h2 class="text-lg font-black sm:text-xl">جوابتان را پیدا نکردید؟</h2>
               <p class="mt-2 text-sm leading-7 text-red-50">پیام بدهید تا پشتیبانی گرند لاین کمکتان کند.</p>
@@ -1762,7 +1663,6 @@ document.addEventListener('keydown', e => {
         </div>
       </div>
 
-      <!-- ستون چپ: کاراکتر دوم -->
       <aside class="hidden xl:block">
         <div class="sticky top-24 pt-60">
           <div class="relative mx-auto aspect-[3/4] w-full">
@@ -1777,40 +1677,32 @@ document.addEventListener('keydown', e => {
 
   <footer class="relative bg-white text-slate-700">
 
-    <!-- دریا: موج‌ها و کشتی -->
     <div dir="ltr" class="relative h-36 overflow-hidden bg-gradient-to-b from-red-50 to-red-100 sm:h-48">
 
-      <!-- لایه‌ی ۱: موج پشتی -->
       <svg class="wave-a absolute bottom-0 left-0 h-[75%] w-[200%] text-red-200" viewBox="0 0 2400 80"
         preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
         <path d="M0 40 Q 150 8 300 40 T 600 40 T 900 40 T 1200 40 T 1500 40 T 1800 40 T 2100 40 T 2400 40 V80 H0 Z" />
       </svg>
 
-      <!-- لایه‌ی ۲ -->
       <svg class="wave-b absolute bottom-0 left-0 h-[60%] w-[200%] text-red-300/70" viewBox="0 0 2400 80"
         preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
         <path
           d="M0 40 Q 100 4 200 40 T 400 40 T 600 40 T 800 40 T 1000 40 T 1200 40 T 1400 40 T 1600 40 T 1800 40 T 2000 40 T 2200 40 T 2400 40 V80 H0 Z" />
       </svg>
 
-      <!-- کشتی (بین لایه‌های موج) -->
       <div class="ship-sail absolute bottom-[14%] z-10 sm:bottom-[18%]">
         <div class="ship-bob relative h-20 w-28 sm:h-28 sm:w-40">
-          <!-- رد کف‌آلود زیر کشتی -->
           <div class="foam absolute -bottom-1 left-1/2 h-3 w-[110%] -translate-x-1/2 rounded-full bg-white/80 blur-sm">
           </div>
-          <img src="img/Onepiece_Anime_Luffy_s_Thousand_Sunny_Ship_PNG-removebg-preview.png" alt=""
-            class="absolute inset-0 h-full w-full object-contain drop-shadow-xl">
+          <img src="img/sani-goo.png" alt="" class="absolute inset-0 h-full w-full object-contain drop-shadow-xl">
         </div>
       </div>
 
-      <!-- لایه‌ی ۳ -->
       <svg class="wave-c absolute bottom-0 left-0 z-20 h-[45%] w-[200%] text-red-400/60" viewBox="0 0 2400 80"
         preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
         <path d="M0 40 Q 300 0 600 40 T 1200 40 T 1800 40 T 2400 40 V80 H0 Z" />
       </svg>
 
-      <!-- لایه‌ی ۴: موج جلویی (هم‌رنگ فوتر) -->
       <svg class="wave-d absolute bottom-0 left-0 z-30 h-[28%] w-[200%] text-white" viewBox="0 0 2400 80"
         preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
         <path d="M0 40 Q 150 10 300 40 T 600 40 T 900 40 T 1200 40 T 1500 40 T 1800 40 T 2100 40 T 2400 40 V80 H0 Z" />
@@ -1819,7 +1711,6 @@ document.addEventListener('keydown', e => {
 
     <div class="relative mx-auto max-w-6xl px-4 pb-10 pt-6 sm:px-6">
 
-      <!-- کارت خبرنامه -->
       <section
         class="relative overflow-hidden rounded-3xl border border-red-100 bg-red-50 p-6 sm:p-8 md:flex md:items-center md:justify-between md:gap-8">
         <div class="pointer-events-none absolute -left-8 -top-8 h-32 w-32 rounded-full bg-red-100"></div>
@@ -1839,14 +1730,13 @@ document.addEventListener('keydown', e => {
         </form>
       </section>
 
-      <!-- ستون‌ها -->
       <div class="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
 
         <div>
           <a href="#"
             class="inline-flex items-center gap-2 text-2xl font-black text-slate-900 transition hover:text-red-600">
             <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-600 text-sm font-black text-white"
-              dir="ltr">GL</span>
+              dir="ltr"><img src="img/strawhat.png" alt=""></span>
             گرند لاین
           </a>
           <p class="mt-4 text-sm leading-7 text-slate-600">فروشگاه مانگا، محصولات وان پیس و کالکشنی‌های انیمه. برای
@@ -1893,19 +1783,19 @@ document.addEventListener('keydown', e => {
             </li>
             <li>ایمیل: <a href="mailto:info@example.com" class="transition hover:text-red-600"
                 dir="ltr">info@example.com</a></li>
-            <li>آدرس : خرم آباد، شهدا غربی، 17 شهریور، بین شهید اکبر عیسائی و طالقانی (محله‌ی چهارراه بانک) مجتمع فنی تهران</li>
+            <li>آدرس : خرم آباد، شهدا غربی، 17 شهریور، بین شهید اکبر عیسائی و طالقانی (محله‌ی چهارراه بانک) مجتمع فنی
+              تهران</li>
             <li>ساعت کاری: همه‌روزه، ۹ صبح تا ۹ شب</li>
           </ul>
         </div>
       </div>
 
-      <!-- ایچیرو اودا + نقشه -->
       <div class="mt-14 grid gap-6 lg:grid-cols-3">
 
         <div class="rounded-3xl border border-red-100 bg-white p-5 shadow-sm">
           <div
             class="relative mx-auto aspect-[4/5] w-full max-w-[16rem] overflow-hidden rounded-2xl bg-red-50 ring-4 ring-red-100">
-            <img src="آدرس-عکس-ایچیرو-اودا.jpg" alt="ایچیرو اودا، خالق وان پیس"
+            <img src="img/echiro-oda.jpg" alt="ایچیرو اودا، خالق وان پیس"
               class="absolute inset-0 h-full w-full object-cover">
           </div>
           <h3 class="mt-4 text-center text-base font-black text-slate-900">ایچیرو اودا</h3>
@@ -1917,31 +1807,32 @@ document.addEventListener('keydown', e => {
         </div>
 
         <div class="relative min-h-[20rem] overflow-hidden rounded-3xl border border-red-100 bg-red-50 lg:col-span-2">
-          
-          
-                <iframe src="https://neshan.org/maps/iframe/places/QbSqhaG50AhJ/33.4896936/48.3500515" class="absolute inset-0 h-full w-full border-0" loading="lazy" title="نقشه‌ی فروشگاه"></iframe>
+
+
+          <iframe src="https://neshan.org/maps/iframe/places/QbSqhaG50AhJ/33.4896936/48.3500515"
+            class="absolute inset-0 h-full w-full border-0" loading="lazy" title="نقشه‌ی فروشگاه"></iframe>
 
           <div
             class="absolute inset-x-4 w-35 bottom-2 flex flex-col gap-3 p-2 sm:flex-row sm:items-center sm:justify-between">
             <a href="https://nshn.ir/QbSqhaG50AhJ"
               class="shrink-0 w-25 rounded-xl bg-red-600 px-5 py-2.5 text-center text-sm font-bold text-white transition hover:bg-red-700 active:bg-red-700">مسیریابی</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-red-100 bg-red-50/60 pb-10 md:pb-0 mt-2">
+        <div
+          class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-5 text-xs text-slate-600 sm:flex-row sm:px-6">
+          <p>© ۱۴۰۵ گرند لاین. همه‌ی حقوق محفوظ است.</p>
+          <nav class="flex flex-wrap items-center justify-center gap-5" aria-label="لینک‌های حقوقی">
+            <a href="#" class="transition hover:text-red-600" onclick="event.preventDefault(); openRules()">قوانین و
+              مقررات</a>
+            <a href="#" class="transition hover:text-red-600">حریم خصوصی</a>
+            <a href="#top" class="font-bold transition hover:text-red-600">بازگشت به بالا</a>
+          </nav>
         </div>
       </div>
-
-    </div>
-
-    <!-- نوار پایانی -->
-    <div class="border-t border-red-100 bg-red-50/60 mt-3">
-      <div
-        class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-5 text-xs text-slate-600 sm:flex-row sm:px-6">
-        <p>© ۱۴۰۵ گرند لاین. همه‌ی حقوق محفوظ است.</p>
-        <nav class="flex flex-wrap items-center justify-center gap-5" aria-label="لینک‌های حقوقی">
-          <a href="#" class="transition hover:text-red-600" onclick="event.preventDefault(); openRules()">قوانین و مقررات</a>
-          <a href="#" class="transition hover:text-red-600">حریم خصوصی</a>
-          <a href="#faq-top" class="font-bold transition hover:text-red-600">بازگشت به بالا</a>
-        </nav>
-      </div>
-    </div>
 
   </footer>
 </body>
