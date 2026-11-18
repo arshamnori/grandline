@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/png" href="img/strawhat.png">
+</head>
+<body>
+     <header class="flex items-center justify-between gap-4 p-1 sticky top-0 z-50 bg-white">
+
+
+    <a href="#" class="md:mr-10 mr-3 w-30 shrink-0">
+      <img src="img/brand.png" alt="" loading="lazy">
+    </a>
+
+    <nav class="hidden min-[900px]:flex items-center m-auto">
+
+      <a href="#" class="px-3 no-underline transition-colors duration-200 text-black hover:text-red-600">خانه</a>
+
+      <div class="relative group shrink-0">
+
+        <a href="#" class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600 group">
+          فروشگاه <span class="inline-block transition-transform duration-300 group-hover:-rotate-90">›</span>
+        </a>
+
+        <div class="absolute right-0 top-full z-50 w-48 p-3 rounded-xl bg-white border border-gray-300 shadow-xl
+                    invisible opacity-0 translate-y-2
+                    group-hover:visible group-hover:opacity-100
+                    group-hover:translate-y-0
+                    transition-all duration-300">
+
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">جدید ترین</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">تخفیف ویژه</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">محبوب ترین</a>
+
+        </div>
+      </div>
+      <div class="relative group shrink-0">
+
+        <a href="#" class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600 group">
+          دسته‌بندی‌ها <span class="inline-block transition-transform duration-300 group-hover:-rotate-90">›</span>
+        </a>
+
+        <div class="absolute right-0 top-full z-50 w-48 p-3 rounded-xl bg-white border border-gray-300 shadow-xl
+                    invisible opacity-0 translate-y-2
+                    group-hover:visible group-hover:opacity-100
+                    group-hover:translate-y-0
+                    transition-all duration-300">
+
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">مانگا</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">فیگور</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">اکسسوری</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">پوشاک</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">کلکسیونی</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">لوازم جانبی</a>
+
+        </div>
+      </div>
+
+      <a href="#"
+        class="px-3 pl-20 no-underline transition-colors duration-200 text-black hover:text-red-600 ml-10 shrink-0">در
+        مورد وان پیس</a>
+
+    </nav>
+
+    <div class="relative w-full max-w-50 mr-auto">
+
+      <input type="text" placeholder="جستجو..."
+        class="w-full h-10 bg-gray-100 focus:bg-white text-gray-800 border border-gray-300 rounded-lg pr-4 outline-none placeholder:text-gray-400 focus:border-red-500 transition-colors duration-300">
+
+      <button class="absolute left-3 top-1/2 -translate-y-1/2">
+
+        <img src="img/search.png" alt="" class="w-5 h-5 active:scale-90">
+
+      </button>
+
+    </div>
+
+
+    <div class="flex items-center gap-3 lg:gap-5 shrink-0 lg:px-10 px-3 ml-auto">
+      <div class="rounded-md hidden md:flex">
+        <div
+          class="flex items-center justify-center p-2 group active:bg-white rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
+          data-tooltip="سبد خرید">
+          <img src="img/sabad.png" alt="سبد" class="w-8 h-8 transition-all group-active:scale-90 group-hover:scale-110 duration-100">
+        </div>
+      </div>
+      <div class="rounded-md">
+        <div
+          class="flex items-center justify-center bg-gray-100 group md:bg-white active:bg-white p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 active:bg-neutral-100 active:text-red-600 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
+          data-tooltip="علاقه مندی ها" onclick="openWishlist()">
+          <img src="img/heart.png" alt="قلب" class="w-8 h-8 transition-all group-active:scale-90 group-hover:scale-110 duration-100">
+        </div>
+      </div>
+      <div class="rounded-md hidden md:flex" onclick="openModal()">
+        <div
+          class="flex items-center justify-center p-2 group active:bg-white rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
+          data-tooltip="حساب کاربری">
+          <img src="img/hesab.png" alt="حساب"  class="w-8 h-8 transition-all group-active:scale-90 group-hover:scale-110 duration-100">
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-6 left-1/2 z-50 flex w-max max-w-[calc(100vw-1rem)] -translate-x-1/2 items-center gap-2
+    min-[900px]:bottom-4 min-[900px]:left-5 min-[900px]:translate-x-0" dir="ltr">
+
+
+      <div class="relative shrink-0 group/support">
+        <details class="relative">
+
+          <summary class="list-none cursor-pointer flex h-[60px] w-[60px] min-[900px]:h-16 min-[900px]:w-32
+          items-center justify-center rounded-full bg-red-600 text-white
+          transition-all duration-200 md:duration-300 ease-out
+          hover:bg-red-700 hover:scale-110 hover:shadow-[0_0_20px_#dc2626]
+          active:bg-red-700 active:shadow-[0_0_20px_#dc2626] active:scale-95
+          [&::-webkit-details-marker]:hidden">
+
+            <p class="ml-3 hidden min-[900px]:flex mr-1" dir="rtl">ارتباط‌‌ با ما</p>
+
+            <img src="img/poshtiban.png" alt="" class="h-10 mr-0 md:mr-1 w-10 min-[900px]:h-7 min-[900px]:w-7">
+          </summary>
+
+          <div dir="rtl" class="absolute bottom-full left-0 mb-3 w-48 rounded-xl
+          border border-gray-200 bg-white p-2 shadow-xl
+          opacity-0 invisible translate-y-3 scale-95
+          transition-all duration-300 origin-bottom-left
+
+          group-hover/support:opacity-100
+          group-hover/support:visible
+          group-hover/support:translate-y-0
+          group-hover/support:scale-100
+
+          [&:is(details[open]_*)]:opacity-100
+          [&:is(details[open]_*)]:visible
+          [&:is(details[open]_*)]:translate-y-0
+          [&:is(details[open]_*)]:scale-100">
+
+            <a href="#" class="block rounded-lg p-3 text-gray-700
+            transition-all duration-200 hover:bg-red-50 active:bg-red-50
+            hover:text-red-600 active:text-red-600 hover:pr-5 active:pr-5">
+              تماس با ما
+            </a>
+
+            <a href="#" class="block rounded-lg p-3 text-gray-700
+            transition-all duration-200 hover:bg-red-50 active:bg-red-50
+            hover:text-red-600 active:text-red-600 hover:pr-5 active:pr-5">
+              درباره ما
+            </a>
+          </div>
+
+        </details>
+      </div>
+
+      <nav class="min-[900px]:hidden">
+        <ul class="flex items-center gap-0.5 rounded-full bg-white p-1.5 shadow-[0_4px_24px_rgba(0,0,0,0.12)]">
+
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100"
+              onclick="openModal()">
+              <img src="img/hesab.png" alt="" class="w-8 h-8">
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
+              <img src="img/sabad.png" alt="" class="w-8 h-8">
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
+              <img src="img/strawhat.png" alt="" class="w-12 h-12 active:scale-95">
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
+              <img src="img/daste.png" alt="" class="w-8 h-9">
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100 text-gray-900 active:bg-gray-100">
+              <img src="img/home.png" alt="" class="w-7 h-8">
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+
+
+
+    <div id="authModal" onclick="if (event.target === this) closeModal()"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+
+      <div id="modalBox"
+        class="no-scrollbar relative max-h-[95dvh] w-full max-w-[410px] translate-y-5 scale-95 overflow-y-auto rounded-2xl bg-white shadow-2xl transition-all duration-300">
+
+        <div class="h-1.5 bg-gradient-to-l from-red-800 to-red-500"></div>
+
+
+        <button type="button" onclick="closeModal()"
+          class="absolute left-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+          &times;
+        </button>
+
+        <div class="p-5 sm:p-6" dir="rtl">
+
+
+          <div class="mb-5 flex flex-col items-center gap-2">
+            <img src="img/brand.png" alt="Grand Line" class="w-[40%] rounded-xl object-contain">
+            <p class="text-sm font-semibold text-gray-600">به دنیای گرند لاین خوش آمدید</p>
+          </div>
+
+
+          <div id="authTabs" class="mb-5 grid grid-cols-2 rounded-xl bg-gray-100 p-1">
+            <button type="button" id="loginTab" onclick="showForm('login')"
+              class="rounded-lg bg-red-600 py-2 text-sm font-bold text-white transition">
+              ورود
+            </button>
+            <button type="button" id="registerTab" onclick="showForm('register')"
+              class="rounded-lg py-2 text-sm font-bold text-gray-500 transition">
+              ثبت‌نام
+            </button>
+          </div>
+
+
+
+          <form id="loginForm" class="space-y-4" onsubmit="event.preventDefault()">
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
+              <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div class="flex items-center justify-between">
+
+              <label class="group flex cursor-pointer select-none items-center gap-2.5">
+                <input type="checkbox" class="peer sr-only">
+
+                <span
+                  class="relative h-6 w-11 shrink-0 rounded-full bg-gray-200 shadow-inner transition-colors duration-300 after:absolute after:right-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:bg-white after:shadow-md after:transition-transform after:duration-300 after:content-[''] group-active:after:w-6 peer-checked:bg-red-600 peer-checked:after:-translate-x-5 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
+
+                <span class="text-xs font-medium text-gray-600">مرا به خاطر بسپار</span>
+              </label>
+
+              <button type="button" onclick="showForm('forgot')"
+                class="text-xs font-semibold text-red-600 transition hover:text-red-800">
+                فراموشی رمز عبور؟
+              </button>
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ورود به حساب کاربری
+            </button>
+
+            <p class="text-center text-xs text-gray-500">
+              حساب کاربری ندارید؟
+              <button type="button" onclick="showForm('register')" class="font-bold text-red-600">ثبت‌نام کنید</button>
+            </p>
+          </form>
+
+
+
+          <form id="registerForm" class="hidden space-y-4" onsubmit="submitRegister(event)">
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">نام و نام خانوادگی</label>
+              <input type="text" name="fullname" placeholder="نام کامل شما"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
+              <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+
+            <div>
+              <label class="relative flex cursor-pointer select-none items-center gap-3 rounded-xl p-3">
+                <input type="checkbox" id="acceptRules" class="peer sr-only"
+                  onchange="if (this.checked) hideRulesError()">
+
+
+                <span
+                  class="absolute inset-0 rounded-xl border border-gray-200 bg-gray-50 transition-all duration-300 peer-checked:border-red-500 peer-checked:bg-red-50 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
+
+
+                <span
+                  class="relative flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border-2 border-gray-300 bg-white text-white shadow-sm transition-all duration-300 peer-checked:border-red-600 peer-checked:bg-red-600 [&>svg]:scale-0 [&>svg]:transition-transform [&>svg]:duration-300 peer-checked:[&>svg]:scale-100">
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+
+                <span class="relative text-xs leading-6 text-gray-600">
+                  <button type="button" onclick="openRules()"
+                    class="font-bold text-red-600 underline decoration-red-300 underline-offset-4 transition hover:text-red-800">
+                    قوانین و مقررات گرند لاین
+                  </button>
+                  را خوانده‌ام و می‌پذیرم
+                </span>
+              </label>
+
+              <p id="rulesError" class="mt-2 hidden items-center gap-1.5 text-xs font-medium text-red-600">
+                <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 8v4m0 4h.01" />
+                </svg>
+                برای ادامه، باید قوانین و مقررات را بپذیرید.
+              </p>
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ایجاد حساب کاربری
+            </button>
+
+            <p class="text-center text-xs text-gray-500">
+              قبلاً ثبت‌نام کرده‌اید؟
+              <button type="button" onclick="showForm('login')" class="font-bold text-red-600">وارد شوید</button>
+            </p>
+          </form>
+
+
+
+          <form id="forgotForm" class="hidden space-y-4" onsubmit="event.preventDefault()">
+
+            <div class="text-center">
+              <div
+                class="mx-auto mb-3 flex h-20 w-20 items-center justify-center rounded-2xl bg-red-50 text-2xl text-red-600">
+                <img src="img/ghofel.png" alt="" class="w-15 h-18"></div>
+              <h3 class="text-lg font-black text-gray-800">بازیابی رمز عبور</h3>
+              <p class="mt-2 text-xs leading-6 text-gray-500">شماره موبایلی که با آن ثبت‌نام کرده‌اید را وارد کنید.</p>
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ادامه بازیابی
+            </button>
+
+            <div class="my-3 flex items-center gap-3">
+              <div class="h-px flex-1 bg-gray-200"></div>
+              <span class="text-[11px] text-gray-400">راه ارتباطی</span>
+              <div class="h-px flex-1 bg-gray-200"></div>
+            </div>
+
+            <!-- پشتیبانی تلگرام -->
+            <div class="rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+              <p class="mb-3 text-sm font-bold text-gray-700">پشتیبانی گرند لاین</p>
+
+              <img src="img/QR.jpeg" alt="QR تلگرام"
+                class="mx-auto h-28 w-28 rounded-xl bg-white object-contain p-2">
+
+              <p class="mt-3 text-xs text-gray-500">برای ارتباط با پشتیبانی اسکن کنید</p>
+
+              <a href="https://t.me/KRATOS_GOD3" target="_blank" rel="noopener noreferrer" dir="ltr"
+                class="mt-3 inline-block text-sm font-bold text-red-600">
+                @KRATOS_GOD3
+              </a>
+            </div>
+
+            <button type="button" onclick="showForm('login')"
+              class="w-full pt-2 text-xs text-gray-500 transition hover:text-red-600">
+              برگشت به ورود
+            </button>
+          </form>
+
+
+
+          <div class="mt-5 border-t border-gray-100 pt-3 text-center">
+            <p class="text-[11px] text-gray-400">تجربه‌ای متفاوت از دنیای گرند لاین</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="rulesModal" onclick="if (event.target === this) closeRules()"
+      class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/70 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+
+      <div id="rulesBox" dir="rtl"
+        class="relative flex h-[min(650px,90dvh)] max-h-[90dvh] w-full max-w-[550px] scale-95 flex-col overflow-hidden rounded-2xl bg-white shadow-2xl transition-all duration-300">
+
+        <div class="h-1.5 shrink-0 bg-gradient-to-l from-red-800 to-red-500"></div>
+
+        <div class="flex shrink-0 items-center justify-between border-b border-gray-100 p-5">
+          <div>
+            <h2 class="text-lg font-black text-gray-800">قوانین و مقررات گرند لاین</h2>
+            <p class="mt-1 text-xs text-gray-400">لطفاً پیش از ثبت‌نام، موارد زیر را مطالعه کنید.</p>
+          </div>
+
+          <button type="button" onclick="closeRules()"
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+            &times;
+          </button>
+        </div>
+
+        <div id="rulesText"
+          class="no-scrollbar min-h-0 flex-1 space-y-5 overflow-y-auto p-5 text-sm leading-8 text-gray-600">
+
+          <section>
+            <h3 class="font-black text-gray-800">۱. شرایط عمومی</h3>
+            <p>
+              استفاده از خدمات و امکانات گرند لاین به معنای پذیرش قوانین و مقررات
+              این فروشگاه است. کاربران موظف‌اند هنگام استفاده از سایت، اصول
+              احترام، صداقت و قوانین جاری را رعایت کنند.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۲. اطلاعات حساب کاربری</h3>
+            <p>
+              کاربران موظف‌اند اطلاعات صحیح و معتبر خود را هنگام ثبت‌نام وارد کنند.
+              مسئولیت حفظ رمز عبور و اطلاعات ورود به حساب بر عهده صاحب حساب است.
+              از در اختیار گذاشتن اطلاعات حساب خود به دیگران خودداری کنید.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۳. ثبت سفارش و پرداخت</h3>
+            <p>
+              کاربران باید پیش از ثبت سفارش، مشخصات محصول، قیمت و توضیحات آن را
+              بررسی کنند. سفارش پس از تکمیل مراحل پرداخت و تأیید فروشگاه ثبت
+              خواهد شد. هرگونه تغییر قیمت یا موجودی پیش از نهایی شدن سفارش
+              امکان‌پذیر است.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۴. ارسال و تحویل سفارش</h3>
+            <p>
+              زمان ارسال و تحویل محصولات با توجه به نوع کالا، مقصد و شرایط ارسال
+              متفاوت است. اطلاعات مربوط به ارسال و هزینه آن باید پیش از خرید
+              در اختیار مشتری قرار گیرد.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۵. محصولات دیجیتال و اشتراک‌ها</h3>
+            <p>
+              کاربران باید پیش از خرید محصولات دیجیتال، مشخصات، محدودیت‌ها،
+              شرایط فعال‌سازی و سازگاری محصول با دستگاه خود را بررسی کنند.
+              شرایط تحویل و استفاده از اشتراک‌ها مطابق توضیحات همان محصول خواهد بود.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۶. لغو سفارش و بازگشت وجه</h3>
+            <p>
+              درخواست لغو سفارش، تعویض یا بازگشت وجه باید از طریق پشتیبانی
+              گرند لاین پیگیری شود. شرایط بازگشت کالا و وجه با توجه به نوع محصول،
+              وضعیت سفارش و قوانین مربوطه بررسی خواهد شد. محصولات دیجیتال
+              ممکن است پس از تحویل یا فعال‌سازی شرایط متفاوتی داشته باشند.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۷. حفظ حریم خصوصی</h3>
+            <p>
+              اطلاعات کاربران صرفاً برای ارائه خدمات، پردازش سفارش‌ها و
+              ارتباط با مشتری استفاده می‌شود. گرند لاین متعهد است از اطلاعات
+              کاربران محافظت کند و بدون مجوز قانونی یا رضایت کاربر آن‌ها را
+              در اختیار اشخاص غیرمجاز قرار ندهد.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۸. پشتیبانی</h3>
+            <p>
+              کاربران می‌توانند برای پیگیری سفارش‌ها، طرح پرسش‌ها و گزارش مشکلات
+              از راه‌های ارتباطی معرفی‌شده در سایت با پشتیبانی گرند لاین تماس بگیرند.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۹. تغییر قوانین</h3>
+            <p>
+              گرند لاین ممکن است در صورت نیاز، قوانین و مقررات خود را به‌روزرسانی
+              کند. نسخه جدید قوانین از طریق همین بخش در دسترس کاربران قرار می‌گیرد.
+            </p>
+          </section>
+
+          <p class="rounded-xl bg-red-50 p-3 text-xs leading-7 text-red-700">
+            با انتخاب دکمه موافقت، تأیید می‌کنید که قوانین و مقررات گرند لاین
+            را مطالعه کرده و پذیرفته‌اید.
+          </p>
+        </div>
+
+        <div class="shrink-0 border-t border-gray-100 bg-white p-4">
+          <button type="button" onclick="acceptRules()"
+            class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+            ✓ موافقت با قوانین
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+ <!-- برای علاقه مندی هاست -->
+    <script>
+      const modal = document.getElementById('authModal');
+      const box = document.getElementById('modalBox');
+      const rules = document.getElementById('rulesModal');
+      const rulesBox = document.getElementById('rulesBox');
+      const rulesError = document.getElementById('rulesError');
+
+      const TAB_ON = ['bg-red-600', 'text-white'];
+      const TAB_OFF = ['text-gray-500'];
+
+
+      function openModal() {
+        modal.classList.replace('hidden', 'flex');
+        document.body.style.overflow = 'hidden';
+
+        requestAnimationFrame(() => {
+          modal.classList.remove('opacity-0');
+          box.classList.remove('scale-95', 'translate-y-5');
+        });
+      }
+
+      function closeModal() {
+        modal.classList.add('opacity-0');
+        box.classList.add('scale-95', 'translate-y-5');
+
+        setTimeout(() => {
+          modal.classList.replace('flex', 'hidden');
+          document.body.style.overflow = '';
+        }, 300);
+      }
+
+      function showForm(type) {
+        ['login', 'register', 'forgot'].forEach(name =>
+          document.getElementById(name + 'Form').classList.toggle('hidden', name !== type)
+        );
+
+        document.getElementById('authTabs').classList.toggle('hidden', type === 'forgot');
+
+        ['login', 'register'].forEach(name => {
+          const tab = document.getElementById(name + 'Tab');
+          TAB_ON.forEach(c => tab.classList.toggle(c, name === type));
+          TAB_OFF.forEach(c => tab.classList.toggle(c, name !== type));
+        });
+
+        hideRulesError();
+        box.scrollTop = 0;
+      }
+
+
+      function openRules() {
+        rules.classList.replace('hidden', 'flex');
+        document.getElementById('rulesText').scrollTop = 0;
+
+        requestAnimationFrame(() => {
+          rules.classList.remove('opacity-0');
+          rulesBox.classList.remove('scale-95');
+        });
+      }
+
+      function closeRules() {
+        rules.classList.add('opacity-0');
+        rulesBox.classList.add('scale-95');
+
+        setTimeout(() => rules.classList.replace('flex', 'hidden'), 300);
+      }
+
+      function acceptRules() {
+        const check = document.getElementById('acceptRules');
+        if (check) check.checked = true;
+
+        hideRulesError();
+        closeRules();
+      }
+
+
+      function hideRulesError() {
+        rulesError.classList.replace('flex', 'hidden');
+      }
+
+      function submitRegister(e) {
+        e.preventDefault();
+
+        if (!document.getElementById('acceptRules').checked) {
+          rulesError.classList.replace('hidden', 'flex');
+          return;
+        }
+
+        hideRulesError();
+      }
+
+
+      document.addEventListener('keydown', e => {
+        if (e.key !== 'Escape') return;
+
+        if (!rules.classList.contains('hidden')) closeRules();
+        else if (!modal.classList.contains('hidden')) closeModal();
+      });
+    </script>
+    <div id="wishlistModal" onclick="if (event.target === this) closeWishlist()"
+  class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+
+  <div id="wishlistBox" dir="rtl"
+    class="relative flex max-h-[95dvh] w-full max-w-[460px] translate-y-5 scale-95 flex-col overflow-hidden rounded-2xl bg-white shadow-2xl transition-all duration-300">
+
+    <div class="h-1.5 shrink-0 bg-gradient-to-l from-red-800 to-red-500"></div>
+
+    <div class="flex shrink-0 items-center justify-between border-b border-gray-100 p-5">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-50 text-red-600">
+          <img src="img/heart.png" alt="" class="h-8 w-8">
+        </div>
+        <div>
+          <h2 class="text-lg font-black text-gray-800">علاقه‌مندی‌ها</h2>
+          <p class="mt-0.5 text-xs text-gray-400">۳ محصول ذخیره شده</p>
+        </div>
+      </div>
+
+      <button type="button" onclick="closeWishlist()"
+        class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+        &times;
+      </button>
+    </div>
+
+    <ul class="no-scrollbar min-h-0 flex-1 divide-y divide-gray-100 overflow-y-auto px-5">
+
+      <li class="flex items-center gap-3 py-4">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl"><img src="img/products/figure-lufy.jpg" alt=""></div>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">فیگور لوفی king of artist</p>
+          <p class="mt-1 text-xs font-bold text-red-600">9,900,000 تومان</p>
+        </div>
+        <button type="button"
+          class="rounded-lg bg-red-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن به سبد
+        </button>
+        <button type="button" aria-label="حذف"
+          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-gray-400 transition">
+          <img src="img/trash.png" alt="" class="h-[30px] w-[30px] hover:scale-110 active:scale-90 transition-all durition-100">
+        </button>
+      </li>
+
+      <li class="flex items-center gap-3 py-4">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl"><img src="img/products/bag.jpg" alt="" class="rounded-xl"></div>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">کوله پشتی طرح انیمه وان پیس</p>
+          <p class="mt-1 text-xs font-bold text-red-600">2,230,000 تومان</p>
+        </div>
+        <button type="button"
+          class="rounded-lg bg-red-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن به سبد
+        </button>
+        <button type="button" aria-label="حذف"
+          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-gray-400 transition">
+          <img src="img/trash.png" alt="" class="h-[30px] w-[30px] hover:scale-110 active:scale-90 transition-all durition-100">
+        </button>
+      </li>
+
+      <li class="flex items-center gap-3 py-4">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl"><img src="img/products/t-shirt.webp" alt=""></div>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">تیشرت وان پیس طرح لوفی</p>
+          <p class="mt-1 text-xs font-bold text-red-600">2,300,000 تومان</p>
+        </div>
+        <button type="button"
+          class="rounded-lg bg-red-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن به سبد
+        </button>
+        <button type="button" aria-label="حذف"
+          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-gray-400 transition">
+          <img src="img/trash.png" alt="" class="h-[30px] w-[30px] hover:scale-110 active:scale-90 transition-all durition-100">
+        </button>
+      </li>
+    </ul>
+
+    <div class="shrink-0 border-t border-gray-100 bg-gray-50 p-4">
+      <div class="mb-3 flex items-center justify-between text-xs">
+        <span class="text-gray-500">جمع کل ۳ محصول</span>
+        <span class="text-base font-black text-red-600">14,430,000 تومان</span>
+      </div>
+      <div class="flex gap-3">
+        <button type="button"
+          class="block h-11 flex-1 rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن همه به سبد خرید
+        </button>
+        <button type="button"
+          class="h-11 rounded-xl border border-gray-200 bg-white px-4 text-[13px] font-bold text-gray-500 transition hover:border-red-200 hover:text-red-600">
+          پاک کردن
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const wishlist = document.getElementById('wishlistModal');
+  const wishlistBox = document.getElementById('wishlistBox');
+
+  function openWishlist() {
+    wishlist.classList.replace('hidden', 'flex');
+    document.body.style.overflow = 'hidden';
+
+    requestAnimationFrame(() => {
+      wishlist.classList.remove('opacity-0');
+      wishlistBox.classList.remove('scale-95', 'translate-y-5');
+    });
+  }
+
+  function closeWishlist() {
+    wishlist.classList.add('opacity-0');
+    wishlistBox.classList.add('scale-95', 'translate-y-5');
+
+    setTimeout(() => {
+      wishlist.classList.replace('flex', 'hidden');
+      document.body.style.overflow = '';
+    }, 300);
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !wishlist.classList.contains('hidden')) closeWishlist();
+  });
+</script>
+  </header>
+  <div class="bg-[#172554] text-white sticky top-[75px] z-40">
+    <div class="mx-auto px-4 py-2 flex items-center justify-center gap-4 text-[10px]">
+
+      <span>ارسال به سراسر ایران</span>
+      <i class="w-1 h-1 rounded-full bg-orange-400"></i>
+
+      <span>ضمانت اصالت کالا</span>
+      <i class="w-1 h-1 rounded-full bg-orange-400"></i>
+
+      <span>تجربه‌ای از دنیای گرند لاین</span>
+
+    </div>
+  </div>
+  <div tabindex="0" class="group fixed left-0 top-34 z-40 outline-none sm:top-28">
+    <div
+      class="pointer-events-none absolute bottom-full left-8 mb-1 w-36 translate-y-2 rounded-2xl rounded-bl-sm bg-white px-3 py-2 text-xs font-bold leading-6 text-red-700 opacity-0 shadow-lg ring-1 ring-red-100 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus:translate-y-0 group-focus:opacity-100 sm:left-12 sm:w-44 sm:px-4">
+      سلامممممممممم
+    </div>
+    <img src="img/choper.png" alt="choper"
+      class="h-16 w-16 -translate-x-[40%] rotate-12 object-contain drop-shadow-xl transition duration-300 group-hover:-translate-x-[15%] group-hover:rotate-0 group-focus:-translate-x-[15%] group-focus:rotate-0 sm:h-20 sm:w-20 lg:h-24 lg:w-24 xl:h-28 xl:w-28">
+  </div>
+<div dir="rtl" class="group/shop relative w-full bg-white px-4 py-8 [overflow-x:clip] md:px-10 lg:px-[72px]">
+
+  <!-- رادیوهای مخفی فیلتر دسته‌بندی (بدون جاوا اسکریپت) -->
+  <input type="radio" name="cat" id="f-all" class="sr-only" checked>
+  <input type="radio" name="cat" id="f-manga" class="sr-only">
+  <input type="radio" name="cat" id="f-figures" class="sr-only">
+  <input type="radio" name="cat" id="f-accessories" class="sr-only">
+  <input type="radio" name="cat" id="f-clothes" class="sr-only">
+  <input type="radio" name="cat" id="f-collectibles" class="sr-only">
+
+  <!-- عکس‌ها و میوه‌های پخش‌شده در حاشیه صفحه (فقط دسکتاپ، بیرون از کارت‌ها) -->
+  <div class="pointer-events-none absolute right-2 hidden h-24 w-14 rotate-6 lg:block" style="top:12%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس یوسوپ</div></div>
+  <div class="pointer-events-none absolute left-2 hidden h-14 w-14 -rotate-12 lg:block" style="top:19%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">میوه شیطانی ۴</div></div>
+  <div class="pointer-events-none absolute right-2 hidden h-14 w-14 rotate-12 lg:block" style="top:27%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">میوه شیطانی ۵</div></div>
+  <div class="pointer-events-none absolute left-2 hidden h-28 w-14 rotate-3 lg:block" style="top:36%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس زورو</div></div>
+  <div class="pointer-events-none absolute right-2 hidden h-28 w-14 -rotate-3 lg:block" style="top:44%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس سنجی</div></div>
+  <div class="pointer-events-none absolute left-2 hidden h-14 w-14 rotate-12 lg:block" style="top:53%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">میوه شیطانی ۶</div></div>
+  <div class="pointer-events-none absolute right-2 hidden h-24 w-14 rotate-6 lg:block" style="top:60%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس رابین</div></div>
+  <div class="pointer-events-none absolute left-2 hidden h-28 w-14 -rotate-6 lg:block" style="top:67%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس فرانکی</div></div>
+  <div class="pointer-events-none absolute right-2 hidden h-14 w-14 -rotate-12 lg:block" style="top:74%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">میوه شیطانی ۷</div></div>
+  <div class="pointer-events-none absolute left-2 hidden h-24 w-14 rotate-6 lg:block" style="top:81%"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس بروک</div></div>
+
+  <!-- مسیر صفحه -->
+
+  <!-- بنر فروشگاه -->
+  <div class="relative mb-10 overflow-hidden rounded-3xl bg-gradient-to-l from-red-50 via-white to-slate-50 px-6 py-9 md:px-10 md:py-12">
+    <div class="relative z-10 max-w-2xl">
+      <span class="mb-4 inline-block rounded-full border border-red-100 bg-white px-4 py-2 text-xs font-bold text-red-600">دنیای طرفداران وان پیس</span>
+      <h1 class="mb-4 text-2xl font-black leading-tight text-slate-900 sm:text-4xl md:text-5xl">به دنیای <span class="text-red-600">زیـران</span> خوش اومدی!</h1>
+      <p class="max-w-xl text-sm leading-8 text-slate-500 md:text-base">از مانگا و فیگور گرفته تا کلکسیونی‌ترین محصولات دنیای انیمه؛ چیزی که دنبالش هستی شاید همین‌جا منتظرته.</p>
+      <a href="#products" class="mt-6 flex w-full items-center justify-center gap-3 rounded-xl bg-red-600 px-6 py-3 sm:inline-flex sm:w-auto text-sm font-bold text-white transition duration-300 hover:bg-red-700 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">دیدن محصولات <span>←</span></a>
+    </div>
+
+    <!-- جای عکس: لوفی بزرگ سمت چپ بنر -->
+    <div class="pointer-events-none absolute bottom-0 left-6 hidden h-60 w-48 lg:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس لوفی (بنر اصلی)</div></div>
+    <!-- جای عکس: میوه شیطانی -->
+    <div class="pointer-events-none absolute bottom-6 left-60 hidden h-24 w-24 rotate-12 lg:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">میوه شیطانی ۱</div></div>
+
+    <div class="absolute -left-12 -top-16 h-52 w-52 rounded-full border-[24px] border-red-100/50"></div>
+    <div class="absolute bottom-5 left-1/3 h-3 w-3 rounded-full bg-red-200"></div>
+    <div class="absolute right-1/2 top-8 h-2 w-2 rounded-full bg-red-300"></div>
+  </div>
+
+  <!-- عنوان صفحه -->
+  <div class="relative mb-6 flex flex-wrap items-end justify-between gap-4">
+    <div class="pointer-events-none absolute left-1/3 -top-6 hidden h-16 w-16 -rotate-6 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">میوه شیطانی ۹</div></div>
+    <div>
+      <h2 class="border-r-4 border-red-600 pr-3 text-2xl font-black text-slate-900 md:text-3xl">فروشگاه محصولات</h2>
+      <p class="mt-2 text-sm text-slate-400">همه محصولات مورد علاقه‌ات در یک جا</p>
+    </div>
+  </div>
+
+  <!-- فیلتر موبایل -->
+  <details class="group top-2 z-30 mb-5 rounded-2xl border border-slate-200 bg-white shadow-sm lg:hidden">
+    <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-bold text-slate-800">
+      <span class="flex items-center gap-2">
+        <svg class="h-5 w-5 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M7 12h10m-7 6h4"/></svg>
+        فیلتر و دسته‌بندی
+      </span>
+      <svg class="h-5 w-5 text-slate-400 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+    </summary>
+    <div class="border-t border-slate-100 p-4">
+      <p class="mb-3 text-sm font-bold text-slate-800">دسته‌بندی محصولات</p>
+      <div class="grid grid-cols-2 gap-2 sm:grid-cols-3">
+        <label for="f-all" class="cursor-pointer rounded-xl bg-slate-50 px-3 py-3 text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-all:checked]/shop:bg-red-50 group-has-[#f-all:checked]/shop:font-bold group-has-[#f-all:checked]/shop:text-red-600">همه محصولات</label>
+        <label for="f-manga" class="cursor-pointer rounded-xl bg-slate-50 px-3 py-3 text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-manga:checked]/shop:bg-red-50 group-has-[#f-manga:checked]/shop:font-bold group-has-[#f-manga:checked]/shop:text-red-600"><img src="img/manga.png" alt="" class="w-6 inline"> مانگا</label>
+        <label for="f-figures" class="cursor-pointer rounded-xl bg-slate-50 px-3 py-3 text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-figures:checked]/shop:bg-red-50 group-has-[#f-figures:checked]/shop:font-bold group-has-[#f-figures:checked]/shop:text-red-600"><img src="img/figur.png" alt="" class="w-6 inline"> فیگور</label>
+        <label for="f-accessories" class="cursor-pointer rounded-xl bg-slate-50 px-3 py-3 text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-accessories:checked]/shop:bg-red-50 group-has-[#f-accessories:checked]/shop:font-bold group-has-[#f-accessories:checked]/shop:text-red-600"><img src="img/accesori.png" alt="" class="w-6 inline"> اکسسوری</label>
+        <label for="f-clothes" class="cursor-pointer rounded-xl bg-slate-50 px-3 py-3 text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-clothes:checked]/shop:bg-red-50 group-has-[#f-clothes:checked]/shop:font-bold group-has-[#f-clothes:checked]/shop:text-red-600"><img src="img/poshak.png" alt="" class="w-6 inline"> پوشاک</label>
+        <label for="f-collectibles" class="cursor-pointer rounded-xl bg-slate-50 px-3 py-3 text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-collectibles:checked]/shop:bg-red-50 group-has-[#f-collectibles:checked]/shop:font-bold group-has-[#f-collectibles:checked]/shop:text-red-600"><img src="img/collaction.png" alt="" class="w-6 inline"> کلکسیونی</label>
+      </div>
+      <p class="mb-2 mt-4 text-sm font-bold text-slate-800">محدوده قیمت</p>
+      <div class="flex items-center gap-2">
+        <input type="text" inputmode="numeric" placeholder="از" class="w-full min-w-0 rounded-lg border border-slate-200 px-2 py-2.5 text-center text-sm outline-none focus:border-red-500 focus:ring-2 focus:ring-red-100">
+        <input type="text" inputmode="numeric" placeholder="تا" class="w-full min-w-0 rounded-lg border border-slate-200 px-2 py-2.5 text-center text-sm outline-none focus:border-red-500 focus:ring-2 focus:ring-red-100">
+        <button type="button" class="shrink-0 rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white active:scale-95">اعمال</button>
+      </div>
+    </div>
+  </details>
+
+  <!-- محتوای فروشگاه -->
+  <div class="grid grid-cols-1 items-start gap-6 lg:grid-cols-[220px_minmax(0,1fr)]">
+
+    <!-- فیلتر دسکتاپ (بدون اسکرول و بدون sticky) -->
+    <aside class="hidden sticky top-27 self-start rounded-2xl border border-slate-200 bg-white p-4 lg:block">
+      <h3 class="mb-4 font-black text-slate-900">دسته‌بندی‌ها</h3>
+      <div class="space-y-2">
+        <label for="f-all" class="block w-full cursor-pointer rounded-xl px-3 py-3 text-right text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-all:checked]/shop:bg-red-50 group-has-[#f-all:checked]/shop:font-bold group-has-[#f-all:checked]/shop:text-red-600">همه محصولات</label>
+        <label for="f-manga" class="block w-full cursor-pointer rounded-xl px-3 py-3 text-right text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-manga:checked]/shop:bg-red-50 group-has-[#f-manga:checked]/shop:font-bold group-has-[#f-manga:checked]/shop:text-red-600"><img src="img/manga.png" alt="" class="w-6 inline"> مانگا</label>
+        <label for="f-figures" class="block w-full cursor-pointer rounded-xl px-3 py-3 text-right text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-figures:checked]/shop:bg-red-50 group-has-[#f-figures:checked]/shop:font-bold group-has-[#f-figures:checked]/shop:text-red-600"><img src="img/figur.png" alt="" class="w-6 inline"> فیگور</label>
+        <label for="f-accessories" class="block w-full cursor-pointer rounded-xl px-3 py-3 text-right text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-accessories:checked]/shop:bg-red-50 group-has-[#f-accessories:checked]/shop:font-bold group-has-[#f-accessories:checked]/shop:text-red-600"><img src="img/accesori.png" alt="" class="w-6 inline"> اکسسوری</label>
+        <label for="f-clothes" class="block w-full cursor-pointer rounded-xl px-3 py-3 text-right text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-clothes:checked]/shop:bg-red-50 group-has-[#f-clothes:checked]/shop:font-bold group-has-[#f-clothes:checked]/shop:text-red-600"><img src="img/poshak.png" alt="" class="w-6 inline"> پوشاک</label>
+        <label for="f-collectibles" class="block w-full cursor-pointer rounded-xl px-3 py-3 text-right text-sm text-slate-600 transition hover:bg-red-50 hover:text-red-600 group-has-[#f-collectibles:checked]/shop:bg-red-50 group-has-[#f-collectibles:checked]/shop:font-bold group-has-[#f-collectibles:checked]/shop:text-red-600"><img src="img/collaction.png" alt="" class="w-6 inline"> کلکسیونی</label>
+      </div>
+
+      <div class="my-5 border-t border-slate-100"></div>
+
+      <h3 class="mb-3 font-bold text-slate-900">محدوده قیمت</h3>
+      <div class="flex items-center gap-2">
+        <input type="text" placeholder="از" class="w-1/2 min-w-0 rounded-lg border border-slate-200 px-2 py-2 text-center text-xs outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-100">
+        <input type="text" placeholder="تا" class="w-1/2 min-w-0 rounded-lg border border-slate-200 px-2 py-2 text-center text-xs outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-100">
+      </div>
+      <button type="button" class="mt-3 w-full rounded-xl bg-slate-900 py-3 text-xs font-bold text-white transition hover:bg-red-600 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">اعمال فیلتر</button>
+    </aside>
+
+    <!-- لیست محصولات -->
+    <main id="products" class="flex min-w-0 flex-col [counter-reset:products]">
+
+      <!-- مرتب سازی -->
+      <div class="order-1 mb-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200 p-3">
+        <span class="text-sm font-bold text-slate-700">همه محصولات</span>
+        <div class="grid w-full grid-cols-4 gap-2 sm:flex sm:w-auto">
+          <button type="button" class="rounded-lg bg-red-600 px-3 py-2 text-xs font-bold text-white active:scale-95">پیش‌فرض</button>
+          <button type="button" class="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-500 transition hover:bg-red-50 hover:text-red-600 active:scale-95">جدیدترین</button>
+          <button type="button" class="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-500 transition hover:bg-red-50 hover:text-red-600 active:scale-95">محبوب ترین</button>
+          <button type="button" class="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-500 transition hover:bg-red-50 hover:text-red-600 active:scale-95">تخفیف های ویژه</button>
+        </div>
+      </div>
+
+      <!-- شمارنده خودکار محصولات (در DOM بعد از گرید است ولی با order بالا نمایش داده می‌شود؛ mb-14 برای جا دادن نامی روی کارت ۴) -->
+      <p class="order-2 mb-14 text-xs text-slate-400">نمایش <b class="font-bold text-slate-600 after:content-[counter(products,persian)]"></b> محصول از فروشگاه</p>
+
+      <!-- گرید محصولات: هر div فرزند مستقیم، یک محصول است. فیلتر و شمارنده خودکار کار می‌کنند. -->
+      <div class="order-3 grid grid-cols-2 gap-x-3 gap-y-14 sm:gap-x-5 md:grid-cols-3 xl:grid-cols-4 [&>*]:[counter-increment:products] group-has-[#f-manga:checked]/shop:[&>:not([data-category=manga])]:hidden group-has-[#f-figures:checked]/shop:[&>:not([data-category=figures])]:hidden group-has-[#f-accessories:checked]/shop:[&>:not([data-category=accessories])]:hidden group-has-[#f-clothes:checked]/shop:[&>:not([data-category=clothes])]:hidden group-has-[#f-collectibles:checked]/shop:[&>:not([data-category=collectibles])]:hidden">
+
+        <!-- محصول 1 -->
+        <div data-category="manga" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/1" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/manga-3.jpg" alt="اورجینال مانگا One piece 3" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">25٪ تخفیف</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/1" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">اورجینال مانگا One piece 3</h3>
+              </a>
+              <div class="mt-2 text-xs font-semibold text-slate-400 line-through">3,500,000</div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">2,625,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=1" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 2 -->
+        <div data-category="figures" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/2" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/figure-lufy.jpg" alt="فیگور لوفی king of artist" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">جدید</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/2" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">فیگور لوفی king of artist</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">9,900,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=2" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 3 -->
+        <div data-category="accessories" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/3" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/fandak.jpg" alt="فندک حکاکی وان پیس" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">20٪ تخفیف</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/3" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">فندک حکاکی وان پیس</h3>
+              </a>
+              <div class="mt-2 text-xs font-semibold text-slate-400 line-through">1,735,000</div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">1,388,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=3" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 4 + نامی (نصف روی کارت، همراه کارت بالا میاد) -->
+        <div data-category="clothes" class="group/pcx relative min-w-0 pt-2 group">
+          <!-- جای عکس: نامی؛ نصف عکس روی کارت و نصف بیرون (PNG بدون پس‌زمینه) -->
+          <div class="transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 pointer-events-none absolute -top-10 left-4 z-20 h-20 w-24 sm:h-24 sm:w-28"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس نامی (نصف روی کارت)</div></div>
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/4" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/t-shirt.webp" alt="تیشرت وان پیس طرح لوفی" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">محبوب</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/4" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">تیشرت وان پیس طرح لوفی</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">2,300,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=4" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 5 -->
+        <div data-category="collectibles" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/5" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/keshti.jpg" alt="ماکت کشتی سانی گو" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">ویژه</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/5" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">ماکت کشتی سانی گو</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">24,580,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=5" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 6 -->
+        <div data-category="accessories" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/6" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/bag.jpg" alt="کوله پشتی طرح انیمه وان پیس" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">تنها 2 عدد</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/6" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">کوله پشتی طرح انیمه وان پیس</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">2,230,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=6" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 7 (بیشترین تخفیف) + لوفی متعجب -->
+        <div data-category="accessories" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/7" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/mousepad.jpg" alt="دسک پد هومرو طرح انیمه وان پیس" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">50٪ تخفیف</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/7" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">دسک پد هومرو طرح انیمه وان پیس</h3>
+              </a>
+              <div class="mt-2 text-xs font-semibold text-slate-400 line-through">3,994,000</div>
+              <div class="relative flex items-center gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">1,997,000</b><span class="text-xs font-semibold text-slate-400">تومان</span>
+                <!-- جای عکس: لوفی متعجب کنار بیشترین تخفیف -->
+                <div class="pointer-events-none absolute -top-14 left-0 h-20 w-16"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس لوفی متعجب</div></div></div>
+              <a href="/cart?add=7" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 8 -->
+        <div data-category="accessories" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/8" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/ki-kap.jpg" alt="کیکپ هنری طرح انیمه وان پیس لوفی" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">ویژه آذر ماه</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/8" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">کیکپ هنری طرح انیمه وان پیس لوفی</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">358,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=8" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 9 -->
+        <div data-category="manga" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/9" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/manga-10.jpg" alt="مانگا وان پیس جلد دهم" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">جدید</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/9" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">مانگا وان پیس جلد دهم</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">3,200,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=9" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 10 -->
+        <div data-category="figures" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/10" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/figure-zoro.jpg" alt="فیگور زورو" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">ویژه</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/10" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">فیگور رورونوا زورو</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">7,800,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=10" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 11 -->
+        <div data-category="clothes" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/11" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/hoodie.jpg" alt="هودی وان پیس" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">محبوب</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/11" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">هودی طرح خدمه کلاه حصیری</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">3,400,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=11" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 12 -->
+        <div data-category="collectibles" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/12" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/collectible.jpg" alt="مجموعه کلکسیونی" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">کلکسیونی</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/12" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">مجموعه کلکسیونی وان پیس</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">5,600,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=12" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 13 -->
+        <div data-category="accessories" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/13" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/keychain.jpg" alt="جاکلیدی لوفی" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">جدید</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/13" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">جاکلیدی طرح لوفی</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">450,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=13" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 14 -->
+        <div data-category="accessories" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/14" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/mouse.jpg" alt="ماوس گیمینگ" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">ویژه</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/14" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">ماوس گیمینگ طرح وان پیس</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">1,800,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=14" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 15 -->
+        <div data-category="manga" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/15" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/manga-20.jpg" alt="مانگا وان پیس جلد بیستم" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">جدید</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/15" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">مانگا وان پیس جلد بیستم</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">3,500,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=15" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 16 -->
+        <div data-category="figures" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/16" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/figure-chopper.jpg" alt="فیگور چوپر" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">خاص</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/16" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">فیگور تونی تونی چوپر</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">4,200,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=16" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 17 -->
+        <div data-category="clothes" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/17" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/cap.jpg" alt="کلاه لوفی" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">محبوب</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/17" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">کلاه کاپیتان لوفی</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">750,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=17" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- محصول 18 -->
+        <div data-category="collectibles" class="group/pcx relative min-w-0 pt-2 group">
+          <article class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] will-change-transform focus-within:border-red-500 focus-within:ring-2 focus-within:ring-red-100 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:border-red-500">
+            <div class="p-2 pb-0 sm:p-3 sm:pb-0">
+              <a href="/product/18" class="relative isolate block aspect-square overflow-hidden rounded-xl bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <img src="img/products/treasure.jpg" alt="جعبه گنج دزدان دریایی" loading="lazy" class="block h-full w-full">
+              </a>
+            </div>
+            <span class="pointer-events-none absolute right-2 top-2 z-10 rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold text-white sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">ویژه</span>
+            <div class="p-3 sm:p-5">
+              <a href="/product/18" class="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500">
+                <h3 class="m-0 min-h-[48px] text-sm sm:min-h-[56px] sm:text-base font-bold leading-7 text-slate-900 transition-colors duration-500 [@media(any-hover:hover)]:group-hover/pcx:text-red-600">جعبه گنج دزدان دریایی</h3>
+              </a>
+              <div class="mt-2 h-4"></div>
+              <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-600 sm:text-xl">2,900,000</b><span class="text-xs font-semibold text-slate-400">تومان</span></div>
+              <a href="/cart?add=18" class="mt-4 block w-full group-hover:bg-red-600 group-hover:text-white rounded-xl border-2 border-red-600 bg-transparent py-2 text-center text-sm sm:py-2.5 sm:text-[15px] font-bold text-red-600 no-underline transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] active:scale-95 active:bg-red-600 active:text-white [@media(any-hover:hover)]:hover:bg-red-600 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">افزودن به سبد</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- صفحه بندی -->
+      <div class="relative order-4 mt-8 flex items-center justify-center gap-2">
+        <div class="pointer-events-none absolute right-[8%] -top-12 hidden h-24 w-16 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">جای عکس رابین</div></div>
+        <div class="pointer-events-none absolute left-[10%] -top-4 hidden h-14 w-14 rotate-12 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-400 bg-red-50/80 p-1 text-center text-[10px] font-bold leading-4 text-red-500 h-full w-full">میوه شیطانی ۱۰</div></div>
+        <button type="button" aria-label="صفحه قبلی" class="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-lg text-slate-500 transition hover:border-red-500 hover:text-red-600 active:scale-90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-100">‹</button>
+        <button type="button" aria-current="page" class="h-10 w-10 rounded-xl bg-red-600 text-sm font-bold text-white transition active:scale-90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200">1</button>
+        <button type="button" class="h-10 w-10 rounded-xl border border-slate-200 text-sm font-bold text-slate-600 transition hover:border-red-500 hover:text-red-600 active:scale-90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-100">2</button>
+        <button type="button" aria-label="صفحه بعدی" class="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-lg text-slate-500 transition hover:border-red-500 hover:text-red-600 active:scale-90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-100">›</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- بخش تاریک ایمو -->
+  <section class="relative mt-12 overflow-hidden rounded-3xl bg-black px-5 py-10 text-white sm:px-8 md:px-12 md:py-16">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(127,29,29,.55),transparent_55%),radial-gradient(ellipse_at_90%_0%,rgba(69,10,10,.6),transparent_50%)]"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/70"></div>
+    <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-l from-transparent via-red-700 to-transparent"></div>
+
+    <!-- ایمو در جاهای مختلف بخش (فقط دسکتاپ) -->
+    <div class="pointer-events-none absolute -right-4 top-6 hidden h-28 w-20 rotate-6 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+    <div class="pointer-events-none absolute -right-3 bottom-4 hidden h-24 w-16 -rotate-12 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+    <div class="pointer-events-none absolute left-[44%] top-1 hidden h-14 w-12 rotate-12 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+    <div class="pointer-events-none absolute left-[38%] bottom-1 hidden h-14 w-12 -rotate-6 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+    <div class="pointer-events-none absolute -left-4 top-8 hidden h-32 w-20 rotate-3 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+    <div class="pointer-events-none absolute -left-3 bottom-3 hidden h-28 w-20 -rotate-6 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+    <div class="pointer-events-none absolute right-[22%] top-1 hidden h-12 w-10 -rotate-12 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+    <div class="pointer-events-none absolute right-[30%] bottom-1 hidden h-12 w-10 rotate-6 md:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">جای عکس ایمو</div></div>
+
+    <div class="relative z-10 grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12">
+      <div class="max-w-xl">
+        <span class="inline-block rounded-full border border-red-900 bg-red-950/60 px-3 py-1 text-[11px] font-bold tracking-widest text-red-400">THE EMPTY THRONE</span>
+        <h3 class="mt-5 text-2xl font-black leading-snug text-white sm:text-3xl lg:text-5xl">تخت خالی،<br><span class="text-red-600">صاحبی که نباید دیده بشه...</span></h3>
+        <p class="mt-5 text-sm leading-8 text-slate-400 md:text-base">پشت دیوارهای پاری‌گرد، چیزی بیدار شده که دنیا هنوز اسمش رو بلند نمی‌گه. رازهای گرند لاین فقط برای کسانی‌ست که جرئت دیدنشون رو دارن.</p>
+      </div>
+
+      <!-- کارت محصول خونی -->
+      <div class="group/pcx relative mx-auto w-full max-w-xs pt-2 lg:max-w-none">
+        <article class="relative overflow-hidden rounded-2xl border-2 border-red-700 bg-gradient-to-b from-zinc-950 via-black to-red-950 shadow-[0_0_0_3px_rgba(69,10,10,.9),0_0_38px_6px_rgba(185,28,28,.4)] transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] focus-within:ring-2 focus-within:ring-red-500 active:scale-[.99] [@media(any-hover:hover)]:group-hover/pcx:-translate-y-2 [@media(any-hover:hover)]:group-hover/pcx:shadow-[0_0_0_3px_rgba(127,29,29,1),0_0_56px_10px_rgba(220,38,38,.55)]">
+          <!-- چکه‌های خون -->
+          <div class="pointer-events-none absolute inset-x-0 top-0 z-10 h-12"><span class="absolute inset-x-0 top-0 h-2 bg-red-700"></span><span class="absolute right-[9%] top-1 h-7 w-2.5 rounded-b-full bg-red-700"></span><span class="absolute right-[22%] top-1 h-4 w-2 rounded-b-full bg-red-600"></span><span class="absolute right-[41%] top-1 h-11 w-3 rounded-b-full bg-red-700"></span><span class="absolute right-[58%] top-1 h-5 w-2 rounded-b-full bg-red-600"></span><span class="absolute right-[73%] top-1 h-9 w-2.5 rounded-b-full bg-red-700"></span><span class="absolute right-[90%] top-1 h-6 w-2 rounded-b-full bg-red-600"></span></div>
+          <div class="p-3 pb-0 pt-5"><a href="/product/19" class="block aspect-square overflow-hidden rounded-xl bg-zinc-900 ring-1 ring-red-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"><img src="img/products/imu-figure.jpg" alt="فیگور ایمو سما" loading="lazy" class="h-full w-full object-contain"></a></div>
+          <span class="pointer-events-none absolute right-3 top-6 z-10 rounded-full border border-red-500 bg-black/80 px-3 py-0.5 text-[10px] font-bold text-red-400 sm:text-xs">نسخه تاریک</span>
+          <div class="p-4 sm:p-5">
+            <a href="/product/19" class="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"><h3 class="min-h-[48px] text-sm font-bold leading-7 text-white transition-colors sm:min-h-[56px] sm:text-base [@media(any-hover:hover)]:group-hover/pcx:text-red-400">فیگور ایمو سما؛ تخت خالی</h3></a>
+            <div class="mt-2 h-4"></div>
+            <div class="flex items-baseline gap-1"><b class="text-lg font-black text-red-500 sm:text-xl">12,500,000</b><span class="text-xs text-zinc-500">تومان</span></div>
+            <a href="/cart?add=19" class="mt-4 block w-full rounded-xl border-2 border-red-700 bg-black py-2 text-center text-sm font-bold text-red-400 transition-all duration-500 active:scale-95 active:bg-red-700 active:text-white sm:py-2.5 sm:text-[15px] [@media(any-hover:hover)]:hover:bg-red-700 [@media(any-hover:hover)]:hover:text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-900">افزودن به سبد</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- جای عکس: میوه شیطانی -->
+  <div class="pointer-events-none absolute right-1/2 top-3 hidden h-20 w-20 -rotate-12 lg:block"><div class="flex items-center justify-center rounded-xl border-2 border-dashed border-red-500/60 bg-red-950/40 p-1 text-center text-[10px] font-bold leading-4 text-red-300 h-full w-full">میوه شیطانی ۳</div></div>
+
+  <div class="absolute -left-10 -top-20 h-56 w-56 rounded-full border-[25px] border-white/5"></div>
+
+</div>
+  <footer class="relative bg-white text-slate-700">
+
+    <div dir="ltr" class="relative h-36 overflow-hidden sm:h-48">
+
+      <svg class="wave-a absolute bottom-0 left-0 h-[75%] w-[200%] text-red-200" viewBox="0 0 2400 80"
+        preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+        <path d="M0 40 Q 150 8 300 40 T 600 40 T 900 40 T 1200 40 T 1500 40 T 1800 40 T 2100 40 T 2400 40 V80 H0 Z" />
+      </svg>
+
+      <svg class="wave-b absolute bottom-0 left-0 h-[60%] w-[200%] text-red-300/70" viewBox="0 0 2400 80"
+        preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+        <path
+          d="M0 40 Q 100 4 200 40 T 400 40 T 600 40 T 800 40 T 1000 40 T 1200 40 T 1400 40 T 1600 40 T 1800 40 T 2000 40 T 2200 40 T 2400 40 V80 H0 Z" />
+      </svg>
+
+      <div class="ship-sail absolute bottom-[14%] z-10 sm:bottom-[18%]">
+        <div class="ship-bob relative h-20 w-28 sm:h-28 sm:w-40">
+          <div class="foam absolute -bottom-1 left-1/2 h-3 w-[110%] -translate-x-1/2 rounded-full bg-white/80 blur-sm">
+          </div>
+          <img src="img/sani-goo.png" alt="" class="absolute inset-0 h-full w-full object-contain drop-shadow-xl">
+        </div>
+      </div>
+
+      <svg class="wave-c absolute bottom-0 left-0 z-20 h-[45%] w-[200%] text-red-400/60" viewBox="0 0 2400 80"
+        preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+        <path d="M0 40 Q 300 0 600 40 T 1200 40 T 1800 40 T 2400 40 V80 H0 Z" />
+      </svg>
+
+      <svg class="wave-d absolute bottom-0 left-0 z-30 h-[28%] w-[200%] text-white" viewBox="0 0 2400 80"
+        preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+        <path d="M0 40 Q 150 10 300 40 T 600 40 T 900 40 T 1200 40 T 1500 40 T 1800 40 T 2100 40 T 2400 40 V80 H0 Z" />
+      </svg>
+    </div>
+
+    <div class="relative mx-auto max-w-6xl px-4 pb-10 pt-6 sm:px-6">
+
+      <section
+        class="relative overflow-hidden rounded-3xl border border-red-100 bg-red-50 p-6 sm:p-8 md:flex md:items-center md:justify-between md:gap-8">
+        <div class="pointer-events-none absolute -left-8 -top-8 h-32 w-32 rounded-full bg-red-100"></div>
+        <div class="pointer-events-none absolute -bottom-10 left-20 h-24 w-24 rounded-full border-4 border-red-100">
+        </div>
+        <div class="relative md:max-w-sm">
+          <h2 class="text-lg font-black text-slate-900 sm:text-xl">خبر جلدهای جدید را اول از همه بشنو</h2>
+          <p class="mt-2 text-sm leading-7 text-slate-600">ایمیلت را بگذار تا وقتی مانگای تازه رسید یا تخفیف گذاشتیم،
+            بی‌خبر نمانی.</p>
+        </div>
+        <form action="#" method="post" class="relative mt-5 flex w-full flex-col gap-3 sm:flex-row md:mt-0 md:max-w-md">
+          <label for="footer-email" class="sr-only">ایمیل</label>
+          <input id="footer-email" type="email" required placeholder="ایمیل خود را بنویسید"
+            class="w-full rounded-xl border border-red-200 bg-white px-4 py-3 text-sm outline-none placeholder:text-slate-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/30">
+          <button type="submit"
+            class="shrink-0 rounded-xl bg-red-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">عضویت</button>
+        </form>
+      </section>
+
+      <div class="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div>
+          <a href="#"
+            class="inline-flex items-center gap-2 text-2xl font-black text-slate-900 transition hover:text-red-600">
+            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-600 text-sm font-black text-white"
+              dir="ltr"><img src="img/strawhat.png" alt=""></span>
+            گرند لاین
+          </a>
+          <p class="mt-4 text-sm leading-7 text-slate-600">فروشگاه مانگا، محصولات وان پیس و کالکشنی‌های انیمه. برای
+            کسانی که دنبال گنج خودشان می‌گردند.</p>
+          <div class="mt-5 flex flex-wrap gap-2">
+<div class="social-login-icons">
+  <!-- Instagram -->
+  <div class="socialcontainer">
+    <div class="icon social-icon-2-2">
+      <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+      </svg>
+    </div>
+    <div class="social-icon-2">
+      <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Telegram -->
+  <div class="socialcontainer">
+    <div class="icon social-icon-3-3">
+      <svg viewBox="0 0 496 512" fill="white" height="1.6em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path>
+      </svg>
+    </div>
+    <div class="social-icon-3">
+      <svg viewBox="0 0 496 512" fill="white" height="1.6em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- GitHub -->
+  <div class="socialcontainer">
+    <div class="icon social-icon-4-4">
+      <svg fill="white" viewBox="0 0 496 512" height="1.6em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.3-5.6-111-14.3-111-110.3 0-27.5 9.8-41.6 25.5-59.9-2.5-6.2-11.2-31.9 2.5-66.4 20.6-6.2 68 23.4 68 23.4 19.7-5.5 40.9-8.3 62-8.3s42.3 2.8 62 8.3c0 0 47.4-29.7 68-23.4 13.7 34.5 5 60.2 2.5 66.4 15.7 18.2 25.5 32.3 25.5 59.9 0 96.2-58.6 104.7-114 110.3 9.1 7.8 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+      </svg>
+    </div>
+    <div class="social-icon-4">
+      <svg fill="white" viewBox="0 0 496 512" height="1.6em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.3-5.6-111-14.3-111-110.3 0-27.5 9.8-41.6 25.5-59.9-2.5-6.2-11.2-31.9 2.5-66.4 20.6-6.2 68 23.4 68 23.4 19.7-5.5 40.9-8.3 62-8.3s42.3 2.8 62 8.3c0 0 47.4-29.7 68-23.4 13.7 34.5 5 60.2 2.5 66.4 15.7 18.2 25.5 32.3 25.5 59.9 0 96.2-58.6 104.7-114 110.3 9.1 7.8 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+      </svg>
+    </div>
+  </div>
+</div>          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-4 flex items-center gap-2 text-base font-black text-slate-900"><span
+              class="h-5 w-1 rounded-full bg-red-600"></span>دسترسی سریع</h3>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li><a href="index.html" class="transition hover:text-red-600 active:text-red-600">صفحه‌ی اصلی</a></li>
+            <li><a href="store.html" class="transition hover:text-red-600 active:text-red-600">فروشگاه</a></li>
+            <li><a href="cart.html" class="transition hover:text-red-600 active:text-red-600">سبد خرید</a></li>
+            <li><a href="#" class="transition hover:text-red-600 active:text-red-600" onclick="openModal()">حساب کاربری</a></li>
+            <li><a href="index.html#faq-top" class="transition hover:text-red-600 active:text-red-600">سؤالات متداول</a></li>
+            <li><a href="about.html" class="transition hover:text-red-600 active:text-red-600">درباره ما</a></li>
+            <li><a href="onepiece.html" class="transition hover:text-red-600 active:text-red-600">در مورد وان پیس</a></li>
+            <li><a href="#" class="transition hover:text-red-600 active:text-red-600" onclick="openWishlist()">علاقه مندی ها</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-4 flex items-center gap-2 text-base font-black text-slate-900"><span
+              class="h-5 w-1 rounded-full bg-red-600"></span>دسته‌بندی محصولات</h3>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li><a href="manga.html" class="transition hover:text-red-600 active:text-red-600">مانگا</a></li>
+            <li><a href="figure.html" class="transition hover:text-red-600 active:text-red-600">فیگور</a></li>
+            <li><a href="accessories.html" class="transition hover:text-red-600 active:text-red-600">اکسسوری</a></li>
+            <li><a href="poshak.html" class="transition hover:text-red-600 active:text-red-600">پوشاک</a></li>
+            <li><a href="collection" class="transition hover:text-red-600 active:text-red-600">کلکسیونی</a></li>
+            <li><a href="equipment.html" class="transition hover:text-red-600 active:text-red-600">لوازم جانبی</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-4 flex items-center gap-2 text-base font-black text-slate-900"><span
+              class="h-5 w-1 rounded-full bg-red-600"></span>تماس با ما</h3>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li>تلفن: <a href="tel:+989168891067" class="transition hover:text-red-600" dir="ltr">09168891067</a>
+            </li>
+            <li>ایمیل: <a href="mailto:arshamnorinia@gmail.com" class="transition hover:text-red-600"
+                dir="ltr">arshamnorinia@gmail.com</a></li>
+            <li>آدرس : خرم آباد، شهدا غربی، 17 شهریور، بین شهید اکبر عیسائی و طالقانی (محله‌ی چهارراه بانک) مجتمع فنی
+              تهران</li>
+            <li>ساعت کاری: همه‌روزه، ۹ صبح تا ۹ شب</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-14 grid gap-6 lg:grid-cols-3">
+
+        <div class="rounded-3xl border border-red-100 bg-white p-5 shadow-sm">
+          <div
+            class="relative mx-auto aspect-[4/5] w-full max-w-[16rem] overflow-hidden rounded-2xl bg-red-50 ring-4 ring-red-100">
+            <img src="img/echiro-oda.png" alt="ایچیرو اودا، خالق وان پیس"
+              class="absolute inset-0 h-full w-full object-cover">
+          </div>
+          <h3 class="mt-4 text-center text-base font-black text-slate-900">ایچیرو اودا</h3>
+          <p class="mt-1 text-center text-sm leading-7 text-slate-600">خالق وان پیس؛ ماجراجویی‌ای که از ۱۹۹۷ هنوز ادامه
+            دارد.</p>
+          <a href="#"
+            class="mt-4 block rounded-xl bg-red-600 px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-red-700">درباره‌ی
+            او بیشتر بخوانید</a>
+        </div>
+
+        <div class="relative min-h-[20rem] overflow-hidden rounded-3xl border border-red-100 bg-red-50 lg:col-span-2">
+
+
+          <iframe src="https://neshan.org/maps/iframe/places/QbSqhaG50AhJ/33.4896936/48.3500515"
+            class="absolute inset-0 h-full w-full border-0" loading="lazy" title="نقشه‌ی فروشگاه"></iframe>
+
+          <div
+            class="absolute inset-x-4 w-35 bottom-2 flex flex-col gap-3 p-2 sm:flex-row sm:items-center sm:justify-between">
+            <a href="https://nshn.ir/QbSqhaG50AhJ"
+              class="shrink-0 w-25 rounded-xl bg-red-600 px-5 py-2.5 text-center text-sm font-bold text-white transition hover:bg-red-700 active:bg-red-700">مسیریابی</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-red-100 bg-red-50/60 pb-10 md:pb-0 mt-2">
+        <div
+          class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-5 text-xs text-slate-600 sm:flex-row sm:px-6">
+          <p>© ۱۴۰۵ گرند لاین. همه‌ی حقوق محفوظ است.</p>
+          <nav class="flex flex-wrap items-center justify-center gap-5" aria-label="لینک‌های حقوقی">
+            <a href="#" class="transition hover:text-red-600" onclick="event.preventDefault(); openRules()">قوانین و
+              مقررات</a>
+            <a href="#top" class="font-bold transition hover:text-red-600">بازگشت به بالا</a>
+          </nav>
+        </div>
+      </div>
+
+  </footer>
+</body>
+</html>

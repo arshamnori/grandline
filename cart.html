@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/png" href="img/strawhat.png">
+</head>
+<body>
+         <header class="flex items-center justify-between gap-4 p-1 sticky top-0 z-50 bg-white">
+
+
+    <a href="#" class="md:mr-10 mr-3 w-30 shrink-0">
+      <img src="img/brand.png" alt="" loading="lazy">
+    </a>
+
+    <nav class="hidden min-[900px]:flex items-center m-auto">
+
+      <a href="#" class="px-3 no-underline transition-colors duration-200 text-black hover:text-red-600">خانه</a>
+
+      <div class="relative group shrink-0">
+
+        <a href="#" class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600 group">
+          فروشگاه <span class="inline-block transition-transform duration-300 group-hover:-rotate-90">›</span>
+        </a>
+
+        <div class="absolute right-0 top-full z-50 w-48 p-3 rounded-xl bg-white border border-gray-300 shadow-xl
+                    invisible opacity-0 translate-y-2
+                    group-hover:visible group-hover:opacity-100
+                    group-hover:translate-y-0
+                    transition-all duration-300">
+
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">جدید ترین</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">تخفیف ویژه</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">محبوب ترین</a>
+
+        </div>
+      </div>
+      <div class="relative group shrink-0">
+
+        <a href="#" class="px-3 py-2 transition-colors duration-200 text-black hover:text-red-600 group">
+          دسته‌بندی‌ها <span class="inline-block transition-transform duration-300 group-hover:-rotate-90">›</span>
+        </a>
+
+        <div class="absolute right-0 top-full z-50 w-48 p-3 rounded-xl bg-white border border-gray-300 shadow-xl
+                    invisible opacity-0 translate-y-2
+                    group-hover:visible group-hover:opacity-100
+                    group-hover:translate-y-0
+                    transition-all duration-300">
+
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">مانگا</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">فیگور</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">اکسسوری</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">پوشاک</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">کلکسیونی</a>
+          <a href="#" class="block p-2 hover:bg-gray-100 rounded-lg hover:text-red-600">لوازم جانبی</a>
+
+        </div>
+      </div>
+
+      <a href="#"
+        class="px-3 pl-20 no-underline transition-colors duration-200 text-black hover:text-red-600 ml-10 shrink-0">در
+        مورد وان پیس</a>
+
+    </nav>
+
+    <div class="relative w-full max-w-50 mr-auto">
+
+      <input type="text" placeholder="جستجو..."
+        class="w-full h-10 bg-gray-100 focus:bg-white text-gray-800 border border-gray-300 rounded-lg pr-4 outline-none placeholder:text-gray-400 focus:border-red-500 transition-colors duration-300">
+
+      <button class="absolute left-3 top-1/2 -translate-y-1/2">
+
+        <img src="img/search.png" alt="" class="w-5 h-5 active:scale-90">
+
+      </button>
+
+    </div>
+
+
+    <div class="flex items-center gap-3 lg:gap-5 shrink-0 lg:px-10 px-3 ml-auto">
+      <div class="rounded-md hidden md:flex">
+        <div
+          class="flex items-center justify-center p-2 group active:bg-white rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
+          data-tooltip="سبد خرید">
+          <img src="img/sabad.png" alt="سبد" class="w-8 h-8 transition-all group-active:scale-90 group-hover:scale-110 duration-100">
+        </div>
+      </div>
+      <div class="rounded-md">
+        <div
+          class="flex items-center justify-center bg-gray-100 group md:bg-white active:bg-white p-2 rounded-md hover:text-red-600 hover:bg-neutral-100 active:bg-neutral-100 active:text-red-600 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
+          data-tooltip="علاقه مندی ها" onclick="openWishlist()">
+          <img src="img/heart.png" alt="قلب" class="w-8 h-8 transition-all group-active:scale-90 group-hover:scale-110 duration-100">
+        </div>
+      </div>
+      <div class="rounded-md hidden md:flex" onclick="openModal()">
+        <div
+          class="flex items-center justify-center p-2 group active:bg-white rounded-md hover:text-red-600 hover:bg-neutral-100 font-medium relative z-[100] data-[tooltip]:after:content-[attr(data-tooltip)] data-[tooltip]:after:mt-2 data-[tooltip]:after:text-sm data-[tooltip]:after:invisible data-[tooltip]:after:scale-50 data-[tooltip]:after:origin-top data-[tooltip]:after:opacity-0 hover:data-[tooltip]:after:visible hover:data-[tooltip]:after:opacity-100 hover:data-[tooltip]:after:scale-100 data-[tooltip]:after:transition-all data-[tooltip]:after:absolute data-[tooltip]:after:bg-white data-[tooltip]:after:top-[calc(100%+4px)] data-[tooltip]:after:left-1/2 data-[tooltip]:after:-translate-x-1/2 data-[tooltip]:after:-z-[1] data-[tooltip]:after:px-2.5 data-[tooltip]:after:py-1 data-[tooltip]:after:min-h-fit data-[tooltip]:after:min-w-fit data-[tooltip]:after:rounded-md data-[tooltip]:after:drop-shadow data-[tooltip]:before:mt-2 data-[tooltip]:before:drop-shadow data-[tooltip]:after:text-center data-[tooltip]:after:text-zinc-800 data-[tooltip]:after:whitespace-nowrap data-[tooltip]:after:text-[12px] data-[tooltip]:before:invisible data-[tooltip]:before:opacity-0 hover:data-[tooltip]:before:visible hover:data-[tooltip]:before:opacity-100 data-[tooltip]:before:transition-all data-[tooltip]:before:bg-white data-[tooltip]:before:[clip-path:polygon(50%_0,0_100%,100%_100%)] data-[tooltip]:before:absolute data-[tooltip]:before:top-full data-[tooltip]:before:left-1/2 data-[tooltip]:before:-translate-x-1/2 data-[tooltip]:before:z-0 data-[tooltip]:before:w-3 data-[tooltip]:before:h-[4px]"
+          data-tooltip="حساب کاربری">
+          <img src="img/hesab.png" alt="حساب"  class="w-8 h-8 transition-all group-active:scale-90 group-hover:scale-110 duration-100">
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-6 left-1/2 z-50 flex w-max max-w-[calc(100vw-1rem)] -translate-x-1/2 items-center gap-2
+    min-[900px]:bottom-4 min-[900px]:left-5 min-[900px]:translate-x-0" dir="ltr">
+
+
+      <div class="relative shrink-0 group/support">
+        <details class="relative">
+
+          <summary class="list-none cursor-pointer flex h-[60px] w-[60px] min-[900px]:h-16 min-[900px]:w-32
+          items-center justify-center rounded-full bg-red-600 text-white
+          transition-all duration-200 md:duration-300 ease-out
+          hover:bg-red-700 hover:scale-110 hover:shadow-[0_0_20px_#dc2626]
+          active:bg-red-700 active:shadow-[0_0_20px_#dc2626] active:scale-95
+          [&::-webkit-details-marker]:hidden">
+
+            <p class="ml-3 hidden min-[900px]:flex mr-1" dir="rtl">ارتباط‌‌ با ما</p>
+
+            <img src="img/poshtiban.png" alt="" class="h-10 mr-0 md:mr-1 w-10 min-[900px]:h-7 min-[900px]:w-7">
+          </summary>
+
+          <div dir="rtl" class="absolute bottom-full left-0 mb-3 w-48 rounded-xl
+          border border-gray-200 bg-white p-2 shadow-xl
+          opacity-0 invisible translate-y-3 scale-95
+          transition-all duration-300 origin-bottom-left
+
+          group-hover/support:opacity-100
+          group-hover/support:visible
+          group-hover/support:translate-y-0
+          group-hover/support:scale-100
+
+          [&:is(details[open]_*)]:opacity-100
+          [&:is(details[open]_*)]:visible
+          [&:is(details[open]_*)]:translate-y-0
+          [&:is(details[open]_*)]:scale-100">
+
+            <a href="#" class="block rounded-lg p-3 text-gray-700
+            transition-all duration-200 hover:bg-red-50 active:bg-red-50
+            hover:text-red-600 active:text-red-600 hover:pr-5 active:pr-5">
+              تماس با ما
+            </a>
+
+            <a href="#" class="block rounded-lg p-3 text-gray-700
+            transition-all duration-200 hover:bg-red-50 active:bg-red-50
+            hover:text-red-600 active:text-red-600 hover:pr-5 active:pr-5">
+              درباره ما
+            </a>
+          </div>
+
+        </details>
+      </div>
+
+      <nav class="min-[900px]:hidden">
+        <ul class="flex items-center gap-0.5 rounded-full bg-white p-1.5 shadow-[0_4px_24px_rgba(0,0,0,0.12)]">
+
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100"
+              onclick="openModal()">
+              <img src="img/hesab.png" alt="" class="w-8 h-8">
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
+              <img src="img/sabad.png" alt="" class="w-8 h-8">
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
+              <img src="img/strawhat.png" alt="" class="w-12 h-12 active:scale-95">
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100 active:bg-gray-100">
+              <img src="img/daste.png" alt="" class="w-8 h-9">
+            </a>
+          </li>
+
+          <li>
+            <a href="#"
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100 text-gray-900 active:bg-gray-100">
+              <img src="img/home.png" alt="" class="w-7 h-8">
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+
+
+
+    <div id="authModal" onclick="if (event.target === this) closeModal()"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+
+      <div id="modalBox"
+        class="no-scrollbar relative max-h-[95dvh] w-full max-w-[410px] translate-y-5 scale-95 overflow-y-auto rounded-2xl bg-white shadow-2xl transition-all duration-300">
+
+        <div class="h-1.5 bg-gradient-to-l from-red-800 to-red-500"></div>
+
+
+        <button type="button" onclick="closeModal()"
+          class="absolute left-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+          &times;
+        </button>
+
+        <div class="p-5 sm:p-6" dir="rtl">
+
+
+          <div class="mb-5 flex flex-col items-center gap-2">
+            <img src="img/brand.png" alt="Grand Line" class="w-[40%] rounded-xl object-contain">
+            <p class="text-sm font-semibold text-gray-600">به دنیای گرند لاین خوش آمدید</p>
+          </div>
+
+
+          <div id="authTabs" class="mb-5 grid grid-cols-2 rounded-xl bg-gray-100 p-1">
+            <button type="button" id="loginTab" onclick="showForm('login')"
+              class="rounded-lg bg-red-600 py-2 text-sm font-bold text-white transition">
+              ورود
+            </button>
+            <button type="button" id="registerTab" onclick="showForm('register')"
+              class="rounded-lg py-2 text-sm font-bold text-gray-500 transition">
+              ثبت‌نام
+            </button>
+          </div>
+
+
+
+          <form id="loginForm" class="space-y-4" onsubmit="event.preventDefault()">
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
+              <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div class="flex items-center justify-between">
+
+              <label class="group flex cursor-pointer select-none items-center gap-2.5">
+                <input type="checkbox" class="peer sr-only">
+
+                <span
+                  class="relative h-6 w-11 shrink-0 rounded-full bg-gray-200 shadow-inner transition-colors duration-300 after:absolute after:right-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:bg-white after:shadow-md after:transition-transform after:duration-300 after:content-[''] group-active:after:w-6 peer-checked:bg-red-600 peer-checked:after:-translate-x-5 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
+
+                <span class="text-xs font-medium text-gray-600">مرا به خاطر بسپار</span>
+              </label>
+
+              <button type="button" onclick="showForm('forgot')"
+                class="text-xs font-semibold text-red-600 transition hover:text-red-800">
+                فراموشی رمز عبور؟
+              </button>
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ورود به حساب کاربری
+            </button>
+
+            <p class="text-center text-xs text-gray-500">
+              حساب کاربری ندارید؟
+              <button type="button" onclick="showForm('register')" class="font-bold text-red-600">ثبت‌نام کنید</button>
+            </p>
+          </form>
+
+
+
+          <form id="registerForm" class="hidden space-y-4" onsubmit="submitRegister(event)">
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">نام و نام خانوادگی</label>
+              <input type="text" name="fullname" placeholder="نام کامل شما"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">رمز عبور</label>
+              <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+
+            <div>
+              <label class="relative flex cursor-pointer select-none items-center gap-3 rounded-xl p-3">
+                <input type="checkbox" id="acceptRules" class="peer sr-only"
+                  onchange="if (this.checked) hideRulesError()">
+
+
+                <span
+                  class="absolute inset-0 rounded-xl border border-gray-200 bg-gray-50 transition-all duration-300 peer-checked:border-red-500 peer-checked:bg-red-50 peer-focus-visible:ring-4 peer-focus-visible:ring-red-500/20"></span>
+
+
+                <span
+                  class="relative flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border-2 border-gray-300 bg-white text-white shadow-sm transition-all duration-300 peer-checked:border-red-600 peer-checked:bg-red-600 [&>svg]:scale-0 [&>svg]:transition-transform [&>svg]:duration-300 peer-checked:[&>svg]:scale-100">
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+
+                <span class="relative text-xs leading-6 text-gray-600">
+                  <button type="button" onclick="openRules()"
+                    class="font-bold text-red-600 underline decoration-red-300 underline-offset-4 transition hover:text-red-800">
+                    قوانین و مقررات گرند لاین
+                  </button>
+                  را خوانده‌ام و می‌پذیرم
+                </span>
+              </label>
+
+              <p id="rulesError" class="mt-2 hidden items-center gap-1.5 text-xs font-medium text-red-600">
+                <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 8v4m0 4h.01" />
+                </svg>
+                برای ادامه، باید قوانین و مقررات را بپذیرید.
+              </p>
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ایجاد حساب کاربری
+            </button>
+
+            <p class="text-center text-xs text-gray-500">
+              قبلاً ثبت‌نام کرده‌اید؟
+              <button type="button" onclick="showForm('login')" class="font-bold text-red-600">وارد شوید</button>
+            </p>
+          </form>
+
+
+
+          <form id="forgotForm" class="hidden space-y-4" onsubmit="event.preventDefault()">
+
+            <div class="text-center">
+              <div
+                class="mx-auto mb-3 flex h-20 w-20 items-center justify-center rounded-2xl bg-red-50 text-2xl text-red-600">
+                <img src="img/ghofel.png" alt="" class="w-15 h-18"></div>
+              <h3 class="text-lg font-black text-gray-800">بازیابی رمز عبور</h3>
+              <p class="mt-2 text-xs leading-6 text-gray-500">شماره موبایلی که با آن ثبت‌نام کرده‌اید را وارد کنید.</p>
+            </div>
+
+            <div>
+              <label class="mx-1 mb-[7px] block text-xs font-semibold text-gray-700">شماره موبایل</label>
+              <input type="tel" name="phone" dir="rtl" placeholder="09123456789"
+                class="h-11 w-full rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+            </div>
+
+            <button type="submit"
+              class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+              ادامه بازیابی
+            </button>
+
+            <div class="my-3 flex items-center gap-3">
+              <div class="h-px flex-1 bg-gray-200"></div>
+              <span class="text-[11px] text-gray-400">راه ارتباطی</span>
+              <div class="h-px flex-1 bg-gray-200"></div>
+            </div>
+
+            <!-- پشتیبانی تلگرام -->
+            <div class="rounded-xl border border-gray-100 bg-gray-50 p-4 text-center">
+              <p class="mb-3 text-sm font-bold text-gray-700">پشتیبانی گرند لاین</p>
+
+              <img src="img/QR.jpeg" alt="QR تلگرام"
+                class="mx-auto h-28 w-28 rounded-xl bg-white object-contain p-2">
+
+              <p class="mt-3 text-xs text-gray-500">برای ارتباط با پشتیبانی اسکن کنید</p>
+
+              <a href="https://t.me/KRATOS_GOD3" target="_blank" rel="noopener noreferrer" dir="ltr"
+                class="mt-3 inline-block text-sm font-bold text-red-600">
+                @KRATOS_GOD3
+              </a>
+            </div>
+
+            <button type="button" onclick="showForm('login')"
+              class="w-full pt-2 text-xs text-gray-500 transition hover:text-red-600">
+              برگشت به ورود
+            </button>
+          </form>
+
+
+
+          <div class="mt-5 border-t border-gray-100 pt-3 text-center">
+            <p class="text-[11px] text-gray-400">تجربه‌ای متفاوت از دنیای گرند لاین</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="rulesModal" onclick="if (event.target === this) closeRules()"
+      class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/70 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+
+      <div id="rulesBox" dir="rtl"
+        class="relative flex h-[min(650px,90dvh)] max-h-[90dvh] w-full max-w-[550px] scale-95 flex-col overflow-hidden rounded-2xl bg-white shadow-2xl transition-all duration-300">
+
+        <div class="h-1.5 shrink-0 bg-gradient-to-l from-red-800 to-red-500"></div>
+
+        <div class="flex shrink-0 items-center justify-between border-b border-gray-100 p-5">
+          <div>
+            <h2 class="text-lg font-black text-gray-800">قوانین و مقررات گرند لاین</h2>
+            <p class="mt-1 text-xs text-gray-400">لطفاً پیش از ثبت‌نام، موارد زیر را مطالعه کنید.</p>
+          </div>
+
+          <button type="button" onclick="closeRules()"
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+            &times;
+          </button>
+        </div>
+
+        <div id="rulesText"
+          class="no-scrollbar min-h-0 flex-1 space-y-5 overflow-y-auto p-5 text-sm leading-8 text-gray-600">
+
+          <section>
+            <h3 class="font-black text-gray-800">۱. شرایط عمومی</h3>
+            <p>
+              استفاده از خدمات و امکانات گرند لاین به معنای پذیرش قوانین و مقررات
+              این فروشگاه است. کاربران موظف‌اند هنگام استفاده از سایت، اصول
+              احترام، صداقت و قوانین جاری را رعایت کنند.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۲. اطلاعات حساب کاربری</h3>
+            <p>
+              کاربران موظف‌اند اطلاعات صحیح و معتبر خود را هنگام ثبت‌نام وارد کنند.
+              مسئولیت حفظ رمز عبور و اطلاعات ورود به حساب بر عهده صاحب حساب است.
+              از در اختیار گذاشتن اطلاعات حساب خود به دیگران خودداری کنید.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۳. ثبت سفارش و پرداخت</h3>
+            <p>
+              کاربران باید پیش از ثبت سفارش، مشخصات محصول، قیمت و توضیحات آن را
+              بررسی کنند. سفارش پس از تکمیل مراحل پرداخت و تأیید فروشگاه ثبت
+              خواهد شد. هرگونه تغییر قیمت یا موجودی پیش از نهایی شدن سفارش
+              امکان‌پذیر است.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۴. ارسال و تحویل سفارش</h3>
+            <p>
+              زمان ارسال و تحویل محصولات با توجه به نوع کالا، مقصد و شرایط ارسال
+              متفاوت است. اطلاعات مربوط به ارسال و هزینه آن باید پیش از خرید
+              در اختیار مشتری قرار گیرد.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۵. محصولات دیجیتال و اشتراک‌ها</h3>
+            <p>
+              کاربران باید پیش از خرید محصولات دیجیتال، مشخصات، محدودیت‌ها،
+              شرایط فعال‌سازی و سازگاری محصول با دستگاه خود را بررسی کنند.
+              شرایط تحویل و استفاده از اشتراک‌ها مطابق توضیحات همان محصول خواهد بود.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۶. لغو سفارش و بازگشت وجه</h3>
+            <p>
+              درخواست لغو سفارش، تعویض یا بازگشت وجه باید از طریق پشتیبانی
+              گرند لاین پیگیری شود. شرایط بازگشت کالا و وجه با توجه به نوع محصول،
+              وضعیت سفارش و قوانین مربوطه بررسی خواهد شد. محصولات دیجیتال
+              ممکن است پس از تحویل یا فعال‌سازی شرایط متفاوتی داشته باشند.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۷. حفظ حریم خصوصی</h3>
+            <p>
+              اطلاعات کاربران صرفاً برای ارائه خدمات، پردازش سفارش‌ها و
+              ارتباط با مشتری استفاده می‌شود. گرند لاین متعهد است از اطلاعات
+              کاربران محافظت کند و بدون مجوز قانونی یا رضایت کاربر آن‌ها را
+              در اختیار اشخاص غیرمجاز قرار ندهد.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۸. پشتیبانی</h3>
+            <p>
+              کاربران می‌توانند برای پیگیری سفارش‌ها، طرح پرسش‌ها و گزارش مشکلات
+              از راه‌های ارتباطی معرفی‌شده در سایت با پشتیبانی گرند لاین تماس بگیرند.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="font-black text-gray-800">۹. تغییر قوانین</h3>
+            <p>
+              گرند لاین ممکن است در صورت نیاز، قوانین و مقررات خود را به‌روزرسانی
+              کند. نسخه جدید قوانین از طریق همین بخش در دسترس کاربران قرار می‌گیرد.
+            </p>
+          </section>
+
+          <p class="rounded-xl bg-red-50 p-3 text-xs leading-7 text-red-700">
+            با انتخاب دکمه موافقت، تأیید می‌کنید که قوانین و مقررات گرند لاین
+            را مطالعه کرده و پذیرفته‌اید.
+          </p>
+        </div>
+
+        <div class="shrink-0 border-t border-gray-100 bg-white p-4">
+          <button type="button" onclick="acceptRules()"
+            class="block h-11 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+            ✓ موافقت با قوانین
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+ <!-- برای علاقه مندی هاست -->
+    <script>
+      const modal = document.getElementById('authModal');
+      const box = document.getElementById('modalBox');
+      const rules = document.getElementById('rulesModal');
+      const rulesBox = document.getElementById('rulesBox');
+      const rulesError = document.getElementById('rulesError');
+
+      const TAB_ON = ['bg-red-600', 'text-white'];
+      const TAB_OFF = ['text-gray-500'];
+
+
+      function openModal() {
+        modal.classList.replace('hidden', 'flex');
+        document.body.style.overflow = 'hidden';
+
+        requestAnimationFrame(() => {
+          modal.classList.remove('opacity-0');
+          box.classList.remove('scale-95', 'translate-y-5');
+        });
+      }
+
+      function closeModal() {
+        modal.classList.add('opacity-0');
+        box.classList.add('scale-95', 'translate-y-5');
+
+        setTimeout(() => {
+          modal.classList.replace('flex', 'hidden');
+          document.body.style.overflow = '';
+        }, 300);
+      }
+
+      function showForm(type) {
+        ['login', 'register', 'forgot'].forEach(name =>
+          document.getElementById(name + 'Form').classList.toggle('hidden', name !== type)
+        );
+
+        document.getElementById('authTabs').classList.toggle('hidden', type === 'forgot');
+
+        ['login', 'register'].forEach(name => {
+          const tab = document.getElementById(name + 'Tab');
+          TAB_ON.forEach(c => tab.classList.toggle(c, name === type));
+          TAB_OFF.forEach(c => tab.classList.toggle(c, name !== type));
+        });
+
+        hideRulesError();
+        box.scrollTop = 0;
+      }
+
+
+      function openRules() {
+        rules.classList.replace('hidden', 'flex');
+        document.getElementById('rulesText').scrollTop = 0;
+
+        requestAnimationFrame(() => {
+          rules.classList.remove('opacity-0');
+          rulesBox.classList.remove('scale-95');
+        });
+      }
+
+      function closeRules() {
+        rules.classList.add('opacity-0');
+        rulesBox.classList.add('scale-95');
+
+        setTimeout(() => rules.classList.replace('flex', 'hidden'), 300);
+      }
+
+      function acceptRules() {
+        const check = document.getElementById('acceptRules');
+        if (check) check.checked = true;
+
+        hideRulesError();
+        closeRules();
+      }
+
+
+      function hideRulesError() {
+        rulesError.classList.replace('flex', 'hidden');
+      }
+
+      function submitRegister(e) {
+        e.preventDefault();
+
+        if (!document.getElementById('acceptRules').checked) {
+          rulesError.classList.replace('hidden', 'flex');
+          return;
+        }
+
+        hideRulesError();
+      }
+
+
+      document.addEventListener('keydown', e => {
+        if (e.key !== 'Escape') return;
+
+        if (!rules.classList.contains('hidden')) closeRules();
+        else if (!modal.classList.contains('hidden')) closeModal();
+      });
+    </script>
+    <div id="wishlistModal" onclick="if (event.target === this) closeWishlist()"
+  class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 p-3 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+
+  <div id="wishlistBox" dir="rtl"
+    class="relative flex max-h-[95dvh] w-full max-w-[460px] translate-y-5 scale-95 flex-col overflow-hidden rounded-2xl bg-white shadow-2xl transition-all duration-300">
+
+    <div class="h-1.5 shrink-0 bg-gradient-to-l from-red-800 to-red-500"></div>
+
+    <div class="flex shrink-0 items-center justify-between border-b border-gray-100 p-5">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-50 text-red-600">
+          <img src="img/heart.png" alt="" class="h-8 w-8">
+        </div>
+        <div>
+          <h2 class="text-lg font-black text-gray-800">علاقه‌مندی‌ها</h2>
+          <p class="mt-0.5 text-xs text-gray-400">۳ محصول ذخیره شده</p>
+        </div>
+      </div>
+
+      <button type="button" onclick="closeWishlist()"
+        class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-500 transition hover:bg-red-100 hover:text-red-600">
+        &times;
+      </button>
+    </div>
+
+    <ul class="no-scrollbar min-h-0 flex-1 divide-y divide-gray-100 overflow-y-auto px-5">
+
+      <li class="flex items-center gap-3 py-4">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl"><img src="img/products/figure-lufy.jpg" alt=""></div>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">فیگور لوفی king of artist</p>
+          <p class="mt-1 text-xs font-bold text-red-600">9,900,000 تومان</p>
+        </div>
+        <button type="button"
+          class="rounded-lg bg-red-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن به سبد
+        </button>
+        <button type="button" aria-label="حذف"
+          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-gray-400 transition">
+          <img src="img/trash.png" alt="" class="h-[30px] w-[30px] hover:scale-110 active:scale-90 transition-all durition-100">
+        </button>
+      </li>
+
+      <li class="flex items-center gap-3 py-4">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl"><img src="img/products/bag.jpg" alt="" class="rounded-xl"></div>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">کوله پشتی طرح انیمه وان پیس</p>
+          <p class="mt-1 text-xs font-bold text-red-600">2,230,000 تومان</p>
+        </div>
+        <button type="button"
+          class="rounded-lg bg-red-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن به سبد
+        </button>
+        <button type="button" aria-label="حذف"
+          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-gray-400 transition">
+          <img src="img/trash.png" alt="" class="h-[30px] w-[30px] hover:scale-110 active:scale-90 transition-all durition-100">
+        </button>
+      </li>
+
+      <li class="flex items-center gap-3 py-4">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl"><img src="img/products/t-shirt.webp" alt=""></div>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">تیشرت وان پیس طرح لوفی</p>
+          <p class="mt-1 text-xs font-bold text-red-600">2,300,000 تومان</p>
+        </div>
+        <button type="button"
+          class="rounded-lg bg-red-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن به سبد
+        </button>
+        <button type="button" aria-label="حذف"
+          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-gray-400 transition">
+          <img src="img/trash.png" alt="" class="h-[30px] w-[30px] hover:scale-110 active:scale-90 transition-all durition-100">
+        </button>
+      </li>
+    </ul>
+
+    <div class="shrink-0 border-t border-gray-100 bg-gray-50 p-4">
+      <div class="mb-3 flex items-center justify-between text-xs">
+        <span class="text-gray-500">جمع کل ۳ محصول</span>
+        <span class="text-base font-black text-red-600">14,430,000 تومان</span>
+      </div>
+      <div class="flex gap-3">
+        <button type="button"
+          class="block h-11 flex-1 rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          افزودن همه به سبد خرید
+        </button>
+        <button type="button"
+          class="h-11 rounded-xl border border-gray-200 bg-white px-4 text-[13px] font-bold text-gray-500 transition hover:border-red-200 hover:text-red-600">
+          پاک کردن
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const wishlist = document.getElementById('wishlistModal');
+  const wishlistBox = document.getElementById('wishlistBox');
+
+  function openWishlist() {
+    wishlist.classList.replace('hidden', 'flex');
+    document.body.style.overflow = 'hidden';
+
+    requestAnimationFrame(() => {
+      wishlist.classList.remove('opacity-0');
+      wishlistBox.classList.remove('scale-95', 'translate-y-5');
+    });
+  }
+
+  function closeWishlist() {
+    wishlist.classList.add('opacity-0');
+    wishlistBox.classList.add('scale-95', 'translate-y-5');
+
+    setTimeout(() => {
+      wishlist.classList.replace('flex', 'hidden');
+      document.body.style.overflow = '';
+    }, 300);
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !wishlist.classList.contains('hidden')) closeWishlist();
+  });
+</script>
+  </header>
+  <div class="bg-[#172554] text-white sticky top-[75px] z-40">
+    <div class="mx-auto px-4 py-2 flex items-center justify-center gap-4 text-[10px]">
+
+      <span>ارسال به سراسر ایران</span>
+      <i class="w-1 h-1 rounded-full bg-orange-400"></i>
+
+      <span>ضمانت اصالت کالا</span>
+      <i class="w-1 h-1 rounded-full bg-orange-400"></i>
+
+      <span>تجربه‌ای از دنیای گرند لاین</span>
+
+    </div>
+  </div>
+  <div tabindex="0" class="group fixed left-0 top-34 z-40 outline-none sm:top-28">
+    <div
+      class="pointer-events-none absolute bottom-full left-8 mb-1 w-36 translate-y-2 rounded-2xl rounded-bl-sm bg-white px-3 py-2 text-xs font-bold leading-6 text-red-700 opacity-0 shadow-lg ring-1 ring-red-100 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus:translate-y-0 group-focus:opacity-100 sm:left-12 sm:w-44 sm:px-4">
+      سلامممممممممم
+    </div>
+    <img src="img/choper.png" alt="choper"
+      class="h-16 w-16 -translate-x-[40%] rotate-12 object-contain drop-shadow-xl transition duration-300 group-hover:-translate-x-[15%] group-hover:rotate-0 group-focus:-translate-x-[15%] group-focus:rotate-0 sm:h-20 sm:w-20 lg:h-24 lg:w-24 xl:h-28 xl:w-28">
+  </div>
+
+<!-- نوار مراحل خرید -->
+<div dir="rtl" class="mb-6 rounded-2xl bg-white px-4 py-5 mt-10  sm:px-8">
+
+  <div class="flex items-center justify-between gap-2 sm:gap-5">
+
+    <div class="flex shrink-0 items-center gap-2">
+      <span class="flex h-9 w-9 items-center justify-center rounded-full bg-red-600 text-sm font-black text-white">۱</span>
+      <span class="text-xs font-black text-red-600 sm:text-sm">سبد خرید</span>
+    </div>
+
+    <div class="h-[2px] min-w-3 flex-1 bg-gray-200"></div>
+
+    <div class="flex shrink-0 items-center gap-2">
+      <span class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-200 text-sm font-bold text-gray-400">۲</span>
+      <span class="text-[11px] font-bold text-gray-400 sm:text-sm">تکمیل سفارش</span>
+    </div>
+
+    <div class="h-[2px] min-w-3 flex-1 bg-gray-200"></div>
+
+    <div class="flex shrink-0 items-center gap-2">
+      <span class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-200 text-sm font-bold text-gray-400">۳</span>
+      <span class="text-xs font-bold text-gray-400 sm:text-sm">پرداخت</span>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- محتوای سبد خرید -->
+<div class="grid grid-cols-1 items-start gap-5 lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_360px] mx-0 md:mx-15" dir="rtl">
+
+  <!-- لیست محصولات -->
+  <section class="min-w-0 overflow-hidden rounded-2xl bg-white">
+
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-gray-100 p-4 sm:p-5">
+
+      <div>
+        <h1 class="text-base font-black text-gray-800 sm:text-lg">سبد خرید شما</h1>
+        <p class="mt-1 text-xs text-gray-400">۳ کالا در سبد خرید</p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+
+        <!-- علاقه مندی ها -->
+        <button type="button" onclick="openWishlist()"
+          class="flex h-9 items-center gap-2 rounded-lg bg-red-50 px-3 text-xs font-bold text-red-600 transition hover:bg-red-100 active:scale-95">
+
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+          </svg>
+
+          علاقه‌مندی‌ها
+        </button>
+
+        <!-- خالی کردن سبد -->
+        <button type="button"
+          class="rounded-lg px-3 py-2 text-xs font-bold text-gray-500 transition hover:bg-red-50 hover:text-red-600">
+          خالی کردن سبد
+        </button>
+
+      </div>
+    </div>
+
+
+    <ul class="divide-y divide-gray-100 px-3 sm:px-5">
+
+      <!-- محصول اول -->
+      <li class="flex flex-wrap items-center gap-3 py-5 sm:flex-nowrap">
+
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl sm:h-20 sm:w-20 sm:text-4xl">
+          🎮
+        </div>
+
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">نام محصول اول</p>
+          <p class="mt-1 text-xs text-gray-400">اشتراک دیجیتال ۱ ماهه</p>
+          <p class="mt-2 text-[11px] text-gray-500 sm:text-xs">قیمت واحد: ۲,۴۵۰,۰۰۰ تومان</p>
+        </div>
+
+        <div class="flex h-9 items-center rounded-xl bg-gray-100 p-1">
+          <button type="button" class="flex h-7 w-7 items-center justify-center rounded-lg font-bold text-gray-600 transition hover:bg-white hover:text-red-600">+</button>
+          <span class="w-7 text-center text-xs font-bold">۱</span>
+          <button type="button" class="flex h-7 w-7 items-center justify-center rounded-lg font-bold text-gray-600 transition hover:bg-white hover:text-red-600">−</button>
+        </div>
+
+        <div class="flex w-full items-center justify-between sm:w-auto sm:min-w-[125px] sm:justify-center">
+          <p class="text-sm font-black text-red-600">
+            ۲,۴۵۰,۰۰۰ <span class="text-[10px] font-medium">تومان</span>
+          </p>
+
+          <button type="button" aria-label="حذف"
+            class="flex h-9 w-9 items-center justify-center rounded-full text-gray-400 transition hover:bg-red-50 hover:text-red-600 sm:mr-2">
+            <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 7h16M10 11v6M14 11v6M6 7l1 12h10l1-12M9 7V4h6v3"/>
+            </svg>
+          </button>
+        </div>
+
+      </li>
+
+
+      <!-- محصول دوم -->
+      <li class="flex flex-wrap items-center gap-3 py-5 sm:flex-nowrap">
+
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl sm:h-20 sm:w-20 sm:text-4xl">
+          🎧
+        </div>
+
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">نام محصول دوم</p>
+          <p class="mt-1 text-xs text-gray-400">کد فعال‌سازی</p>
+          <p class="mt-2 text-[11px] text-gray-500 sm:text-xs">قیمت واحد: ۳,۱۸۰,۰۰۰ تومان</p>
+        </div>
+
+        <div class="flex h-9 items-center rounded-xl bg-gray-100 p-1">
+          <button type="button" class="flex h-7 w-7 items-center justify-center rounded-lg font-bold text-gray-600 transition hover:bg-white hover:text-red-600">+</button>
+          <span class="w-7 text-center text-xs font-bold">۱</span>
+          <button type="button" class="flex h-7 w-7 items-center justify-center rounded-lg font-bold text-gray-600 transition hover:bg-white hover:text-red-600">−</button>
+        </div>
+
+        <div class="flex w-full items-center justify-between sm:w-auto sm:min-w-[125px] sm:justify-center">
+          <p class="text-sm font-black text-red-600">
+            ۳,۱۸۰,۰۰۰ <span class="text-[10px] font-medium">تومان</span>
+          </p>
+
+          <button type="button" aria-label="حذف"
+            class="flex h-9 w-9 items-center justify-center rounded-full text-gray-400 transition hover:bg-red-50 hover:text-red-600 sm:mr-2">
+            <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 7h16M10 11v6M14 11v6M6 7l1 12h10l1-12M9 7V4h6v3"/>
+            </svg>
+          </button>
+        </div>
+
+      </li>
+
+
+      <!-- محصول سوم -->
+      <li class="flex flex-wrap items-center gap-3 py-5 sm:flex-nowrap">
+
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-50 text-3xl sm:h-20 sm:w-20 sm:text-4xl">
+          🕹️
+        </div>
+
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm font-bold text-gray-800">نام محصول سوم</p>
+          <p class="mt-1 text-xs text-gray-400">بسته ویژه</p>
+          <p class="mt-2 text-[11px] text-gray-500 sm:text-xs">قیمت واحد: ۵,۹۰۰,۰۰۰ تومان</p>
+        </div>
+
+        <div class="flex h-9 items-center rounded-xl bg-gray-100 p-1">
+          <button type="button" class="flex h-7 w-7 items-center justify-center rounded-lg font-bold text-gray-600 transition hover:bg-white hover:text-red-600">+</button>
+          <span class="w-7 text-center text-xs font-bold">۲</span>
+          <button type="button" class="flex h-7 w-7 items-center justify-center rounded-lg font-bold text-gray-600 transition hover:bg-white hover:text-red-600">−</button>
+        </div>
+
+        <div class="flex w-full items-center justify-between sm:w-auto sm:min-w-[125px] sm:justify-center">
+          <p class="text-sm font-black text-red-600">
+            ۱۱,۸۰۰,۰۰۰ <span class="text-[10px] font-medium">تومان</span>
+          </p>
+
+          <button type="button" aria-label="حذف"
+            class="flex h-9 w-9 items-center justify-center rounded-full text-gray-400 transition hover:bg-red-50 hover:text-red-600 sm:mr-2">
+            <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 7h16M10 11v6M14 11v6M6 7l1 12h10l1-12M9 7V4h6v3"/>
+            </svg>
+          </button>
+        </div>
+
+      </li>
+
+    </ul>
+  </section>
+
+
+
+  <!-- خلاصه سفارش -->
+  <aside class="relative min-w-0 lg:sticky lg:top-60">
+
+    <!-- عکس کاراکتر -->
+    <img
+      src="img/character.png"
+      alt=""
+      class="pointer-events-none absolute -top-20 left-3 z-10 h-36 w-auto object-contain sm:-top-24 sm:h-44"
+    />
+
+    <div class="overflow-hidden rounded-2xl bg-white">
+
+      <div class="h-1 bg-gradient-to-l from-red-800 to-red-500"></div>
+
+      <div class="space-y-4 p-4 sm:p-5">
+
+        <h2 class="font-black text-gray-800">خلاصه سفارش</h2>
+
+        <!-- کد تخفیف -->
+        <div>
+          <label class="mx-1 mb-2 block text-xs font-semibold text-gray-700">کد تخفیف</label>
+
+          <div class="flex gap-2">
+            <input type="text" dir="ltr" placeholder="GRAND10"
+              class="h-11 min-w-0 flex-1 rounded-xl border border-gray-200 px-3 text-[13px] outline-none transition focus:border-red-500 focus:ring-[3px] focus:ring-red-500/10">
+
+            <button type="button"
+              class="h-11 shrink-0 rounded-xl bg-gray-800 px-4 text-xs font-bold text-white transition hover:bg-gray-900 active:scale-95">
+              اعمال
+            </button>
+          </div>
+        </div>
+
+
+        <!-- محاسبه قیمت -->
+        <dl class="space-y-3 border-t border-gray-100 pt-4 text-sm">
+
+          <div class="flex justify-between gap-2">
+            <dt class="text-gray-500">جمع محصولات</dt>
+            <dd class="whitespace-nowrap font-bold text-gray-800">۱۷,۴۳۰,۰۰۰ تومان</dd>
+          </div>
+
+          <div class="flex justify-between gap-2 text-red-600">
+            <dt>تخفیف</dt>
+            <dd class="whitespace-nowrap font-bold">− ۱,۷۴۳,۰۰۰ تومان</dd>
+          </div>
+
+          <div class="flex justify-between">
+            <dt class="text-gray-500">هزینه ارسال</dt>
+            <dd class="font-bold text-green-600">رایگان</dd>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 border-t border-gray-100 pt-3">
+            <dt class="font-black text-gray-800">مبلغ قابل پرداخت</dt>
+            <dd class="text-base font-black text-red-600 sm:text-lg">۱۵,۶۸۷,۰۰۰ تومان</dd>
+          </div>
+
+        </dl>
+
+
+        <!-- ادامه سفارش -->
+        <button type="button"
+          class="h-12 w-full rounded-xl bg-red-600 text-[13px] font-bold text-white transition hover:bg-red-700 active:scale-[.98]">
+          ادامه و تکمیل سفارش
+        </button>
+
+        <p class="text-center text-[11px] leading-6 text-gray-400">
+          تحویل محصولات دیجیتال پس از پرداخت موفق انجام می‌شود.
+        </p>
+
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+</body>
+</html>
